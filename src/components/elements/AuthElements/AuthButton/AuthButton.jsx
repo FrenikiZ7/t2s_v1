@@ -5,7 +5,7 @@ import * as Styled from './AuthButton-Styles';
 import { theme } from '../../../../styles/theme';
 
 export function AuthButton({
-  name, id, value, bgcolor = theme.colors.secondary, bghover = theme.colors.quaternary,
+  name, id, value, bgcolor = theme.colors.quaternary, bghover = theme.colors.secondary,
 }) {
   const { t } = useTranslation();
 

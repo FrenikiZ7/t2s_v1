@@ -70,7 +70,7 @@ export function T2sVideo({ onCloseClick, onBackClick }) {
         <IconDiv hovercolor={theme.colors.primary} onclick={onBackClick}>
           <ArrowBack />
         </IconDiv>
-        <Subtitle text="Envie seu vídeo" uppercase />
+        <Subtitle text={t('upload_your_video')} uppercase />
         <IconDiv hovercolor={theme.colors.mediumred} onclick={onCloseClick}>
           <Close />
         </IconDiv>

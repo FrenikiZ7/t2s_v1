@@ -50,7 +50,6 @@ export const ProposalModalElement = styled.div`
 
      ${GridLayoutContainer} {
       width: 100%;
-      background: red;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
       @media ${theme.medias.smallpc} {

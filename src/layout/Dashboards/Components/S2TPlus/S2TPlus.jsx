@@ -5,6 +5,9 @@ import * as Styled from './S2TPlus-Styles';
 import { S2tContext } from '../../../../contexts/s2tContext/S2tContext';
 import { GridCards } from '../../../../components/elements/GridCards/GridCards';
 import { VerticalSoloSlide } from '../../../../components/elements/VerticalSoloSlide/VerticalSoloSlide';
+import { Row } from '../../../../components/RowContainer/Row';
+import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
+import { NewPub } from '../../../../components/elements/PublicationElements/NewPub/NewPub';
 
 export function S2TPlus() {
   const { t } = useTranslation();
@@ -17,6 +20,8 @@ export function S2TPlus() {
       <GridCards title={t('tactical_trainers')} items={s2tState.users.scouts} />
       <GridCards title={t('psychologists')} items={s2tState.users.scouts} />
       <GridCards title={t('doctors')} items={s2tState.users.scouts} />
+
+      <NewPub />
     </Styled.S2TPlusContainer>
   );
 }
