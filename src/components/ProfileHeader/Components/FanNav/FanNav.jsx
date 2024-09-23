@@ -44,9 +44,9 @@ export function FanNav() {
         />
 
         <StyledLink
-          active={activeLink === '/fan-dashboard/scouts'}
-          path="scouts"
-          text={t('scouts')}
+          active={activeLink === '/fan-dashboard/staff'}
+          path="staff"
+          text={t('staff')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -86,6 +86,14 @@ export function FanNav() {
         />
 
         <StyledLink
+          active={activeLink === '/league-dashboard/messages'}
+          path="messages"
+          text={t('messages')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
+        <StyledLink
           active={activeLink === '/fan-dashboard/friends'}
           path="friends"
           text={t('friends')}
@@ -97,6 +105,14 @@ export function FanNav() {
           active={activeLink === '/fan-dashboard/store'}
           path="store"
           text={t('store')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
+        <StyledLink
+          active={activeLink === '/fan-dashboard/my-events'}
+          path="my-events"
+          text={t('my_events')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />

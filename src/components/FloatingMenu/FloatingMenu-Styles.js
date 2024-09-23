@@ -26,7 +26,6 @@ export const FloatingMenuContainer = styled.nav`
     min-width: 300px;
  
 
-
     transition: all 500ms ease-in-out;
 
     @media ${theme.medias.mobile} {

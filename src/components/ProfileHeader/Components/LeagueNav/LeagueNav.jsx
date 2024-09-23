@@ -60,9 +60,9 @@ export function LeagueNav() {
         />
 
         <StyledLink
-          active={activeLink === '/league-dashboard/scouts'}
-          path="scouts"
-          text={t('scouts')}
+          active={activeLink === '/league-dashboard/staff'}
+          path="staff"
+          text={t('staff')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -102,9 +102,9 @@ export function LeagueNav() {
         />
 
         <StyledLink
-          active={activeLink === '/league-dashboard/contacts'}
-          path="contacts"
-          text={t('contacts')}
+          active={activeLink === '/league-dashboard/messages'}
+          path="messages"
+          text={t('messages')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -121,6 +121,14 @@ export function LeagueNav() {
           active={activeLink === '/league-dashboard/store'}
           path="store"
           text={t('store')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
+        <StyledLink
+          active={activeLink === '/league-dashboard/my-events'}
+          path="my-events"
+          text={t('my_events')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />

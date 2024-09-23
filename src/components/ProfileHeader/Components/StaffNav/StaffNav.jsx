@@ -41,9 +41,9 @@ export function StaffNav() {
           hovercolor={theme.colors.black}
         />
         <StyledLink
-          active={activeLink === '/staff-dashboard/scouts'}
-          path="scouts"
-          text={t('scouts')}
+          active={activeLink === '/staff-dashboard/staff'}
+          path="staff"
+          text={t('staff')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -70,9 +70,9 @@ export function StaffNav() {
           hovercolor={theme.colors.black}
         />
         <StyledLink
-          active={activeLink === '/staff-dashboard/contacts'}
-          path="contacts"
-          text={t('contacts')}
+          active={activeLink === '/staff-dashboard/messages'}
+          path="messages"
+          text={t('messages')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -95,6 +95,15 @@ export function StaffNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
+        <StyledLink
+          active={activeLink === '/staff-dashboard/my-events'}
+          path="my-events"
+          text={t('my_events')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
         <StyledLink
           active={activeLink === '/staff-dashboard/my-affiliates'}
           path="my-affiliates"

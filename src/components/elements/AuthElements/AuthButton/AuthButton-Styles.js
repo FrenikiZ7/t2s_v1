@@ -3,8 +3,9 @@ import styled, { css } from 'styled-components';
 export const AuthButtonElement = styled.input`
   ${({ theme, bgcolor, bghover }) => css`
     background: ${bgcolor};
-    border: ${theme.borders.white};
-    border-radius: 7px;
+    /* border: ${theme.borders.white}; */
+    border: none;
+    border-radius: 10px;
     color: ${theme.colors.white};
 
     font-size: ${theme.sizes.medium};

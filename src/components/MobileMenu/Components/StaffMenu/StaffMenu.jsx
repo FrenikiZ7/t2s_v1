@@ -16,6 +16,7 @@ import {
   LocalGroceryStore as StoreIcon,
   Close as CloseIcon,
   SocialDistance as AffiliateIcon,
+  TableView as TableViewIcon,
 } from '@styled-icons/material-outlined';
 
 import { useTranslation } from 'react-i18next';
@@ -58,12 +59,12 @@ export function StaffMenu() {
       </StyledLink>
 
       <StyledLink
-        path="scouts"
+        path="staff"
         color={theme.colors.white}
         hovercolor={theme.colors.primary}
       >
         <WorkIcon />
-        {t('scouts')}
+        {t('staff')}
 
       </StyledLink>
 
@@ -98,12 +99,12 @@ export function StaffMenu() {
       </StyledLink>
 
       <StyledLink
-        path="contacts"
+        path="messages"
         color={theme.colors.white}
         hovercolor={theme.colors.primary}
       >
         <SendIcon />
-        {t('contacts')}
+        {t('messages')}
 
       </StyledLink>
 
@@ -134,6 +135,16 @@ export function StaffMenu() {
       >
         <PlusIcon />
         {t('t2s+')}
+
+      </StyledLink>
+
+      <StyledLink
+        path="my-events"
+        color={theme.colors.white}
+        hovercolor={theme.colors.primary}
+      >
+        <TableViewIcon />
+        {t('my_events')}
 
       </StyledLink>
 

@@ -7,7 +7,7 @@ import { GridCards } from '../../../../components/elements/GridCards/GridCards';
 import { VerticalSoloSlide } from '../../../../components/elements/VerticalSoloSlide/VerticalSoloSlide';
 import { Row } from '../../../../components/RowContainer/Row';
 import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
-import { NewPub } from '../../../../components/elements/PublicationElements/NewPub/NewPub';
+import { NewPost } from '../../../../components/elements/PostElements/NewPost/NewPost';
 
 export function S2TPlus() {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ export function S2TPlus() {
       <GridCards title={t('psychologists')} items={s2tState.users.scouts} />
       <GridCards title={t('doctors')} items={s2tState.users.scouts} />
 
-      <NewPub />
+      <NewPost />
     </Styled.S2TPlusContainer>
   );
 }

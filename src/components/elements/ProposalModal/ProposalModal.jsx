@@ -19,7 +19,6 @@ import { GridLayout } from '../../GridLayout/GridLayout';
 import { FavoriteIcon } from '../FavoriteIcon/FavoriteIcon';
 
 export function ProposalModal({ proposal, onclick, isapplied }) {
-  const [message, setMessage] = useState('');
   const { t } = useTranslation();
 
   const handleSubmitMessage = (e) => {
@@ -27,7 +26,11 @@ export function ProposalModal({ proposal, onclick, isapplied }) {
     // Lógica para envio de mensagem ou criar uma função dispatch com ela
   };
 
-  const handleMessage = (option) => {
+  const messages = ['opportunity_player_message_1', 'opportunity_player_message_2'];
+
+  const [message, setMessage] = useState('');
+
+  const toggleMessage = (option) => {
     setMessage(message === option ? '' : option);
   };
 
@@ -85,54 +88,20 @@ export function ProposalModal({ proposal, onclick, isapplied }) {
           <Subtitle text={t('message')} uppercase />
 
           <GridLayout>
-            <Button
-              text={t('opportunity_player_message_1')}
-              bgcolor={message === t('opportunity_player_message_1') ? theme.colors.primary : theme.colors.lightprimary}
-              bghover={theme.colors.primary}
-              textcolor={theme.colors.black}
-              texthover={theme.colors.black}
-              border={theme.colors.lightprimary}
-              borderhover={theme.colors.primary}
-              active={message === t('opportunity_player_message_1')}
-              onclick={() => handleMessage(t('opportunity_player_message_1'))}
-            />
-
-            <Button
-              text={t('opportunity_player_message_2')}
-              bgcolor={message === t('opportunity_player_message_2') ? theme.colors.primary : theme.colors.lightprimary}
-              bghover={theme.colors.primary}
-              textcolor={theme.colors.black}
-              texthover={theme.colors.black}
-              border={theme.colors.lightprimary}
-              borderhover={theme.colors.primary}
-              active={message === t('opportunity_player_message_2')}
-              onclick={() => handleMessage(t('opportunity_player_message_2'))}
-            />
-
-            {/* <Button
-              text={t('opportunity_player_message_3')}
-              bgcolor={message === t('opportunity_player_message_3') ? theme.colors.primary : theme.colors.lightprimary}
-              bghover={theme.colors.primary}
-              textcolor={theme.colors.black}
-              texthover={theme.colors.black}
-              border={theme.colors.lightprimary}
-              borderhover={theme.colors.primary}
-              active={message === t('opportunity_player_message_3')}
-              onclick={() => handleMessage(t('opportunity_player_message_3'))}
-            />
-
-            <Button
-              text={t('opportunity_player_message_4')}
-              bgcolor={message === t('opportunity_player_message_4') ? theme.colors.primary : theme.colors.lightprimary}
-              bghover={theme.colors.primary}
-              textcolor={theme.colors.black}
-              texthover={theme.colors.black}
-              border={theme.colors.lightprimary}
-              borderhover={theme.colors.primary}
-              active={message === t('opportunity_player_message_4')}
-              onclick={() => handleMessage(t('opportunity_player_message_4'))}
-            /> */}
-
+            {messages.map((msgKey) => (
+              <Button
+                key={msgKey}
+                text={t(msgKey)}
+                bgcolor={message === t(msgKey) ? theme.colors.primary : theme.colors.lightprimary}
+                bghover={theme.colors.primary}
+                textcolor={theme.colors.black}
+                texthover={theme.colors.black}
+                border={theme.colors.lightprimary}
+                borderhover={theme.colors.primary}
+                active={message === t(msgKey)}
+                onclick={() => toggleMessage(t(msgKey))}
+              />
+            ))}
           </GridLayout>
 
           <TextArea

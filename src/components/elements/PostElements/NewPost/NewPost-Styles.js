@@ -1,20 +1,22 @@
 import styled, { css } from 'styled-components';
-import { fadeIn } from '../../../../styles/animations';
-import { TextAreaElement } from '../../TextArea/TextArea-Styles';
-import { AuthIconFileContainer, AuthIconFileInput } from '../../AuthElements/AuthIconFile/AuthIconFile-Styles';
-import { IconContainer } from '../../IconDiv/IconDiv-Styles';
-import { AuthFormContainer } from '../../AuthElements/AuthForm/AuthForm-Styles';
-import { AuthButtonElement } from '../../AuthElements/AuthButton/AuthButton-Styles';
+import { fadeIn } from '../../../../styles/animations.js';
+import { TextAreaElement } from '../../TextArea/TextArea-Styles.js';
+import { AuthIconFileContainer, AuthIconFileInput } from '../../AuthElements/AuthIconFile/AuthIconFile-Styles.js';
+import { IconContainer } from '../../IconDiv/IconDiv-Styles.js';
+import { AuthFormContainer } from '../../AuthElements/AuthForm/AuthForm-Styles.js';
+import { AuthButtonElement } from '../../AuthElements/AuthButton/AuthButton-Styles.js';
+import { ButtonElement } from '../../Button/Button-Styles.js';
+import { RowContainer } from '../../../RowContainer/Row-Styles.js.js';
+import { SubtitleElement } from '../../Subtitle/Subtitle-Styles.js';
 
-export const NewPub = styled.div`
+export const NewPost = styled.div`
   ${({ theme }) => css`
     animation: ${fadeIn} 300ms;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     border: ${theme.borders.white};
-    box-shadow: 0px 0px 8px 0.5px ${theme.colors.white};
+    box-shadow: 0px 0px 5px 0.5px ${theme.colors.white};
     border-radius: 15px;
-
 
     position: fixed;
     top: 50%;
@@ -32,12 +34,44 @@ export const NewPub = styled.div`
     gap: ${theme.spacings.medium};
     transition: all 500ms ease-in-out;
 
+    ${RowContainer} {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      @media ${theme.medias.smallpc} {
+        flex-direction: row;
+      }
+
+      ${SubtitleElement} {
+        margin-bottom: 0px;
+      }
+    }
+
+    ${IconContainer} {
+      &:hover {
+        > svg {
+         transform: scale(1);
+        }
+      }
+    }
+
     @media ${theme.medias.mobile} {
       width: 90%;
     }
 
     ${AuthButtonElement} {
       width: 100%;
+      font-weight: 800;
+      font-size: ${theme.sizes.small};
+      animation: ${fadeIn} 500ms;
+    }
+
+    ${ButtonElement} {
+      animation: ${fadeIn} 500ms;
+
+      padding: ${theme.spacings.medium};
+      border: none;
     }
 
     ${TextAreaElement} {
@@ -106,20 +140,21 @@ export const Icons = styled.div`
 
 
         &:hover {
-          background: ${theme.colors.lightgray};
-
-          & svg {
-            color: ${theme.colors.primary};
-          }
-
+          /* background: ${theme.colors.lightgray}; */
+          box-shadow: 0px 0px 7px 1px ${theme.colors.lightprimary};
         }
 
 
 
        ${IconContainer} {
-        position: static; 
-        width: 30px;
-        
+         position: static; 
+         width: 30px;
+
+         &:hover {
+          > svg {
+            transform: scale(1);
+          }
+         }
        }
     }
   `}

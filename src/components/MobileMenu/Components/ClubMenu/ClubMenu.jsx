@@ -17,6 +17,7 @@ import {
   SafetyDivider as SquadIcon,
   Close as CloseIcon,
   PersonSearch as PersonSearchIcon,
+  TableView as TableViewIcon,
   SocialDistance as AffiliateIcon,
 } from '@styled-icons/material-outlined';
 
@@ -80,12 +81,12 @@ export function ClubMenu() {
       </StyledLink>
 
       <StyledLink
-        path="scouts"
+        path="staff"
         color={theme.colors.white}
         hovercolor={theme.colors.primary}
       >
         <WorkIcon />
-        {t('scouts')}
+        {t('staff')}
 
       </StyledLink>
 
@@ -130,12 +131,12 @@ export function ClubMenu() {
       </StyledLink>
 
       <StyledLink
-        path="contacts"
+        path="messages"
         color={theme.colors.white}
         hovercolor={theme.colors.primary}
       >
         <SendIcon />
-        {t('contacts')}
+        {t('messages')}
 
       </StyledLink>
 
@@ -166,6 +167,16 @@ export function ClubMenu() {
       >
         <PlusIcon />
         {t('t2s+')}
+
+      </StyledLink>
+
+      <StyledLink
+        path="my-events"
+        color={theme.colors.white}
+        hovercolor={theme.colors.primary}
+      >
+        <TableViewIcon />
+        {t('my_events')}
 
       </StyledLink>
 

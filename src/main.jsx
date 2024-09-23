@@ -180,13 +180,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<PlayerProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="player" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="scouts" element={<Scouts />} />
+                                <Route path="staff" element={<Scouts />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="favorites" element={<PlayerFavorites />} />
-                                <Route path="contacts" element={<PlayerContacts />} />
+                                <Route path="messages" element={<PlayerContacts />} />
                                 <Route path="events" element={<Events />} />
                                 <Route path="friends" element={<Friends friends={playerData.friends} />} />
                                 <Route path="store" element={<Store />} />
+                                <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
                                 <Route path="my-affiliates" element={<MyAffiliates affiliates={s2tData.users.scouts} />} />
                                 <Route path="s2t+" element={<S2TPlus />} />
                               </Route>
@@ -196,13 +197,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<StaffProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="staff" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="scouts" element={<Scouts />} />
+                                <Route path="staff" element={<Scouts />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="favorites" element={<StaffFavorites />} />
-                                <Route path="contacts" element={<h1>Em construção... :)</h1>} />
+                                <Route path="messages" element={<h1>Em construção... :)</h1>} />
                                 <Route path="events" element={<Events />} />
                                 <Route path="friends" element={<Friends friends={playerData.friends} />} />
                                 <Route path="store" element={<Store />} />
+                                <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
                                 <Route path="my-affiliates" element={<MyAffiliates affiliates={s2tData.users.scouts} />} />
                                 <Route path="s2t+" element={<S2TPlus />} />
                               </Route>
@@ -212,13 +214,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<BusinessManProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="business-man" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="scouts" element={<Scouts />} />
+                                <Route path="staff" element={<Scouts />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="favorites" element={<BusinessManFavorites />} />
-                                <Route path="contacts" element={<h1>Em construção... :)</h1>} />
+                                <Route path="messages" element={<h1>Em construção... :)</h1>} />
                                 <Route path="events" element={<Events />} />
                                 <Route path="friends" element={<Friends friends={playerData.friends} />} />
                                 <Route path="store" element={<Store />} />
+                                <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
                                 <Route path="my-affiliates" element={<MyAffiliates affiliates={s2tData.users.scouts} />} />
                                 <Route path="s2t+" element={<S2TPlus />} />
                               </Route>
@@ -231,12 +234,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile-edit" element={<EditProfile type="club" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities opportunities={s2tData.proposals.male.professional.clubs} />} />
-                                <Route path="scouts" element={<Scouts />} />
+                                <Route path="staff" element={<Scouts />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<ClubFavorites />} />
                                 <Route path="events" element={<Events />} />
-                                <Route path="contacts" element={<h1>Em construção... :)</h1>} />
+                                <Route path="messages" element={<h1>Em construção... :)</h1>} />
                                 <Route path="friends" element={<Friends friends={clubData.friends} />} />
                                 <Route path="store" element={<Store />} />
                                 <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
@@ -251,12 +254,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile-edit" element={<EditProfile type="league" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities opportunities={s2tData.proposals.male.professional.agents} />} />
-                                <Route path="scouts" element={<Scouts />} />
+                                <Route path="staff" element={<Scouts />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<ClubFavorites />} />
                                 <Route path="events" element={<Events />} />
-                                <Route path="contacts" element={<h1>Em construção... :)</h1>} />
+                                <Route path="messages" element={<h1>Em construção... :)</h1>} />
                                 <Route path="friends" element={<Friends friends={leagueData.friends} />} />
                                 <Route path="store" element={<Store />} />
                                 <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
@@ -271,12 +274,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile-edit" element={<EditProfile type="agency" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities opportunities={s2tData.proposals.male.professional.clubs} />} />
-                                <Route path="scouts" element={<Scouts />} />
+                                <Route path="staff" element={<Scouts />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<AgencyFavorites />} />
                                 <Route path="events" element={<Events />} />
-                                <Route path="contacts" element={<h1>Em construção... :)</h1>} />
+                                <Route path="messages" element={<h1>Em construção... :)</h1>} />
                                 <Route path="friends" element={<Friends friends={agencyData.friends} />} />
                                 <Route path="store" element={<Store />} />
                                 <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
@@ -291,14 +294,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile-edit" element={<EditProfile type="university" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities />} />
-                                <Route path="scouts" element={<Scouts />} />
+                                <Route path="staff" element={<Scouts />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<ClubFavorites />} />
                                 <Route path="events" element={<Events />} />
-                                <Route path="contacts" element={<h1>Em construção... :)</h1>} />
+                                <Route path="messages" element={<h1>Em construção... :)</h1>} />
                                 <Route path="friends" element={<Friends friends={clubData.friends} />} />
                                 <Route path="store" element={<Store />} />
+                                <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
                                 <Route path="my-affiliates" element={<MyAffiliates affiliates={s2tData.users.scouts} />} />
                                 <Route path="s2t+" element={<S2TPlus />} />
                               </Route>
@@ -308,13 +312,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<FanProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="fan" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="scouts" element={<Scouts />} />
+                                <Route path="staff" element={<Scouts />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<FanFavorites />} />
                                 <Route path="events" element={<Events />} />
                                 <Route path="friends" element={<Friends friends={fanData.friends} />} />
                                 <Route path="store" element={<Store />} />
+                                <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
                                 <Route path="my-affiliates" element={<MyAffiliates affiliates={s2tData.users.scouts} />} />
                                 <Route path="s2t+" element={<S2TPlus />} />
                               </Route>

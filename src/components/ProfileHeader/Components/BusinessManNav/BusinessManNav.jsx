@@ -41,9 +41,9 @@ export function BusinessManNav() {
           hovercolor={theme.colors.black}
         />
         <StyledLink
-          active={activeLink === '/business-man-dashboard/scouts'}
-          path="scouts"
-          text={t('scouts')}
+          active={activeLink === '/business-man-dashboard/staff'}
+          path="staff"
+          text={t('staff')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -70,9 +70,9 @@ export function BusinessManNav() {
           hovercolor={theme.colors.black}
         />
         <StyledLink
-          active={activeLink === '/business-man-dashboard/contacts'}
-          path="contacts"
-          text={t('contacts')}
+          active={activeLink === '/business-man-dashboard/messages'}
+          path="messages"
+          text={t('messages')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -95,6 +95,15 @@ export function BusinessManNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
+        <StyledLink
+          active={activeLink === '/business-man-dashboard/my-events'}
+          path="my-events"
+          text={t('my_events')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
         <StyledLink
           active={activeLink === '/business-man-dashboard/my-affiliates'}
           path="my-affiliates"
@@ -102,6 +111,7 @@ export function BusinessManNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
         <StyledLink
           active={activeLink === '/business-man-dashboard/s2t+'}
           path="s2t+"

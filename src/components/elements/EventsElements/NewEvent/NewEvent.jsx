@@ -39,9 +39,7 @@ export function NewEvent({ onclick }) {
     state: '',
     zipCode: '',
     adress: '',
-    path: '/',
     bannerImage: '',
-    termsAndConditions: '',
   });
 
   const { t } = useTranslation();
@@ -116,7 +114,7 @@ export function NewEvent({ onclick }) {
               onDropdownChange={(value) => setEventData((prevData) => ({ ...prevData, format: value }))}
             />
 
-            {eventData.format === 'inPerson' && (
+            {eventData.format === 'in_person' && (
               <>
                 <AuthInput
                   type="text"

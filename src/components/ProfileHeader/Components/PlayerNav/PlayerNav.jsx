@@ -41,9 +41,9 @@ export function PlayerNav() {
           hovercolor={theme.colors.black}
         />
         <StyledLink
-          active={activeLink === '/player-dashboard/scouts'}
-          path="scouts"
-          text={t('scouts')}
+          active={activeLink === '/player-dashboard/staff'}
+          path="staff"
+          text={t('staff')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -70,9 +70,9 @@ export function PlayerNav() {
           hovercolor={theme.colors.black}
         />
         <StyledLink
-          active={activeLink === '/player-dashboard/contacts'}
-          path="contacts"
-          text={t('contacts')}
+          active={activeLink === '/player-dashboard/messages'}
+          path="messages"
+          text={t('messages')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -95,6 +95,15 @@ export function PlayerNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
+        <StyledLink
+          active={activeLink === '/player-dashboard/my-events'}
+          path="my-events"
+          text={t('my_events')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
         <StyledLink
           active={activeLink === '/player-dashboard/my-affiliates'}
           path="my-affiliates"
