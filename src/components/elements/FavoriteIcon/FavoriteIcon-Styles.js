@@ -17,7 +17,6 @@ export const FavoriteIconElement = styled.div`
 
     > svg {
      color: ${isfavorite ? theme.colors.red : color};
-     padding: 2px;
     }
   }
   `}

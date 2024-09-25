@@ -4,7 +4,7 @@ import { Close as CloseIcon } from '@styled-icons/material-outlined';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import Prop from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import { Share } from '@styled-icons/fluentui-system-filled';
+import { Share, Chat } from '@styled-icons/fluentui-system-filled';
 import * as Styled from './PublicDashboard-Styles';
 import { PlayerContext } from '../../../contexts/userContext/PlayerProvider/PlayerContext';
 import { theme } from '../../../styles/theme';
@@ -32,9 +32,12 @@ import { FloatingMenu } from '../../../components/FloatingMenu/FloatingMenu';
 import { ShareMenu } from '../../../components/FloatingMenu/Components/ShareMenu/ShareMenu';
 
 export function PublicDashboard() {
+  // Posteriormente, mudar tudo que envolva clubState para dados reais.clubState está sendo usado de placeholder
+
   const { t } = useTranslation();
   const clubContext = useContext(ClubContext);
   const { clubState, clubDispatch } = clubContext;
+
   const [menuVisibility, setMenuVisibility] = useState(false);
   const [follow, setFollow] = useState(false);
   const [mobileHeader, setMobileHeader] = useState(false);
@@ -42,9 +45,20 @@ export function PublicDashboard() {
   const { username } = useParams();
 
   const [shareMenuVisibility, setShareMenuVisibility] = useState(false);
+  const [chatActive, setChatActive] = useState(false);
 
   const handleShareMenuVisibility = () => {
     setShareMenuVisibility(!shareMenuVisibility);
+  };
+
+  const handleChatActive = () => {
+    // Add lógica para o sistema de chat
+    setChatActive(!chatActive);
+  };
+
+  const handleFollow = () => {
+    // Add lógica para o sistema de follow/unfollow}
+    setFollow(!follow);
   };
 
   return (
@@ -125,18 +139,38 @@ export function PublicDashboard() {
         <ProfileName name={clubState.profile.banner.name} />
 
         <Row>
-          <Button
-            text={follow ? t('unfollow') : t('follow')}
-            bgcolor={theme.colors.primary}
-            bghover={theme.colors.black}
-            textcolor={theme.colors.black}
-            texthover={theme.colors.primary}
-            border={theme.colors.black}
-            borderhover={theme.colors.primary}
-            onclick={() => setFollow(!follow)}
-          />
+          {follow ? (
+            <Button
+              text={t('unfollow')}
+              bgcolor={theme.colors.primary}
+              bghover={theme.colors.primary}
+              textcolor={theme.colors.black}
+              border={theme.colors.primary}
+              borderhover={theme.colors.primary}
+              onclick={() => handleFollow()}
+            />
+          ) : (
+            <Button
+              text={t('follow')}
+              bgcolor={theme.colors.lightprimary}
+              bghover={theme.colors.primary}
+              textcolor={theme.colors.black}
+              border={theme.colors.lightprimary}
+              borderhover={theme.colors.primary}
+              onclick={() => handleFollow()}
+            />
+          )}
 
           <FavoriteIcon />
+
+          <IconDiv
+            active={chatActive}
+            hovercolor={theme.colors.primary}
+            name={t('chat')}
+            onclick={handleChatActive}
+          >
+            <Chat />
+          </IconDiv>
 
           <IconDiv
             active={shareMenuVisibility}

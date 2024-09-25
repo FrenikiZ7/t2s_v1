@@ -311,6 +311,26 @@ export const s2tData = {
     players: [
 
     ],
+
+    staff: {
+      performanceAnalysts: [],
+      coachAssistants: [],
+      coordinators: [],
+      directors: [],
+      physiologists: [],
+      physiotherapists: [],
+      managers: [],
+      massageTherapists: [],
+      doctors: [],
+      nutritionists: [],
+      goalkeeperTrainers: [],
+      physicalTrainers: [],
+      tacticalTrainers: [],
+      psychologists: [],
+      scouts: [],
+      coachs: [],
+      personalTrainers: [],
+    },
   },
 
   proposals: {
@@ -461,7 +481,6 @@ export const s2tData = {
       { value: 'coach_assistant', text: 'Auxiliar Técnico' },
       { value: 'coordinator', text: 'Coordenador' },
       { value: 'director', text: 'Diretor' },
-      { value: 'business_man', text: 'Empresário' },
       { value: 'physiologist', text: 'Fisiologista' },
       { value: 'physiotherapist', text: 'Fisioterapeuta' },
       { value: 'manager', text: 'Gerente' },
@@ -605,6 +624,11 @@ export const s2tData = {
     eventFormat: [
       { value: 'online', text: 'Online' },
       { value: 'in_person', text: 'Presencial' },
+    ],
+
+    eventType: [
+      { value: 'tour', text: 'Tour' },
+      { value: 'showcase', text: 'Showcase' },
     ],
 
     languageOptions: [

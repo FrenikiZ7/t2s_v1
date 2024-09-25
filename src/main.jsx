@@ -114,6 +114,7 @@ import { AcceptableUse } from './layout/Policies/Components/AcceptableUse/Accept
 import { agencyData } from './contexts/userContext/AgencyProvider/agencyData';
 import { TelemedicineUsa } from './layout/Benefits/Components/TelemedicineUsa/TelemedicineUsa';
 import { Solar } from './layout/Benefits/Components/Solar/Solar';
+import { Staff } from './layout/Dashboards/Components/Staff/Staff';
 
 register();
 
@@ -180,7 +181,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<PlayerProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="player" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="staff" element={<Scouts />} />
+                                <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="favorites" element={<PlayerFavorites />} />
                                 <Route path="messages" element={<PlayerContacts />} />
@@ -197,7 +198,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<StaffProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="staff" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="staff" element={<Scouts />} />
+                                <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="favorites" element={<StaffFavorites />} />
                                 <Route path="messages" element={<h1>Em construção... :)</h1>} />
@@ -214,7 +215,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<BusinessManProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="business-man" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="staff" element={<Scouts />} />
+                                <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="favorites" element={<BusinessManFavorites />} />
                                 <Route path="messages" element={<h1>Em construção... :)</h1>} />
@@ -234,7 +235,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile-edit" element={<EditProfile type="club" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities opportunities={s2tData.proposals.male.professional.clubs} />} />
-                                <Route path="staff" element={<Scouts />} />
+                                <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<ClubFavorites />} />
@@ -254,7 +255,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile-edit" element={<EditProfile type="league" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities opportunities={s2tData.proposals.male.professional.agents} />} />
-                                <Route path="staff" element={<Scouts />} />
+                                <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<ClubFavorites />} />
@@ -274,7 +275,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile-edit" element={<EditProfile type="agency" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities opportunities={s2tData.proposals.male.professional.clubs} />} />
-                                <Route path="staff" element={<Scouts />} />
+                                <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<AgencyFavorites />} />
@@ -294,7 +295,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile-edit" element={<EditProfile type="university" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities />} />
-                                <Route path="staff" element={<Scouts />} />
+                                <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<ClubFavorites />} />
@@ -312,7 +313,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<FanProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="fan" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="staff" element={<Scouts />} />
+                                <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<FanFavorites />} />

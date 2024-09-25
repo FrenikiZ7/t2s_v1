@@ -26,7 +26,7 @@ export const VerticalLongSlideContainer = styled.div`
     }
   
     .swiper-wrapper{
-      height: 1000px;
+      height: 400px;
 
       @media ${theme.medias.tablet} {
         height: 600px;
@@ -39,6 +39,8 @@ export const VerticalLongSlideContainer = styled.div`
 
     .swiper-slide {
       padding: ${theme.spacings.xsmall};
+      width: 100%;
+      height: 100%;
     }
   `}
 `;

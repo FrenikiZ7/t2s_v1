@@ -13,9 +13,11 @@ export const PlayerContactsContainer = styled.article`
     width: 100%;
     height: 100%;
     display: flex;
+    padding: 30px;
     flex-direction: row;
     gap: ${theme.spacings.small};
-
+    font-family: ${theme.fonts.primary};
+    
     ${VerticalLongSlideWrapper} {
       width: 60%;
 
@@ -24,6 +26,11 @@ export const PlayerContactsContainer = styled.article`
       }
     }
 
+   
+
+
+
+  
 
      //Estilos do placeholder
     > section {

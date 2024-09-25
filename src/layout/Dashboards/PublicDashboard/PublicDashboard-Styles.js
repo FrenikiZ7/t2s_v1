@@ -6,6 +6,9 @@ import { IconContainer } from '../../../components/elements/IconDiv/IconDiv-Styl
 import { NavContainer } from '../../../components/Nav/Nav-Styles.js';
 import { FloatingMenuContainer } from '../../../components/FloatingMenu/FloatingMenu-Styles.js';
 import { ButtonElement } from '../../../components/elements/Button/Button-Styles.js';
+import { IconDiv } from '../../../components/elements/IconDiv/IconDiv.jsx';
+import { ProfileBannerContainer } from '../../../components/elements/ProfileBanner/ProfileBanner-Styles.js';
+import { fadeIn } from '../../../styles/animations.js';
 
 export const PublicDashboardContainer = styled.section`
   ${({ theme }) => css`
@@ -68,6 +71,19 @@ export const PublicDashboardContainer = styled.section`
       }
     }
 
+
+    ${ProfileBannerContainer} {
+      > ${RowContainer} {
+        gap: ${theme.spacings.small};
+        
+         ${IconContainer} {
+            height: 25px;
+            width: auto;
+          }
+      }
+
+
+    }
 
     
 
