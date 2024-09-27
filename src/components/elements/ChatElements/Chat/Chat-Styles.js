@@ -3,75 +3,55 @@ import { ButtonElement } from '../../Button/Button-Styles';
 
 export const ChatWrapper = styled.div`
   ${({ theme }) => css`
-      font-family: ${theme.fonts.primary};
+    width: 100%;
+    height: 100%;
+    font-family: ${theme.fonts.primary};
   `}
 `;
 
 export const ChatContainer = styled.div`
   ${({ theme }) => css`
-    height: 100%;
     width: 100%;
+    height: 100%;
     font-family: ${theme.fonts.primary};
-    background: ${theme.colors.mediumblack};
-    border-radius: 0px 0px 12px 12px;
+    background: rgba(0,0,0,0.4);
     padding: ${theme.spacings.small};
     height: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: ${theme.spacings.medium};
 
-    .rce-citem {
-      background: ${theme.colors.lightblack};
-      border-radius: 12px;
-      border: ${theme.borders.white};
+    // Div das mensagens
+    .rce-mlist {
+      color: ${theme.colors.black};  
+      max-height: 400px;
+      padding: ${theme.spacings.small};
     }
 
-    .rce-citem-body--bottom {
-      color: ${theme.colors.white};
+    // Container individual de cada mensagem
+    .rce-container-mbox {
+      width: 100%;
+      min-width: 100px;
     }
 
-    .rce-citem-body--top{
-      color: ${theme.colors.white};
+    // Mensagem em si
+    .rce-mbox {
+      min-width: 100px;
     }
 
-    .rce-citem-body--top-time {
-      color: ${theme.colors.white};
+     // Avatar
+     .rce-avatar {
+      border-radius: 50%;
     }
 
-    .rce-citem-body--bottom-title {
-      color: ${theme.colors.white};
-    }
-
-    .rce-container-mlist{
-      color: ${theme.colors.black};
-    }
-
-    .message-item {
-      margin-bottom: ${theme.spacings.small};
-    }  
-
-    .rce-mbox-item {
-      font-family: ${theme.fonts.primary};
-    }
-
-    .rce-input {
-      font-family: ${theme.fonts.primary};
-    }
-
-    .rce-button {
-      background: ${theme.colors.quaternary};
-      font-family: ${theme.fonts.primary};
-      text-transform: uppercase;
-    }
   `}  
 `;
 
 export const ChatHeader = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.quaternary};
+    background: rgba(0,0,0,0.6);
     padding: ${theme.spacings.small};
     width: 100%;
     display: flex;
@@ -79,5 +59,67 @@ export const ChatHeader = styled.div`
     gap: ${theme.spacings.small};
     border-radius: 12px 12px 0px 0px;
     font-weight: 600;
+
+  `}
+`;
+
+export const ChatFooter = styled.div`
+  ${({ theme }) => css`
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    font-family: ${theme.fonts.primary};
+    border-radius: 0px 0px 12px 12px;
+    padding: ${theme.spacings.small};
+    height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: ${theme.spacings.medium};
+
+    //Botão de enviar mensagens
+    .rce-button {
+      background-color: ${theme.colors.red};
+      font-family: ${theme.fonts.primary};
+      text-transform: uppercase;
+    }
+
+    //Container do input de mensagens
+    .rce-container-input {
+      background: none;
+      min-width: 0;
+      width: 100%;
+    }
+
+
+     // input de mensagens
+    .rce-input {
+     font-family: ${theme.fonts.primary};
+     background: ${theme.colors.transparent};
+     border: ${theme.borders.white};
+     border-radius: 7px;
+     color: ${theme.colors.white};
+     min-width: 0;  
+     width: 100%;
+     transition: all 300ms ease-in-out;
+    
+      &:hover {
+        border: ${theme.borders.secondary};
+      }
+
+      &::-webkit-input-placeholder {
+        color: ${theme.colors.white};
+      }
+
+      &:focus {
+        border: ${theme.borders.secondary};
+        box-shadow: 0px 0px 5px 0.5px ${theme.colors.secondary};
+        outline: none;
+      }
+    }
   `}
 `;

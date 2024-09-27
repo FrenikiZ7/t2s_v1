@@ -83,7 +83,7 @@ export function ProfileInfo({ items }) {
             ))}
           </>
         ) : (
-          <Text text="Nenhum dado foi encontrado..." />
+          <Text text={t('data_not_found')} />
         )}
       </GridTwoColumn>
     </Styled.ProfileInfoElement>

@@ -23,9 +23,13 @@ import { Row } from '../../../../components/RowContainer/Row';
 import { ListContainer, ListItem } from '../../../../components/elements/List/List-Styles';
 import { List } from '../../../../components/elements/List/List';
 
-export function StaffPage({ children }) {
+export function StaffPage() {
   const { t } = useTranslation();
   const [explanation, setExplanation] = useState('step-1');
+
+  const handleExplanation = (selectedStep) => {
+    setExplanation(explanation === selectedStep ? '' : selectedStep);
+  };
 
   return (
     <Styled.StaffPageContainer>
@@ -59,7 +63,7 @@ export function StaffPage({ children }) {
 
         <IconCard
           name={t('staff_step_1_title')}
-          onclick={() => setExplanation(explanation === 'step-1' ? '' : 'step-1')}
+          onClick={() => handleExplanation('step-1')}
           active={explanation === 'step-1'}
           activecolor={theme.colors.primary}
         >
@@ -91,7 +95,7 @@ export function StaffPage({ children }) {
 
         <IconCard
           name={t('staff_step_2_title')}
-          onclick={() => setExplanation(explanation === 'step-2' ? '' : 'step-2')}
+          onClick={() => handleExplanation('step-2')}
           active={explanation === 'step-2'}
           activecolor={theme.colors.primary}
         >
@@ -123,7 +127,7 @@ export function StaffPage({ children }) {
 
         <IconCard
           name={t('staff_step_3_title')}
-          onclick={() => setExplanation(explanation === 'step-3' ? '' : 'step-3')}
+          onClick={() => handleExplanation('step-3')}
           active={explanation === 'step-3'}
           activecolor={theme.colors.primary}
         >
@@ -151,7 +155,7 @@ export function StaffPage({ children }) {
 
         <IconCard
           name={t('staff_step_4_title')}
-          onclick={() => setExplanation(explanation === 'step-4' ? '' : 'step-4')}
+          onClick={() => handleExplanation('step-4')}
           active={explanation === 'step-4'}
           activecolor={theme.colors.primary}
         >

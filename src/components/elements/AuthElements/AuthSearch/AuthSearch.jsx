@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import * as Styled from './AuthSearch-Styles';
 
 export function AuthSearch({
-  name, id, onChange, value, title = '', autocomplete = '', required = false, children,
+  name, id, onChange, value, title = '', autocomplete = '', required = false, children, placeholder,
 }) {
   const { t } = useTranslation();
 
@@ -25,6 +25,7 @@ export function AuthSearch({
           value={value}
           autoComplete={autocomplete}
           required={required}
+          placeholder={placeholder}
         />
 
         <Styled.SearchIconContainer>
@@ -45,4 +46,5 @@ AuthSearch.propTypes = {
   onChange: Prop.func,
   autocomplete: Prop.string,
   required: Prop.bool,
+  placeholder: Prop.string,
 };

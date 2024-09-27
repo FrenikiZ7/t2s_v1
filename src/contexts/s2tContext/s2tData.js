@@ -596,12 +596,6 @@ export const s2tData = {
       { value: 'n/a', label: 'Não' },
     ],
 
-    language: [
-      { value: 'portuguese_br', text: 'Português' },
-      { value: 'english', text: 'Inglês' },
-      { value: 'spanish', text: 'Espanhol' },
-    ],
-
     avaliability: [
       { value: 'active_tree', text: 'Ativo - Sem contrato' },
       { value: 'active', text: 'Ativo - Com contrato' },

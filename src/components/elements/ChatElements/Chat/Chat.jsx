@@ -1,36 +1,27 @@
 import Prop from 'prop-types';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
-  Avatar, Button, Input, MessageList,
+  Avatar, Input, MessageList,
 } from 'react-chat-elements';
 import * as Styled from './Chat-Styles';
 import { Text } from '../../Text/Text';
 import { theme } from '../../../../styles/theme';
+import { Button } from '../../Button/Button';
 
-export function Chat({ children }) {
+export function Chat({ messages }) {
   const [message, setMessage] = useState('');
 
-  const messageData = [
-    {
-      avatar: '/assets/images/logos/vertical-background.png',
-      position: 'right',
-      type: 'text',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-      date: new Date(),
-    },
-    {
-      avatar: '/assets/images/logos/vertical-background.png',
-      position: 'left',
-      type: 'text',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-      date: new Date(),
-    },
-  ];
+  const [messageData, setMessageData] = useState([]);
+
+  useEffect(() => {
+    setMessageData(messages);
+  }, [messages]);
 
   const handleSend = () => {
-    console.log('Message sent:', message);
     setMessage('');
   };
+
+  console.log(messages);
 
   return (
     <Styled.ChatWrapper>
@@ -49,6 +40,9 @@ export function Chat({ children }) {
           dataSource={messageData}
         />
 
+      </Styled.ChatContainer>
+
+      <Styled.ChatFooter>
         <Input
           placeholder="Digite sua mensagem..."
           defaultValue=""
@@ -57,19 +51,18 @@ export function Chat({ children }) {
             <Button
               onClick={handleSend}
               text="enviar"
-              bgcolor={theme.colors.quaternary}
-              bghover={theme.colors.secondary}
-              border={theme.colors.quaternary}
+              bgcolor={theme.colors.transparent}
+              bghover={theme.colors.transparent}
+              border={theme.colors.white}
               borderhover={theme.colors.secondary}
+              textcolor={theme.colors.white}
+              texthover={theme.colors.secondary}
             />
           )}
         />
-      </Styled.ChatContainer>
+      </Styled.ChatFooter>
+
     </Styled.ChatWrapper>
 
   );
 }
-
-Chat.propTypes = {
-  children: Prop.node.isRequired,
-};

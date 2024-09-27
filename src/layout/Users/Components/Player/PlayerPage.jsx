@@ -23,9 +23,13 @@ import { Row } from '../../../../components/RowContainer/Row';
 import { ListContainer, ListItem } from '../../../../components/elements/List/List-Styles';
 import { List } from '../../../../components/elements/List/List';
 
-export function PlayerPage({ children }) {
+export function PlayerPage() {
   const { t } = useTranslation();
   const [explanation, setExplanation] = useState('step-1');
+
+  const handleExplanation = (selectedStep) => {
+    setExplanation(explanation === selectedStep ? '' : selectedStep);
+  };
 
   return (
     <Styled.PlayerPageContainer>
@@ -59,7 +63,7 @@ export function PlayerPage({ children }) {
 
         <IconCard
           name={t('player_step_1_title')}
-          onclick={() => setExplanation(explanation === 'step-1' ? '' : 'step-1')}
+          onClick={() => handleExplanation('step-1')}
           active={explanation === 'step-1'}
           activecolor={theme.colors.primary}
         >
@@ -91,7 +95,7 @@ export function PlayerPage({ children }) {
 
         <IconCard
           name={t('player_step_2_title')}
-          onclick={() => setExplanation(explanation === 'step-2' ? '' : 'step-2')}
+          onClick={() => handleExplanation('step-2')}
           active={explanation === 'step-2'}
           activecolor={theme.colors.primary}
         >
@@ -119,7 +123,7 @@ export function PlayerPage({ children }) {
 
         <IconCard
           name={t('player_step_3_title')}
-          onclick={() => setExplanation(explanation === 'step-3' ? '' : 'step-3')}
+          onClick={() => handleExplanation('step-3')}
           active={explanation === 'step-3'}
           activecolor={theme.colors.primary}
         >
@@ -147,7 +151,7 @@ export function PlayerPage({ children }) {
 
         <IconCard
           name={t('player_step_4_title')}
-          onclick={() => setExplanation(explanation === 'step-4' ? '' : 'step-4')}
+          onClick={() => handleExplanation('step-4')}
           active={explanation === 'step-4'}
           activecolor={theme.colors.primary}
         >
@@ -183,13 +187,10 @@ export function PlayerPage({ children }) {
         <img src="/assets/images/backgrounds/slider-bg-1.png" alt="" />
         <img src="/assets/images/backgrounds/slider-bg-1.png" alt="" />
         <img src="/assets/images/backgrounds/slider-bg-1.png" alt="" />
-        <img src="/assets/images/backgrounds/slider-bg-1.png" alt="" />
-        <img src="/assets/images/backgrounds/slider-bg-1.png" alt="" />
-        <img src="/assets/images/backgrounds/slider-bg-1.png" alt="" />
       </BannerSlide>
 
       <Styled.Benefits>
-        <Slide items={s2tData.photos.benefits} title="Benefícios" />
+        <Slide items={s2tData.photos.benefits} title={t('benefits')} />
 
       </Styled.Benefits>
 

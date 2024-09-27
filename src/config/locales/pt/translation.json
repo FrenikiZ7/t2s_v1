@@ -266,6 +266,7 @@
 	"youtube_video_url": "URL do vídeo no Youtube",
 	"vimeo_video_url": "URL do vídeo no Vimeo",
 	"url": "URL",
+	"upload_your_video": "Envie o seu vídeo",
 
 	"------------------------------------------ Benefits": "------------------------------------------ ",
 
@@ -326,7 +327,6 @@
 	"user_benefits": "Benefícios do usuário",
 
 	"------------------------------------------ Edit + Create + View Opportunity": "------------------------------------------ ",
-
 	"edit_my_opportunity": "Editar minha oportunidade",
 	"which_league": "Para qual liga é a oportunidade?",
 	"league": "Liga",
@@ -733,7 +733,7 @@
 	"club_step_4_part_4": "Acesse a seção 'jogadores' e utilize os filtros para descobrir os talentos que podem elevar o seu time ao próximo nível.",
 	"club_text_2": "Crie o seu perfil, mostre o seu clube ao mundo e busque novos talentos.",
 
-	"staff_text": "Trabalhamos com comissão ténica de todos os níveis, incluindo amadores, profissionais e semi profissionais",
+	"staff_text": "Trabalhamos com comissões técnicas de todos os níveis, incluindo amadores, profissionais e semi profissionais",
 	"staff_step_1_title": "Crie sua conta",
 	"staff_step_2_title": "Edite seu perfil",
 	"staff_step_3_title": "Mostre seu talento",
