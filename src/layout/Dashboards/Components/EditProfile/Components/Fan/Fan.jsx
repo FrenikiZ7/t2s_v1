@@ -14,7 +14,7 @@ import { theme } from '../../../../../../styles/theme';
 import { AuthContainer } from '../../../../../../components/elements/AuthElements/AuthWrapper/AuthWrapper-Styles';
 
 import { S2tContext } from '../../../../../../contexts/s2tContext/S2tContext';
-import { changeProfileInfo } from '../../../../../../contexts/userContext/FanProvider/FanActions';
+import { changeProfileInfo } from '../../../../../../contexts/userContext/FanProvider/fanActions';
 import { FanContext } from '../../../../../../contexts/userContext/FanProvider/FanContext';
 
 export function Fan() {

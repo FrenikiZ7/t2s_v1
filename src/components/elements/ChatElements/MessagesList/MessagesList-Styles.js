@@ -7,6 +7,7 @@ export const MessagesListWrapper = styled.div`
     width: 50%;
     height: 100%;
     font-family: ${theme.fonts.primary};
+    
   `}
 `;
 
