@@ -73,6 +73,8 @@ import { Users } from './layout/Users/Users';
 import { PlayerPage } from './layout/Users/Components/Player/PlayerPage';
 import { Logo } from './components/elements/Logo/Logo';
 import { ClubPage } from './layout/Users/Components/Club/ClubPage';
+import { FanPage } from './layout/Users/Components/Fan/FanPage';
+import { AgentPage } from './layout/Users/Components/Agent/AgentPage';
 import { MyEvents } from './layout/Dashboards/Components/MyEvents/MyEvents';
 import { StaffProvider } from './contexts/userContext/StaffProvider/StaffProvider';
 import { Interchange } from './layout/Benefits/Components/Interchange/Interchange';
