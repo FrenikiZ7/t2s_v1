@@ -116,11 +116,11 @@ import { agencyData } from './contexts/userContext/AgencyProvider/agencyData';
 import { TelemedicineUsa } from './layout/Benefits/Components/TelemedicineUsa/TelemedicineUsa';
 import { Solar } from './layout/Benefits/Components/Solar/Solar';
 import { Staff } from './layout/Dashboards/Components/Staff/Staff';
-import { University } from './layout/Users/Components/University';
-import { Agency } from './layout/Users/Components/Agency';
-import { League } from './layout/Users/Components/League';
-import { Fan } from './layout/Users/Components/Fan';
-import { Agent } from './layout/Users/Components/Agent';
+import { University } from './layout/Users/Components/University/UniversityPage';
+import { Agency } from './layout/Users/Components/Agency/AgencyPage';
+import { League } from './layout/Users/Components/League/LeaguePage';
+import { Fan } from './layout/Users/Components/Fan/FanPage';
+import { Agent } from './layout/Users/Components/Agent/AgentPage';
 
 
 register();
