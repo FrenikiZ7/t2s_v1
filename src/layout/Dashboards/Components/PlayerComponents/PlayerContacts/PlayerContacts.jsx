@@ -11,7 +11,6 @@ export function PlayerContacts() {
 
   const handleSelectedContact = (contact) => {
     setSelectedContact(contact);
-    console.log(contact);
   };
 
   const [contactsMessages, setContactsMessages] = useState([
@@ -23,6 +22,7 @@ export function PlayerContacts() {
       subtitle: 'Vo nadakkkk',
       date: new Date(),
       unread: 1,
+      accepted: true,
       active: selectedContact?.id === 1,
 
       messages: [
@@ -50,6 +50,7 @@ export function PlayerContacts() {
       title: 'Léo Pelé',
       subtitle: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
       date: new Date(),
+      accepted: false,
       unread: 1,
       active: selectedContact?.id === 2,
       messages: [
@@ -68,51 +69,17 @@ export function PlayerContacts() {
       avatar: '/assets/images/users/athletes.png',
       alt: 'Reactjs',
       title: 'Wellington Rato',
-      subtitle: 'Rato',
+      subtitle: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
       date: new Date(),
       unread: 0,
+      accepted: undefined,
       active: selectedContact?.id === 3,
       messages: [
         {
-          avatar: '/assets/images/users/athletes.png',
+          avatar: '/assets/images/profile/profile.png',
           position: 'left',
           type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
-          type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/users/athletes.png',
-          position: 'left',
-          type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
-          type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/users/athletes.png',
-          position: 'left',
-          type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
-          type: 'text',
-          text: 'Rato',
+          text: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
           date: new Date(),
         },
       ],

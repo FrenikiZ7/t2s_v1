@@ -12,7 +12,6 @@ import { Row } from '../../../RowContainer/Row';
 import { StyledLink } from '../../StyledLink/StyledLink';
 
 export function Chat({ contact }) {
-  const [chatStatus, setChatStatus] = useState('');
   const [message, setMessage] = useState('');
   const [contactData, setContactData] = useState([]);
 
@@ -34,6 +33,7 @@ export function Chat({ contact }) {
       <Styled.ChatHeader>
         <Avatar src={contact.avatar} alt={contact.alt} size="large" type="circle flexible" />
         <StyledLink text={contact.title} uppercase />
+
       </Styled.ChatHeader>
 
       <Styled.ChatContainer>
@@ -47,9 +47,9 @@ export function Chat({ contact }) {
           dataSource={contact.messages}
         />
 
+        {contact?.accepted === undefined && (
         <Row>
           <Button
-            onClick={() => handleChatStatus('accepted')}
             text="Aceitar"
             bgcolor={theme.colors.lightprimary}
             bghover={theme.colors.primary}
@@ -60,7 +60,6 @@ export function Chat({ contact }) {
           />
 
           <Button
-            onClick={() => handleChatStatus('rejected')}
             text="Recusar"
             bgcolor={theme.colors.red}
             bghover={theme.colors.mediumred}
@@ -70,8 +69,10 @@ export function Chat({ contact }) {
             texthover={theme.colors.white}
           />
         </Row>
+        )}
 
-        {chatStatus === 'rejected' && <SystemMessage text="Você rejeitou esse chat" />}
+        {contact?.accepted === false && <SystemMessage text="Você rejeitou esse chat" />}
+
       </Styled.ChatContainer>
 
       <Styled.ChatFooter>
@@ -81,7 +82,7 @@ export function Chat({ contact }) {
           onChange={(e) => setMessage(e.target.value)}
           rightButtons={(
             <Button
-              onClick={handleSend}
+              onclick={handleSend}
               text="enviar"
               bgcolor={theme.colors.transparent}
               bghover={theme.colors.transparent}
