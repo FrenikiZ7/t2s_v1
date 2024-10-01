@@ -10,7 +10,7 @@ import { Button } from '../../Button/Button.jsx';
 import { AuthSearch } from '../../AuthElements/AuthSearch/AuthSearch.jsx';
 import 'react-chat-elements/dist/main.css';
 
-export function MessagesList({ messages, onClick }) {
+export function MessagesList({ contactsMessages, onClick }) {
   const [searchValue, setSearchValue] = useState('');
 
   const handleSearch = (e) => {
@@ -26,8 +26,8 @@ export function MessagesList({ messages, onClick }) {
 
       <Styled.MessagesListHeader>
         <AuthSearch
-          name="messagesSearch"
-          id="messagesSearch"
+          name="contactsMessagesSearch"
+          id="contactsMessagesSearch"
           onChange={(e) => handleSearch(e)}
           value={searchValue}
           placeholder="Pesquise aqui suas mensagens"
@@ -37,17 +37,17 @@ export function MessagesList({ messages, onClick }) {
       <Styled.MessagesWrapper>
 
         <Styled.MessagesListContainer>
-          {messages.map((message) => (
+          {contactsMessages.map((contact) => (
             <ChatItem
-              key={message.id}
-              avatar={message.avatar}
-              alt={message.alt}
-              title={message.title}
-              subtitle={message.subtitle}
-              date={message.date}
-              unread={message.unread}
-              onClick={() => handleSelected(message)}
-              className={`message-item ${message.active ? 'active' : ''}`}
+              key={contact.id}
+              avatar={contact.avatar}
+              alt={contact.alt}
+              title={contact.title}
+              subtitle={contact.subtitle}
+              date={contact.date}
+              unread={contact.unread}
+              onClick={() => handleSelected(contact)}
+              className={`message-item ${contact.active ? 'active' : ''}`}
             />
           ))}
         </Styled.MessagesListContainer>
@@ -62,6 +62,6 @@ export function MessagesList({ messages, onClick }) {
 }
 
 MessagesList.propTypes = {
-  messages: Prop.arrayOf(Prop.object).isRequired,
+  contactsMessages: Prop.arrayOf(Prop.object).isRequired,
   onClick: Prop.func.isRequired,
 };

@@ -136,7 +136,7 @@ export const s2tData = {
       {
         id: 3,
         src: '/assets/images/users/business.png',
-        title: 'business_man',
+        title: 'agent',
         path: '/register',
       },
 
@@ -467,13 +467,13 @@ export const s2tData = {
   formOptions: {
 
     profileType: [
-      { value: 'player', text: 'Atleta' },
       { value: 'club', text: 'Clube' },
       { value: 'league', text: 'Liga' },
       { value: 'university', text: 'Universidade' },
       { value: 'staff', text: 'Comissão técnica' },
       { value: 'agency', text: 'Agência' },
       { value: 'fan', text: 'Fã' },
+      { value: 'agent', text: 'Empresário' },
     ],
 
     staffProfileType: [
@@ -623,6 +623,12 @@ export const s2tData = {
     eventType: [
       { value: 'tour', text: 'Tour' },
       { value: 'showcase', text: 'Showcase' },
+      { value: 'match', text: 'Partida' },
+      { value: 'festival', text: 'Festival' },
+      { value: 'clinic', text: 'Clínica' },
+      { value: 'tournament', text: 'Torneio' },
+      { value: 'camping', text: 'Acampamento' },
+      { value: 'webnar', text: 'Webnário' },
     ],
 
     languageOptions: [

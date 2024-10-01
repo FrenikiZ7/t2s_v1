@@ -11,6 +11,7 @@ export const StudiesContainer = styled.article`
      text-align: center;
      display: flex;
      flex-direction: column;
+     
 
      ${BannerSlideWrapper} {
 
@@ -29,7 +30,8 @@ export const StudiesContainer = styled.article`
 
      & ${ListContainer} {
       animation: ${slideIn} 500ms;
-
+      width: 100%;
+      max-width: 1000px;
      }
 
      & ${ListItem} {

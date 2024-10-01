@@ -4,7 +4,7 @@ import { SearchWrapper } from '../../AuthElements/AuthSearch/AuthSearch-Styles';
 
 export const MessagesListWrapper = styled.div`
   ${({ theme }) => css`
-    width: 100%;
+    width: 50%;
     height: 100%;
     font-family: ${theme.fonts.primary};
   `}

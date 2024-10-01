@@ -1,5 +1,5 @@
 import Prop from 'prop-types';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import * as Styled from './PlayerContacts-Styles';
 import { MessagesList } from '../../../../../components/elements/ChatElements/MessagesList/MessagesList';
@@ -11,96 +11,130 @@ export function PlayerContacts() {
 
   const handleSelectedContact = (contact) => {
     setSelectedContact(contact);
+    console.log(contact);
   };
 
-  const contactMessages = [
+  const [contactsMessages, setContactsMessages] = useState([
     {
       id: 1,
-      avatar: '/assets/images/logos/vertical-background.png',
-      alt: 'Reactjs',
-      title: 'Facebook',
-      subtitle: 'What are you doing?',
+      avatar: '/assets/images/profile/spfc.jpg',
+      alt: 'São Paulo FC',
+      title: 'Sâo Paulo',
+      subtitle: 'Vo nadakkkk',
       date: new Date(),
-      unread: 3,
+      unread: 1,
       active: selectedContact?.id === 1,
+
       messages: [
         {
           avatar: '/assets/images/logos/vertical-background.png',
           position: 'right',
           type: 'text',
-          text: '5 - Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+          text: 'Ganha mais um título por favor',
           date: new Date(),
         },
         {
-          avatar: '/assets/images/logos/vertical-background.png',
+          avatar: '/assets/images/profile/spfc.jpg',
           position: 'left',
           type: 'text',
-          text: '6 -Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+          text: 'Vo nadakkkk',
           date: new Date(),
         },
       ],
     },
+
     {
       id: 2,
-      avatar: '/assets/images/logos/vertical-background.png',
+      avatar: '/assets/images/profile/profile.png',
       alt: 'Reactjs',
-      title: 'Facebook',
-      subtitle: 'What are you doing?',
+      title: 'Léo Pelé',
+      subtitle: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
       date: new Date(),
-      unread: 3,
+      unread: 1,
       active: selectedContact?.id === 2,
       messages: [
         {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
-          type: 'text',
-          text: '3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/logos/vertical-background.png',
+          avatar: '/assets/images/profile/profile.png',
           position: 'left',
           type: 'text',
-          text: '4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+          text: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
           date: new Date(),
         },
       ],
     },
+
     {
       id: 3,
-      avatar: '/assets/images/logos/vertical-background.png',
+      avatar: '/assets/images/users/athletes.png',
       alt: 'Reactjs',
-      title: 'Facebook',
-      subtitle: 'What are you doing?',
+      title: 'Wellington Rato',
+      subtitle: 'Rato',
       date: new Date(),
-      unread: 3,
+      unread: 0,
       active: selectedContact?.id === 3,
       messages: [
         {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
+          avatar: '/assets/images/users/athletes.png',
+          position: 'left',
           type: 'text',
-          text: '1 - Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+          text: 'Rato',
           date: new Date(),
         },
         {
           avatar: '/assets/images/logos/vertical-background.png',
+          position: 'right',
+          type: 'text',
+          text: 'Rato',
+          date: new Date(),
+        },
+        {
+          avatar: '/assets/images/users/athletes.png',
           position: 'left',
           type: 'text',
-          text: '2 - Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+          text: 'Rato',
+          date: new Date(),
+        },
+        {
+          avatar: '/assets/images/logos/vertical-background.png',
+          position: 'right',
+          type: 'text',
+          text: 'Rato',
+          date: new Date(),
+        },
+        {
+          avatar: '/assets/images/users/athletes.png',
+          position: 'left',
+          type: 'text',
+          text: 'Rato',
+          date: new Date(),
+        },
+        {
+          avatar: '/assets/images/logos/vertical-background.png',
+          position: 'right',
+          type: 'text',
+          text: 'Rato',
           date: new Date(),
         },
       ],
     },
-  ];
+  ]);
+
+  useEffect(() => {
+    const updatedContacts = contactsMessages.map((contact) => ({
+      ...contact,
+      active: selectedContact?.id === contact.id,
+    }));
+    setContactsMessages(updatedContacts);
+  }, [selectedContact]);
 
   return (
     <Styled.PlayerContactsContainer>
       <MessagesList
-        messages={contactMessages}
-        onClick={(contact) => handleSelectedContact(contact)}
+        contactsMessages={contactsMessages}
+        onClick={handleSelectedContact}
       />
-      {selectedContact && <Chat messages={selectedContact.messages} />}
+
+      {selectedContact && <Chat contact={selectedContact} />}
     </Styled.PlayerContactsContainer>
   );
 }

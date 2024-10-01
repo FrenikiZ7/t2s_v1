@@ -1,9 +1,11 @@
 import styled, { css } from 'styled-components';
 import { ButtonElement } from '../../Button/Button-Styles';
+import { fadeIn } from '../../../../styles/animations';
 
 export const ChatWrapper = styled.div`
   ${({ theme }) => css`
-    width: 100%;
+    animation: ${fadeIn} 500ms;
+    width: 50%;
     height: 100%;
     font-family: ${theme.fonts.primary};
   `}
@@ -23,11 +25,17 @@ export const ChatContainer = styled.div`
     align-items: center;
     gap: ${theme.spacings.medium};
 
-    // Div das mensagens
-    .rce-mlist {
+
+    .rce-container-mlist {
       color: ${theme.colors.black};  
       max-height: 400px;
       padding: ${theme.spacings.small};
+      width: 100%;
+    }
+
+    // Div das mensagens
+    .rce-mlist {
+      
     }
 
     // Container individual de cada mensagem

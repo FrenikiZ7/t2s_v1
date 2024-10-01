@@ -172,7 +172,8 @@
 	"coach_assistant": "Auxiliar Técnico",
 	"coordinator": "Coordenador",
 	"director": "Diretor",
-	"business_man": "Empresário",
+	"agent": "Empresário",
+	"agents": "Empresários",
 	"physiologist": "Fisiologista",
 	"physiotherapist": "Fisioterapeuta",
 	"manager": "Gerente",
@@ -256,7 +257,6 @@
 	"active": "Ativo",
 	"injured": "Lesionado",
 	"injured_free": "Lesionado - Sem contrato",
-	"agents": "Agentes",
 
 	"------------------------------------------ Videos": "------------------------------------------ ",
 	"upload_method": "Método de envio",
@@ -267,6 +267,7 @@
 	"vimeo_video_url": "URL do vídeo no Vimeo",
 	"url": "URL",
 	"upload_your_video": "Envie o seu vídeo",
+	"insert_video_url": "Por favor, insira a URL do vídeo!",
 
 	"------------------------------------------ Benefits": "------------------------------------------ ",
 
@@ -481,7 +482,7 @@
 
 	"pt": "Português (BR)",
 	"en": "English",
-	"es": "Spanish",
+	"es": "Español",
 	"fr": "Français",
 
 	"soccer": "Futebol",
@@ -538,9 +539,12 @@
 	"register_step_2": "Selecione o tipo de perfil que deseja criar",
 	"register_step_3": "Valide sua conta: Confirme seu email e siga as instruções para concluir o processo de cadastro.",
 	"register_step_4": "Acesse 'Editar perfil' e adicione detalhes sobre sua experiência, habilidades, formação e conquistas.",
+
 	"------------------------------------------ Benefits pages": "------------------------------------------ ",
 
 	"welcome_t2s_benefits": "Boas-vindas aos benefícios da T2S",
+	"other_t2s_benefits": "Outros benefícios da T2S",
+
 	"benefits_text_1": "Descubra as vantagens exclusivas que a T2S tem reservadas especialmente para você. Nossa missão é tornar sua experiência conosco ainda mais gratificante e recompensadora.",
 	"benefits_text_2": "Aqui estão alguns dos benefícios incríveis que você pode aproveitar como parte da comunidade T2S:",
 	"benefits_step_1": "Clique em qualquer um dos eventos abaixo.",
@@ -594,6 +598,15 @@
 	"studies_step_2": "Você será direcionado automaticamente para a plataforma escolhida",
 	"studies_step_3": "Crie sua conta ou faça login, se já tiver uma.",
 	"studies_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
+
+	"welcome_t2s_solar": "",
+	"solar_text_1": "",
+	"solar_text_2": "",
+
+	"solar_step_1": "",
+	"solar_step_2": "",
+	"solar_step_3": "",
+	"solar_step_4": "",
 
 	"welcome_t2s_american_studies": "Boas-vindas à area de estudos americanos da T2S!",
 	"american_studies_text_1": "Aqui, você encontrará informações essenciais para planejar seus estudos a distância com ensino dos Estados Unidos e aproveitar ao máximo sua experiência acadêmica.",
@@ -660,11 +673,14 @@
 	"zip_code": "CEP",
 	"adress": "Endereço",
 	"participate": "Participar",
-	"camping": "Acampamento",
-	"clinic": "Clínica",
 	"palestra": "Palestra",
 	"tour": "Tour",
 	"showcase": "Exibição",
+	"festival": "Festival",
+	"clinic": "Cliníca",
+	"tournament": "Torneio",
+	"camping": "Acampamento",
+	"webnar": "Webnário",
 	"exchange": "Intercâmbio",
 	"filter_events": "Filtrar eventos",
 	"event_format": "Formato do evento",
@@ -720,7 +736,7 @@
 	"player_text_2": "Crie o seu perfil, compartilhe suas melhores fotos e vídeos e deixe que o mundo descubra o seu talento.",
 
 	"club_text": "Trabalhamos com clubes de todos os níveis, incluindo amadores, profissionais e semi profissionais",
-	"club_step_1_title": "Crie sua conta",
+
 	"club_step_2_title": "Edite seu perfil",
 	"club_step_3_title": "Mostre seu talento",
 	"club_step_4_title": "Busque talentoss",

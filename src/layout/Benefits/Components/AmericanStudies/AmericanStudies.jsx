@@ -69,18 +69,6 @@ export function AmericanStudies() {
           <img src="/assets/images/others/business.png" alt="" />
         </StyledLink>
 
-        <StyledLink path="https://beneficios.plataformalions.com/categoria/novidades/" newtab>
-          <img src="/assets/images/others/business.png" alt="" />
-        </StyledLink>
-
-        <StyledLink path="https://beneficios.plataformalions.com/categoria/novidades/" newtab>
-          <img src="/assets/images/others/business.png" alt="" />
-        </StyledLink>
-
-        <StyledLink path="https://beneficios.plataformalions.com/categoria/novidades/" newtab>
-          <img src="/assets/images/others/business.png" alt="" />
-        </StyledLink>
-
       </BannerSlide>
 
       <Slide items={s2tData.photos.benefits} title={t('others_t2s_benefits')} />

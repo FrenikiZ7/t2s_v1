@@ -8,27 +8,25 @@ import { Text } from '../../Text/Text';
 import { theme } from '../../../../styles/theme';
 import { Button } from '../../Button/Button';
 
-export function Chat({ messages }) {
+export function Chat({ contact }) {
   const [message, setMessage] = useState('');
 
-  const [messageData, setMessageData] = useState([]);
+  const [contactData, setContactData] = useState([]);
 
   useEffect(() => {
-    setMessageData(messages);
-  }, [messages]);
+    setContactData(contact);
+  }, [contact]);
 
   const handleSend = () => {
     setMessage('');
   };
 
-  console.log(messages);
-
   return (
     <Styled.ChatWrapper>
 
       <Styled.ChatHeader>
-        <Avatar src="/assets/images/logos/vertical-background.png" alt="logo" size="large" type="circle flexible" />
-        <Text text="Teste" uppercase />
+        <Avatar src={contact.avatar} alt={contact.alt} size="large" type="circle flexible" />
+        <Text text={contact.title} uppercase />
       </Styled.ChatHeader>
 
       <Styled.ChatContainer>
@@ -37,7 +35,7 @@ export function Chat({ messages }) {
           className="message-list"
           lockable
           toBottomHeight="100%"
-          dataSource={messageData}
+          dataSource={contact.messages}
         />
 
       </Styled.ChatContainer>
@@ -66,3 +64,6 @@ export function Chat({ messages }) {
 
   );
 }
+Chat.propTypes = {
+  contact: Prop.arrayOf(Prop.object).isRequired,
+};

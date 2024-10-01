@@ -29,7 +29,7 @@ export const TelemedicineUsaContainer = styled.article`
 
      & ${ListContainer} {
       animation: ${slideIn} 500ms;
-
+      max-width: 1000px;
      }
 
      & ${ListItem} {
