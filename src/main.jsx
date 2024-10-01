@@ -73,6 +73,7 @@ import { Users } from './layout/Users/Users';
 import { PlayerPage } from './layout/Users/Components/Player/PlayerPage';
 import { Logo } from './components/elements/Logo/Logo';
 import { ClubPage } from './layout/Users/Components/Club/ClubPage';
+import { LeaguePage } from './layout/Users/Components/League/LeaguePage';
 import { MyEvents } from './layout/Dashboards/Components/MyEvents/MyEvents';
 import { StaffProvider } from './contexts/userContext/StaffProvider/StaffProvider';
 import { Interchange } from './layout/Benefits/Components/Interchange/Interchange';
@@ -115,6 +116,8 @@ import { agencyData } from './contexts/userContext/AgencyProvider/agencyData';
 import { TelemedicineUsa } from './layout/Benefits/Components/TelemedicineUsa/TelemedicineUsa';
 import { Solar } from './layout/Benefits/Components/Solar/Solar';
 import { Staff } from './layout/Dashboards/Components/Staff/Staff';
+import { University } from './layout/Dashboards/Components/EditProfile/Components/University/University';
+import { Agency } from './layout/Dashboards/Components/EditProfile/Components/Agency/Agency';
 
 register();
 
