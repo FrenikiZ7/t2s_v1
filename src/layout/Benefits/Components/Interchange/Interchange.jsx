@@ -36,20 +36,31 @@ export function Interchange() {
 
         <ListWrapper>
           <ListContainer>
-            <ListItem>
-              {t('interchange_step_1')}
+          <ListItem>
+              {t('Treinamento Pessoal Elite')}
+               <p>{t('Oferece programas personalizados para melhorar o desempenho atlético.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('interchange_step_2')}
+              {t('Aulas Após a Escola')}
+              <p>{t('Proporciona atividades físicas e acadêmicas para jovens.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('interchange_step_3')}
+              {t('Futsal')}
+              <p>{t('Encoraja a participação em competições de futsal.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('interchange_step_4')}
+              {t('Educação')}
+              <p>{t('Integra aprendizado e desenvolvimento esportivo, visando formar líderes.')}</p>
+            </ListItem>
+            <ListItem>
+              {t('Intercâmbio Cultural')}
+              <p>{t('Promove a troca de experiências entre jovens de diferentes países.')}</p>
+            </ListItem>
+            <ListItem>
+              <StyledLink path="https://www.floridalions.org/" newtab>{t('Saiba mais na Plataforma Florida Lions')}</StyledLink>
             </ListItem>
           </ListContainer>
         </ListWrapper>

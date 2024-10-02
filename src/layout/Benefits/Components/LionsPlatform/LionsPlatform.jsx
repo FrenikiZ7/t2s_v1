@@ -37,19 +37,34 @@ export function LionsPlatform() {
         <ListWrapper>
           <ListContainer>
             <ListItem>
-              {t('lions_platform_step_1')}
+              {t('Streaming de Vídeos')}
+               <p>{t('Acesso instantâneo a uma vasta seleção de filmes e documentários, disponível em qualquer dispositivo.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('lions_platform_step_2')}
+              {t('Banco Digital')}
+              <p>{t('Gerenciamento de finanças em tempo real, com funcionalidades como transferências e investimentos em um único aplicativo.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('lions_platform_step_3')}
+              {t('Intercâmbio Cultural')}
+              <p>{t('Oportunidade de estudar em outro país, aprimorando habilidades linguísticas e culturais.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('lions_platform_step_4')}
+              {t('Plataforma de Livros')}
+              <p>{t('Acesso a uma ampla gama de eBooks de diferentes gêneros, permitindo leitura imersiva em qualquer lugar.')}</p>
+            </ListItem>
+            <ListItem>
+              {t('Aprendizado de Inglês Online')}
+              <p>{t('Cursos personalizados para todos os níveis, tornando o aprendizado de idiomas acessível e divertido.')}</p>
+            </ListItem>
+            <ListItem>
+              {t('Telemedicina')}
+              <p>{t('Consultas médicas remotas com profissionais qualificados, oferecendo conveniência e segurança.')}</p>
+            </ListItem>
+            <ListItem>
+              <StyledLink path="https://www.plataformalions.com/" newtab>{t('Saiba mais na Plataforma Lions')}</StyledLink>
             </ListItem>
           </ListContainer>
         </ListWrapper>

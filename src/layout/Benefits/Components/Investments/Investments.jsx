@@ -36,20 +36,32 @@ export function Investments() {
 
         <ListWrapper>
           <ListContainer>
-            <ListItem>
-              {t('investments_step_1')}
+          <ListItem>
+              {t('Diversificação de Portfólio')}
+               <p>{t('Permite que os investidores minimizem riscos ao alocar seus recursos em diferentes ativos, aumentando a segurança financeira.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('investments_step_2')}
+              {t('Acesso a Expertise')}
+              <p>{t('Os investidores têm acesso a análises de mercado e estratégias elaboradas por especialistas, ajudando a maximizar retornos.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('investments_step_3')}
+              {t('Rendimentos Potenciais')}
+              <p>{t('Investir em ações, títulos e imóveis oferece a oportunidade de obter rendimentos superiores em comparação com contas de poupança.')}</p>
             </ListItem>
 
             <ListItem>
-              {t('investments_step_4')}
+              {t('Planejamento para o Futuro')}
+              <p>{t('Os investimentos ajudam a construir um patrimônio ao longo do tempo, proporcionando segurança financeira na aposentadoria.')}</p>
+            </ListItem>
+            <ListItem>
+              {t('Participação no Crescimento Econômico')}
+              <p>{t('Investir em empresas permite que os investidores participem diretamente do crescimento e sucesso dos negócios.')}</p>
+            </ListItem>
+            <ListItem>
+              <StyledLink path="https://contarendimento.com/" newtab>{t('Saiba mais na Plataforma Lins Rendimento')}</StyledLink>
+              <StyledLink path="https://www.plataformalions.com/investimentos" newtab>{t('Saiba mais na Plataforma Lions Invest')}</StyledLink>
             </ListItem>
           </ListContainer>
         </ListWrapper>
