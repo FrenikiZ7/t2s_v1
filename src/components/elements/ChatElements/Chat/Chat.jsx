@@ -11,20 +11,32 @@ import { Button } from '../../Button/Button';
 import { Row } from '../../../RowContainer/Row';
 import { StyledLink } from '../../StyledLink/StyledLink';
 
-export function Chat({ contact }) {
-  const [message, setMessage] = useState('');
-  const [contactData, setContactData] = useState([]);
+export function Chat({ contact, sendMessage, acceptMessage }) {
+  const [message, setMessage] = useState({
+    position: 'right',
+    type: 'text',
+    text: '',
+    date: '',
+  });
+
+  const [contactData, setContactData] = useState([
+  ]);
 
   useEffect(() => {
     setContactData(contact);
   }, [contact]);
 
-  const handleSend = () => {
-    setMessage('');
-  };
+  const handleSendMessage = () => {
+    // Atualiza a data da mensagem para o exato momento que ela foi enviada
+    const newMessage = { ...message, date: new Date() };
 
-  const handleChatStatus = (status) => {
-    setChatStatus(status);
+    // Lógica para enviar a mensagem
+    if (message.text) {
+      sendMessage(newMessage);
+    }
+
+    // Reseta o estado local da mensagem
+    setMessage((prevData) => ({ ...prevData, text: '' }));
   };
 
   return (
@@ -57,6 +69,8 @@ export function Chat({ contact }) {
             borderhover={theme.colors.primary}
             textcolor={theme.colors.white}
             texthover={theme.colors.white}
+            onclick={() => acceptMessage(true)}
+
           />
 
           <Button
@@ -67,6 +81,7 @@ export function Chat({ contact }) {
             borderhover={theme.colors.mediumred}
             textcolor={theme.colors.white}
             texthover={theme.colors.white}
+            onclick={() => acceptMessage(false)}
           />
         </Row>
         )}
@@ -76,13 +91,15 @@ export function Chat({ contact }) {
       </Styled.ChatContainer>
 
       <Styled.ChatFooter>
+        {contact?.accepted && (
         <Input
           placeholder="Digite sua mensagem..."
           defaultValue=""
-          onChange={(e) => setMessage(e.target.value)}
+          value={message.text}
+          onChange={(e) => setMessage((prevData) => ({ ...prevData, text: e.target.value }))}
           rightButtons={(
             <Button
-              onclick={handleSend}
+              onclick={handleSendMessage}
               text="enviar"
               bgcolor={theme.colors.transparent}
               bghover={theme.colors.transparent}
@@ -93,6 +110,7 @@ export function Chat({ contact }) {
             />
           )}
         />
+        )}
 
       </Styled.ChatFooter>
 

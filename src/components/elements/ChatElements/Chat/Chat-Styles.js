@@ -7,7 +7,8 @@ import { RowContainer } from '../../../RowContainer/Row-Styles.js';
 export const ChatWrapper = styled.div`
   ${({ theme }) => css`
     animation: ${fadeIn} 500ms;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     height: 100%;
     font-family: ${theme.fonts.primary};
 

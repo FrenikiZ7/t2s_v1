@@ -13,10 +13,16 @@ export const PlayerContactsContainer = styled.article`
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 30px;
+    padding: ${theme.spacings.xxlarge};
     flex-direction: row;
     gap: ${theme.spacings.small};
     font-family: ${theme.fonts.primary};
+
+    @media ${theme.medias.smallpc} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     
     ${VerticalLongSlideWrapper} {
       width: 60%;
