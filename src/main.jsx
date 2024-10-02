@@ -117,7 +117,6 @@ import { Solar } from './layout/Benefits/Components/Solar/Solar';
 import { Staff } from './layout/Dashboards/Components/Staff/Staff';
 import { UniversityPage } from './layout/Users/Components/University/UniversityPage';
 import { AgencyPage } from './layout/Users/Components/Agency/AgencyPage';
-import { LeaguePage } from './layout/Users/Components/League/LeaguePage';
 import { FanPage } from './layout/Users/Components/Fan/FanPage';
 import { AgentPage } from './layout/Users/Components/Agent/AgentPage';
 

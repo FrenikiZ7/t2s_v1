@@ -42,7 +42,7 @@ export function LeaguePage() {
         />
         <Text
           size={theme.sizes.large}
-          text={t('club_text')}
+          text={t('league_text')}
         />
         <Button
           path="/register"

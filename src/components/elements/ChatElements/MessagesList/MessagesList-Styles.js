@@ -4,9 +4,11 @@ import { SearchWrapper } from '../../AuthElements/AuthSearch/AuthSearch-Styles';
 
 export const MessagesListWrapper = styled.div`
   ${({ theme }) => css`
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     font-family: ${theme.fonts.primary};
+    
   `}
 `;
 

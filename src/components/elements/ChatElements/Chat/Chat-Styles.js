@@ -1,13 +1,36 @@
 import styled, { css } from 'styled-components';
 import { ButtonElement } from '../../Button/Button-Styles';
 import { fadeIn } from '../../../../styles/animations';
+import { LinkContainer } from '../../StyledLink/StyledLink-Styles';
+import { RowContainer } from '../../../RowContainer/Row-Styles.js';
 
 export const ChatWrapper = styled.div`
   ${({ theme }) => css`
     animation: ${fadeIn} 500ms;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     height: 100%;
     font-family: ${theme.fonts.primary};
+
+    ${LinkContainer} {
+      text-transform: uppercase;
+     }
+
+     .rce-container-smsg {
+      width: 100%;
+     }
+
+     .rce-smsg {
+      width: 100%;
+      background: rgba(0,0,0,0.4);
+      border: ${theme.borders.white};
+    }
+
+    .rce-smsg-text {
+      width: 100%;
+      background: 'none';
+      color: ${theme.colors.white};
+    }
   `}
 `;
 
@@ -53,6 +76,16 @@ export const ChatContainer = styled.div`
      .rce-avatar {
       border-radius: 50%;
     }
+
+    ${RowContainer} {
+      width: 100%;
+      justify-content: center;
+
+      @media ${theme.medias.smallpc} {
+        flex-direction: row;
+      }
+     }
+
 
   `}  
 `;

@@ -9,35 +9,23 @@ export function PlayerContacts() {
   const { t } = useTranslation();
   const [selectedContact, setSelectedContact] = useState(null);
 
-  const handleSelectedContact = (contact) => {
-    setSelectedContact(contact);
-    console.log(contact);
-  };
-
   const [contactsMessages, setContactsMessages] = useState([
     {
       id: 1,
       avatar: '/assets/images/profile/spfc.jpg',
       alt: 'São Paulo FC',
       title: 'Sâo Paulo',
-      subtitle: 'Vo nadakkkk',
+      subtitle: 'Ganhar libertadores? vou nadakkkkk',
       date: new Date(),
       unread: 1,
+      accepted: undefined,
       active: selectedContact?.id === 1,
 
       messages: [
         {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
-          type: 'text',
-          text: 'Ganha mais um título por favor',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/profile/spfc.jpg',
           position: 'left',
           type: 'text',
-          text: 'Vo nadakkkk',
+          text: 'Ganhar libertadores? vou nadakkkkk',
           date: new Date(),
         },
       ],
@@ -46,15 +34,15 @@ export function PlayerContacts() {
     {
       id: 2,
       avatar: '/assets/images/profile/profile.png',
-      alt: 'Reactjs',
+      alt: 'Léo Pelé',
       title: 'Léo Pelé',
       subtitle: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
       date: new Date(),
+      accepted: undefined,
       unread: 1,
       active: selectedContact?.id === 2,
       messages: [
         {
-          avatar: '/assets/images/profile/profile.png',
           position: 'left',
           type: 'text',
           text: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
@@ -66,53 +54,18 @@ export function PlayerContacts() {
     {
       id: 3,
       avatar: '/assets/images/users/athletes.png',
-      alt: 'Reactjs',
+      alt: 'Wellington Rato',
       title: 'Wellington Rato',
-      subtitle: 'Rato',
+      subtitle: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
       date: new Date(),
-      unread: 0,
+      unread: 1,
+      accepted: undefined,
       active: selectedContact?.id === 3,
       messages: [
         {
-          avatar: '/assets/images/users/athletes.png',
           position: 'left',
           type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
-          type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/users/athletes.png',
-          position: 'left',
-          type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
-          type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/users/athletes.png',
-          position: 'left',
-          type: 'text',
-          text: 'Rato',
-          date: new Date(),
-        },
-        {
-          avatar: '/assets/images/logos/vertical-background.png',
-          position: 'right',
-          type: 'text',
-          text: 'Rato',
+          text: 'Oi, vi a oportunidade e estou muito interessado. Podemos conversar para discutir mais detalhes?',
           date: new Date(),
         },
       ],
@@ -127,6 +80,45 @@ export function PlayerContacts() {
     setContactsMessages(updatedContacts);
   }, [selectedContact]);
 
+  const handleSelectedContact = (contact) => {
+    setContactsMessages((prevData) => {
+      const updatedContacts = prevData.map((ctt) => (ctt.id === contact.id
+        ? { ...ctt, unread: 0 }
+        : ctt));
+
+      const updatedContact = updatedContacts.find((ctt) => ctt.id === contact.id);
+      setSelectedContact(updatedContact);
+
+      return updatedContacts;
+    });
+  };
+
+  const handleSendMessage = (newMessage) => {
+    setContactsMessages((prevData) => {
+      const updatedContacts = prevData.map((contact) => (contact.id === selectedContact.id
+        ? { ...contact, messages: [...contact.messages, newMessage] }
+        : contact));
+
+      const updatedContact = updatedContacts.find((contact) => contact.id === selectedContact.id);
+      setSelectedContact(updatedContact);
+
+      return updatedContacts;
+    });
+  };
+
+  const handleAcceptMessage = (status) => {
+    setContactsMessages((prevData) => {
+      const updatedContacts = prevData.map((contact) => (contact.id === selectedContact.id
+        ? { ...contact, accepted: status }
+        : contact));
+
+      const updatedContact = updatedContacts.find((contact) => contact.id === selectedContact.id);
+      setSelectedContact(updatedContact);
+
+      return updatedContacts;
+    });
+  };
+
   return (
     <Styled.PlayerContactsContainer>
       <MessagesList
@@ -134,7 +126,13 @@ export function PlayerContacts() {
         onClick={handleSelectedContact}
       />
 
-      {selectedContact && <Chat contact={selectedContact} />}
+      {selectedContact && (
+        <Chat
+          contact={selectedContact}
+          sendMessage={handleSendMessage}
+          acceptMessage={handleAcceptMessage}
+        />
+      )}
     </Styled.PlayerContactsContainer>
   );
 }
