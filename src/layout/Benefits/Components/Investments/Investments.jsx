@@ -13,6 +13,8 @@ import { StyledLink } from '../../../../components/elements/StyledLink/StyledLin
 import { ListContainer, ListItem, ListWrapper } from '../../../../components/elements/List/List-Styles';
 import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
+import { Column } from '../../../../components/ColumnContainer/Column';
+import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
 
 export function Investments() {
   useEffect(() => {
@@ -31,37 +33,50 @@ export function Investments() {
 
         <Title text={t('welcome_t2s_investments')} uppercase />
 
-        <Text text={t('investments_text_1')} />
-        <Text text={t('investments_text_2')} />
+        <Text text={t('investments_text_0')} />
+        <Text text={t('investments_text_00')} />
+
+        <Column>
+          <Subtitle text={t('investments_subtitle_1')} uppercase />
+          <Text text={t('investments_text_1')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('investments_subtitle_2')} uppercase />
+          <Text text={t('investments_text_2')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('investments_subtitle_3')} uppercase />
+          <Text text={t('investments_text_3')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('investments_subtitle_4')} uppercase />
+          <Text text={t('investments_text_4')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('investments_subtitle_5')} uppercase />
+          <Text text={t('investments_text_5')} />
+        </Column>
 
         <ListWrapper>
           <ListContainer>
           <ListItem>
-              {t('Diversificação de Portfólio')}
-               <p>{t('Permite que os investidores minimizem riscos ao alocar seus recursos em diferentes ativos, aumentando a segurança financeira.')}</p>
+              {t('investments_step_1')}
             </ListItem>
 
             <ListItem>
-              {t('Acesso a Expertise')}
-              <p>{t('Os investidores têm acesso a análises de mercado e estratégias elaboradas por especialistas, ajudando a maximizar retornos.')}</p>
+              {t('investments_step_2')}
             </ListItem>
 
             <ListItem>
-              {t('Rendimentos Potenciais')}
-              <p>{t('Investir em ações, títulos e imóveis oferece a oportunidade de obter rendimentos superiores em comparação com contas de poupança.')}</p>
+              {t('investments_step_3')}
             </ListItem>
 
             <ListItem>
-              {t('Planejamento para o Futuro')}
-              <p>{t('Os investimentos ajudam a construir um patrimônio ao longo do tempo, proporcionando segurança financeira na aposentadoria.')}</p>
-            </ListItem>
-            <ListItem>
-              {t('Participação no Crescimento Econômico')}
-              <p>{t('Investir em empresas permite que os investidores participem diretamente do crescimento e sucesso dos negócios.')}</p>
-            </ListItem>
-            <ListItem>
-              <StyledLink path="https://contarendimento.com/" newtab>{t('Saiba mais na Plataforma Lins Rendimento')}</StyledLink>
-              <StyledLink path="https://www.plataformalions.com/investimentos" newtab>{t('Saiba mais na Plataforma Lions Invest')}</StyledLink>
+              {t('investments_step_4')}
             </ListItem>
           </ListContainer>
         </ListWrapper>

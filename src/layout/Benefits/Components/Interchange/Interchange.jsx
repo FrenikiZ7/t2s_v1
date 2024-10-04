@@ -13,6 +13,8 @@ import { StyledLink } from '../../../../components/elements/StyledLink/StyledLin
 import { ListContainer, ListItem, ListWrapper } from '../../../../components/elements/List/List-Styles';
 import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
+import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
+import { Column } from '../../../../components/ColumnContainer/Column';
 
 export function Interchange() {
   useEffect(() => {
@@ -31,36 +33,51 @@ export function Interchange() {
 
         <Title text={t('welcome_t2s_interchange')} uppercase />
 
-        <Text text={t('interchange_text_1')} />
-        <Text text={t('interchange_text_2')} />
+        <Text text={t('interchange_text_0')} />
+        <Text text={t('interchange_text_00')} />
+
+        <Column>
+          <Subtitle text={t('interchange_subtitle_1')} uppercase />
+          <Text text={t('interchange_text_1')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('interchange_subtitle_2')} uppercase />
+          <Text text={t('interchange_text_2')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('interchange_subtitle_3')} uppercase />
+          <Text text={t('interchange_text_3')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('interchange_subtitle_4')} uppercase />
+          <Text text={t('interchange_text_4')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('interchange_subtitle_5')} uppercase />
+          <Text text={t('interchange_text_5')} />
+        </Column>
+
 
         <ListWrapper>
           <ListContainer>
-          <ListItem>
-              {t('Treinamento Pessoal Elite')}
-               <p>{t('Oferece programas personalizados para melhorar o desempenho atlético.')}</p>
+            <ListItem>
+              {t('interchange_step_1')}
             </ListItem>
 
             <ListItem>
-              {t('Aulas Após a Escola')}
-              <p>{t('Proporciona atividades físicas e acadêmicas para jovens.')}</p>
+              {t('interchange_step_2')}
             </ListItem>
 
             <ListItem>
-              {t('Futsal')}
-              <p>{t('Encoraja a participação em competições de futsal.')}</p>
+              {t('interchange_step_3')}
             </ListItem>
 
             <ListItem>
-              {t('Educação')}
-              <p>{t('Integra aprendizado e desenvolvimento esportivo, visando formar líderes.')}</p>
-            </ListItem>
-            <ListItem>
-              {t('Intercâmbio Cultural')}
-              <p>{t('Promove a troca de experiências entre jovens de diferentes países.')}</p>
-            </ListItem>
-            <ListItem>
-              <StyledLink path="https://www.floridalions.org/" newtab>{t('Saiba mais na Plataforma Florida Lions')}</StyledLink>
+              {t('interchange_step_4')}
             </ListItem>
           </ListContainer>
         </ListWrapper>
