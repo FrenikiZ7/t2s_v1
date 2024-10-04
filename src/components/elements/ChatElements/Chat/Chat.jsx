@@ -4,14 +4,18 @@ import {
   Avatar, Input, MessageList,
   SystemMessage,
 } from 'react-chat-elements';
+import { ArrowBack } from '@styled-icons/material-outlined';
 import * as Styled from './Chat-Styles';
 import { Text } from '../../Text/Text';
 import { theme } from '../../../../styles/theme';
 import { Button } from '../../Button/Button';
 import { Row } from '../../../RowContainer/Row';
 import { StyledLink } from '../../StyledLink/StyledLink';
+import { IconDiv } from '../../IconDiv/IconDiv';
 
-export function Chat({ contact, sendMessage, acceptMessage }) {
+export function Chat({
+  contact, sendMessage, acceptMessage, closeChat,
+}) {
   const [message, setMessage] = useState({
     position: 'right',
     type: 'text',
@@ -39,12 +43,29 @@ export function Chat({ contact, sendMessage, acceptMessage }) {
     setMessage((prevData) => ({ ...prevData, text: '' }));
   };
 
+  const handleCloseChat = (e) => {
+    closeChat();
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSendMessage();
+    }
+
+    if (e.key === 'Escape') {
+      handleCloseChat();
+    }
+  };
+
   return (
-    <Styled.ChatWrapper>
+    <Styled.ChatWrapper onKeyDown={handleKeyDown} tabIndex={0}>
 
       <Styled.ChatHeader>
+        <IconDiv onclick={handleCloseChat}>
+          <ArrowBack />
+        </IconDiv>
         <Avatar src={contact.avatar} alt={contact.alt} size="large" type="circle flexible" />
-        <StyledLink text={contact.title} uppercase />
+        <StyledLink text={contact.title} uppercase hovercolor={theme.colors.secondary} />
 
       </Styled.ChatHeader>
 
@@ -52,12 +73,14 @@ export function Chat({ contact, sendMessage, acceptMessage }) {
 
         <SystemMessage text="Nunca passe seus dados ou clique em qualquer link enviado" />
 
+        {contactData.messages && (
         <MessageList
           className="message-list"
           lockable
           toBottomHeight="100%"
-          dataSource={contact.messages}
+          dataSource={contactData.messages}
         />
+        )}
 
         {contact?.accepted === undefined && (
         <Row>
@@ -70,7 +93,6 @@ export function Chat({ contact, sendMessage, acceptMessage }) {
             textcolor={theme.colors.white}
             texthover={theme.colors.white}
             onclick={() => acceptMessage(true)}
-
           />
 
           <Button

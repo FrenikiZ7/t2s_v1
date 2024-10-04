@@ -8,15 +8,17 @@ export const MessagesListWrapper = styled.div`
     max-width: 600px;
     height: auto;
     font-family: ${theme.fonts.primary};
-    
+    border-radius: 12px;
   `}
 `;
 
 export const MessagesWrapper = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    height: 400px;
+    height: 100%;
+    max-height: 600px;
     overflow-y: auto;
+    border-radius: 0px 0px 12px 12px;
   `}
 `;
 
@@ -32,6 +34,7 @@ export const MessagesListContainer = styled.div`
       justify-content: center;
       align-items: center;
       pointer-events: auto;
+
 
     //Quem enviou
      .rce-citem-body--top{

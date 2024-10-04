@@ -50,6 +50,9 @@ export function MessagesList({ contactsMessages, onClick }) {
               className={`message-item ${contact.active ? 'active' : ''}`}
             />
           ))}
+
+          <Text text="Você não tem mais mensagens..." color={theme.colors.lightgray} />
+
         </Styled.MessagesListContainer>
 
       </Styled.MessagesWrapper>
