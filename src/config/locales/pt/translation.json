@@ -572,9 +572,9 @@
 	"investments_text_00": "A area de investimentos da T2S tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo.Para acessar:",
 	"investments_text_1": "Permite que os investidores minimizem riscos ao alocar seus recursos em diferentes ativos, aumentando a segurança financeira.",
 	"investments_text_2": "Os investidores têm acesso a análises de mercado e estratégias elaboradas por especialistas, ajudando a maximizar retornos.",
-    "investments_text_3": "Investir em ações, títulos e imóveis oferece a oportunidade de obter rendimentos superiores em comparação com contas de poupança.",
+	"investments_text_3": "Investir em ações, títulos e imóveis oferece a oportunidade de obter rendimentos superiores em comparação com contas de poupança.",
 	"investments_text_4": "Os investimentos ajudam a construir um patrimônio ao longo do tempo, proporcionando segurança financeira na aposentadoria.",
-    "investments_text_5": "Investir em empresas permite que os investidores participem diretamente do crescimento e sucesso dos negócios.",
+	"investments_text_5": "Investir em empresas permite que os investidores participem diretamente do crescimento e sucesso dos negócios.",
 
 	"investments_step_1": "Clique em qualquer um dos tipos de investimentos abaixo.",
 	"investments_step_2": "Você será direcionado automaticamente para o nosso site de investimentos.",
@@ -583,12 +583,9 @@
 
 	"investments_subtitle_1": "Diversificação de Portfólio",
 	"investments_subtitle_2": "Acesso a Expertise",
-    "investments_subtitle_3": "Rendimentos Potenciais",
-    "investments_subtitle_4": "Planejamento para o Futuro",
+	"investments_subtitle_3": "Rendimentos Potenciais",
+	"investments_subtitle_4": "Planejamento para o Futuro",
 	"investments_subtitle_5": "Participação no Crescimento Econômico",
-
-
-
 
 	"welcome_t2s_english": "Boas-vindas à area de inglês da T2S!",
 	"english_text_0": "Aqui, você encontrará informações essenciais para melhorar seu aprendizado de inglês e expandir seu vocabulário.",
@@ -610,7 +607,7 @@
 	"interchange_text_0": "Aqui, você encontrará informações essenciais para planejar seu intercâmbio e aproveitar ao máximo sua experiência no exterior.",
 	"interchange_text_00": "A área de intercâmbio tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:",
 	"interchange_text_1": "Oferece programas personalizados para melhorar o desempenho atlético.",
-    "interchange_text_2": "Proporciona atividades físicas e acadêmicas para jovens.",
+	"interchange_text_2": "Proporciona atividades físicas e acadêmicas para jovens.",
 	"interchange_text_3": "O programa de intercâmbio estimula a participação em competições esportivas, desenvolvendo habilidades como trabalho em equipe e disciplina, enquanto constrói a confiança dos jovens ao enfrentarem desafios.",
 	"interchange_text_4": "Integra aprendizado e desenvolvimento esportivo, visando formar líderes.",
 	"interchange_text_5": "O programa de intercâmbio conta com uma ampla rede de parceiros, que abrange instituições acadêmicas e esportivas internacionais. Essas parcerias possibilitam que os participantes tenham acesso a experiências diversas e de alta qualidade, em áreas como educação, cultura e atividades esportivas, garantindo uma vivência enriquecedora e completa.",
@@ -620,8 +617,8 @@
 	"interchange_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 	"interchange_subtitle_1": "Treinamento Pessoal Elite",
 	"interchange_subtitle_2": "Aulas Após a Escola",
-    "interchange_subtitle_3": "Incentivo à Competição",
-    "interchange_subtitle_4": "Educação",
+	"interchange_subtitle_3": "Incentivo à Competição",
+	"interchange_subtitle_4": "Educação",
 	"interchange_subtitle_5": "Parcerias no Intercâmbio",
 
 	"welcome_t2s_studies": "Boas-vindas à area de estudos da T2S!",
@@ -671,11 +668,11 @@
 	"lions_platform_text_0": "Aqui, você encontra tudo para tornar sua vida mais incrível: ofertas, experiências e muito mais!",
 	"lions_platform_text_00": "A plataforma Lions tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo seus benefícios.Para acessar:",
 	"lions_platform_text_1": "Acesso instantâneo a uma vasta seleção de filmes e documentários, disponível em qualquer dispositivo.",
-    "lions_platform_text_2": "Consultas médicas remotas com profissionais qualificados, oferecendo conveniência e segurança.",
-    "lions_platform_text_3": "Cursos personalizados para todos os níveis, tornando o aprendizado de idiomas acessível e divertido.",
-    "lions_platform_text_4": "Acesso a uma ampla gama de eBooks de diferentes gêneros, permitindo leitura imersiva em qualquer lugar.",
+	"lions_platform_text_2": "Consultas médicas remotas com profissionais qualificados, oferecendo conveniência e segurança.",
+	"lions_platform_text_3": "Cursos personalizados para todos os níveis, tornando o aprendizado de idiomas acessível e divertido.",
+	"lions_platform_text_4": "Acesso a uma ampla gama de eBooks de diferentes gêneros, permitindo leitura imersiva em qualquer lugar.",
 	"lions_platform_text_5": "Oportunidade de estudar em outro país, aprimorando habilidades linguísticas e culturais.",
-    "lions_platform_text_6": "Gerenciamento de finanças em tempo real, com funcionalidades como transferências e investimentos em um único aplicativo.",
+	"lions_platform_text_6": "Gerenciamento de finanças em tempo real, com funcionalidades como transferências e investimentos em um único aplicativo.",
 
 	"lions_platform_step_1": "Clique em qualquer um dos benefícios abaixo.",
 	"lions_platform_step_2": "Você será direcionado automaticamente para o site da plataforma lions",
@@ -684,10 +681,10 @@
 
 	"lions_platform_subtitle_1": "Streaming de Vídeos",
 	"lions_platform_subtitle_2": "Telemedicina",
-    "lions_platform_subtitle_3": "Aprendizado de Inglês Online",
-    "lions_platform_subtitle_4": "Plataforma de Livros",
-    "lions_platform_subtitle_5": "Intercâmbio Cultural",
-    "lions_platform_subtitle_6": "Banco Digital",
+	"lions_platform_subtitle_3": "Aprendizado de Inglês Online",
+	"lions_platform_subtitle_4": "Plataforma de Livros",
+	"lions_platform_subtitle_5": "Intercâmbio Cultural",
+	"lions_platform_subtitle_6": "Banco Digital",
 
 	"welcome_t2s_telemedicine_usa": "Boas-vindas à area de telemedicina da T2S!",
 	"telemedicine_usa_text_1": "Aqui, você encontrará informações essenciais para acessar serviços de telemedicina e receber o cuidado médico que você precisa.",

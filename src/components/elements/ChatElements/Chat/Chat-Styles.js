@@ -1,13 +1,14 @@
 import styled, { css } from 'styled-components';
 import { ButtonElement } from '../../Button/Button-Styles';
-import { fadeIn } from '../../../../styles/animations';
+import {
+  fadeIn, slideIn, slideInRight, slideOut,
+} from '../../../../styles/animations';
 import { LinkContainer } from '../../StyledLink/StyledLink-Styles';
 import { RowContainer } from '../../../RowContainer/Row-Styles.js';
 import { IconContainer } from '../../IconDiv/IconDiv-Styles.js';
 
 export const ChatWrapper = styled.div`
   ${({ theme }) => css`
-    animation: ${fadeIn} 500ms;
     width: 100%;
     max-width: 600px;
     height: 100%;
@@ -47,6 +48,7 @@ export const ChatContainer = styled.div`
     align-items: center;
 
 
+    //Container das mensagens
     .rce-container-mlist {
       color: ${theme.colors.black};  
       max-height: 300px;
@@ -54,15 +56,11 @@ export const ChatContainer = styled.div`
       width: 100%;
     }
 
-    // Div das mensagens
-    .rce-mlist {
-      
-    }
-
     // Container individual de cada mensagem
     .rce-container-mbox {
       width: 100%;
       min-width: 100px;
+      animation: ${slideIn} 500ms;
     }
 
     // Mensagem em si
@@ -103,6 +101,7 @@ export const ChatHeader = styled.div`
     ${IconContainer} {
       width: 30px;
       display: none;
+      animation: ${slideInRight} 500ms;
 
       @media (max-width: 1050px) {
         display: flex;
@@ -160,6 +159,10 @@ export const ChatFooter = styled.div`
      min-width: 0;  
      width: 100%;
      transition: all 300ms ease-in-out;
+
+     @media ${theme.medias.smallmobile} {
+      max-height: 30px;
+     }
     
       &:hover {
         border: ${theme.borders.secondary};

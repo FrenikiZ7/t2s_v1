@@ -58,22 +58,15 @@ export const MessagesListContainer = styled.div`
       width: 100%;
       max-height: 600px;
       padding: ${theme.spacings.medium};
-
      }
 
+     //Container
      .message-item {
        width: 100%;
      }
 
-     .active {
 
-       > .rce-citem {
-        background: ${theme.colors.mediumblack};
-        border: ${theme.borders.secondary};
-       }
-     }
-
-     //Container da mensagem
+     //Container de cada mensagem
      .rce-citem {
        background: ${theme.colors.lightblack};
        border-radius: 12px;
@@ -85,6 +78,14 @@ export const MessagesListContainer = styled.div`
         background: ${theme.colors.mediumblack};
         border: ${theme.borders.secondary};
        }
+     }
+
+     //Contato selecionado
+     .active {
+       > .rce-citem {
+        background: rgba(0,0,0,0.7);
+        border: ${theme.borders.secondary};
+      }
      }
   `}  
 `;

@@ -123,70 +123,70 @@ export const s2tData = {
         id: 1,
         src: '/assets/images/users/athletes.png',
         title: 'players',
-        path: '/register',
+        path: 'users/player',
       },
 
       {
         id: 2,
         src: '/assets/images/users/scouts.png',
         title: 'scout',
-        path: '/register',
+        path: 'users/staff',
       },
 
       {
         id: 3,
         src: '/assets/images/users/business.png',
         title: 'agent',
-        path: '/register',
+        path: 'users/agent',
       },
 
       {
         id: 4,
         src: '/assets/images/users/clubs.png',
         title: 'clubs',
-        path: '/register',
+        path: 'users/club',
       },
 
       {
         id: 5,
         src: '/assets/images/users/facultys.png',
         title: 'universities',
-        path: '/register',
+        path: 'users/university',
       },
 
       {
         id: 6,
         src: '/assets/images/users/leagues.png',
         title: 'leagues',
-        path: '/register',
+        path: 'users/league',
       },
 
       {
         id: 7,
         src: '/assets/images/users/schools.jpg',
         title: 'schools',
-        path: '/register',
+        path: 'users/university',
       },
 
       {
         id: 8,
         src: '/assets/images/users/staff.jpg',
         title: 'staff',
-        path: '/register',
+        path: 'users/staff',
       },
 
       {
         id: 9,
         src: '/assets/images/users/exchangeAgencies.jpg',
         title: 'exchange_agencies',
-        path: '/register',
+        path: 'users/agency',
       },
 
       {
         id: 10,
         src: '/assets/images/users/fans.jpg',
         title: 'fans',
-        path: '/register',
+        path: 'users/fan',
       },
     ],
 

@@ -119,7 +119,7 @@ import { UniversityPage } from './layout/Users/Components/University/UniversityP
 import { AgencyPage } from './layout/Users/Components/Agency/AgencyPage';
 import { FanPage } from './layout/Users/Components/Fan/FanPage';
 import { AgentPage } from './layout/Users/Components/Agent/AgentPage';
-
+import { LeaguePage } from './layout/Users/Components/League/LeaguePage';
 
 register();
 
@@ -178,6 +178,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="player" element={<PlayerPage />} />
                                 <Route path="staff" element={<StaffPage />} />
                                 <Route path="club" element={<ClubPage />} />
+                                <Route path="league" element={<LeaguePage />} />
+                                <Route path="agency" element={<AgencyPage />} />
+                                <Route path="university" element={<UniversityPage />} />
+                                <Route path="agent" element={<AgentPage />} />
+                                <Route path="fan" element={<FanPage />} />
                               </Route>
 
                               {/* Rota do dashboard para jogadores + subrotas dele */}
