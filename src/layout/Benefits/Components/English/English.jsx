@@ -13,7 +13,8 @@ import { StyledLink } from '../../../../components/elements/StyledLink/StyledLin
 import { ListContainer, ListItem, ListWrapper } from '../../../../components/elements/List/List-Styles';
 import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
-
+import { Column } from '../../../../components/ColumnContainer/Column';
+import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
 export function English() {
   useEffect(() => {
     window.scrollTo({
@@ -31,37 +32,45 @@ export function English() {
 
         <Title text={t('welcome_t2s_english')} uppercase />
 
-        <Text text={t('english_text_1')} />
-        <Text text={t('english_text_2')} />
+        <Text text={t('english_text_0')} />
+        <Text text={t('english_text_00')} />
+
+        <Column>
+          <Subtitle text={t('english_subtitle_1')} uppercase />
+          <Text text={t('english_text_1')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('english_subtitle_2')} uppercase />
+          <Text text={t('english_text_2')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('english_subtitle_3')} uppercase />
+          <Text text={t('english_text_3')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('english_subtitle_4')} uppercase />
+          <Text text={t('english_text_4')} />
+        </Column>
 
         <ListWrapper>
           <ListContainer>
           <ListItem>
-              {t('Acesso Global')}
-               <p>{t('O inglês é a língua mais falada no mundo, facilitando a comunicação em diversos países.')}</p>
+              {t('english_step_1')}
             </ListItem>
 
             <ListItem>
-              {t('Oportunidades Profissionais')}
-              <p>{t('O domínio do inglês abre portas para melhores empregos e avanço na carreira, especialmente em empresas multinacionais.')}</p>
+              {t('english_step_2')}
             </ListItem>
 
             <ListItem>
-              {t('Educação Superior')}
-              <p>{t('Muitas universidades renomadas oferecem cursos em inglês, aumentando as opções de educação.')}</p>
+              {t('english_step_3')}
             </ListItem>
 
             <ListItem>
-              {t('Cultura e Entretenimento')}
-              <p>{t('O inglês é a língua da maioria dos filmes, músicas e livros, permitindo uma experiência cultural mais rica.')}</p>
-            </ListItem>
-            <ListItem>
-              {t('Comunicação em Esportes e Profissões')}
-              <p>{t('Dominar o inglês é essencial para atletas e profissionais de diversas áreas, permitindo uma comunicação eficaz com treinadores, colegas e outros profissionais ao redor do mundo. Essa habilidade não apenas facilita a integração em equipes internacionais, mas também abre portas para oportunidades de carreira em esportes e setores que exigem interações globais.')}</p>
-            </ListItem>
-            <ListItem>
-              <StyledLink path="https://immediateenglish.com/ansep" newtab>{t('Saiba mais na Plataforma Immediate English')}</StyledLink>
-              <StyledLink path="https://www.ansep.org/" newtab>{t('Saiba mais na Plataforma ANSEP')}</StyledLink>
+              {t('english_step_4')}
             </ListItem>
           </ListContainer>
         </ListWrapper>

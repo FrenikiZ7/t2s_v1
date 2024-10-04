@@ -13,6 +13,8 @@ import { StyledLink } from '../../../../components/elements/StyledLink/StyledLin
 import { ListContainer, ListItem, ListWrapper } from '../../../../components/elements/List/List-Styles';
 import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
+import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
+import { Column } from '../../../../components/ColumnContainer/Column';
 
 export function LionsPlatform() {
   useEffect(() => {
@@ -31,40 +33,51 @@ export function LionsPlatform() {
 
         <Title text={t('welcome_t2s_lions_platform')} uppercase />
 
-        <Text text={t('lions_platform_text_1')} />
-        <Text text={t('lions_platform_text_2')} />
+        <Text text={t('lions_platform_text_0')} />
+        <Text text={t('lions_platform_text_00')} />
 
+
+        <Column>
+          <Subtitle text={t('lions_platform_subtitle_1')} uppercase />
+          <Text text={t('lions_platform_text_1')} />
+        </Column>
+        <Column>
+          <Subtitle text={t('lions_platform_subtitle_2')} uppercase />
+          <Text text={t('lions_platform_text_2')} />
+        </Column>
+        <Column>
+          <Subtitle text={t('lions_platform_subtitle_3')} uppercase />
+          <Text text={t('lions_platform_text_3')} />
+        </Column>
+        <Column>
+          <Subtitle text={t('lions_platform_subtitle_4')} uppercase />
+          <Text text={t('lions_platform_text_4')} />
+        </Column>
+        <Column>
+          <Subtitle text={t('lions_platform_subtitle_5')} uppercase />
+          <Text text={t('lions_platform_text_5')} />
+        </Column>
+        <Column>
+          <Subtitle text={t('lions_platform_subtitle_6')} uppercase />
+          <Text text={t('lions_platform_text_6')} />
+        </Column>
+        
         <ListWrapper>
           <ListContainer>
             <ListItem>
-              {t('Streaming de Vídeos')}
-               <p>{t('Acesso instantâneo a uma vasta seleção de filmes e documentários, disponível em qualquer dispositivo.')}</p>
+              {t('lions_platform_step_1')}
             </ListItem>
 
             <ListItem>
-              {t('Banco Digital')}
-              <p>{t('Gerenciamento de finanças em tempo real, com funcionalidades como transferências e investimentos em um único aplicativo.')}</p>
+              {t('lions_platform_step_2')}
             </ListItem>
 
             <ListItem>
-              {t('Intercâmbio Cultural')}
-              <p>{t('Oportunidade de estudar em outro país, aprimorando habilidades linguísticas e culturais.')}</p>
+              {t('lions_platform_step_3')}
             </ListItem>
 
             <ListItem>
-              {t('Plataforma de Livros')}
-              <p>{t('Acesso a uma ampla gama de eBooks de diferentes gêneros, permitindo leitura imersiva em qualquer lugar.')}</p>
-            </ListItem>
-            <ListItem>
-              {t('Aprendizado de Inglês Online')}
-              <p>{t('Cursos personalizados para todos os níveis, tornando o aprendizado de idiomas acessível e divertido.')}</p>
-            </ListItem>
-            <ListItem>
-              {t('Telemedicina')}
-              <p>{t('Consultas médicas remotas com profissionais qualificados, oferecendo conveniência e segurança.')}</p>
-            </ListItem>
-            <ListItem>
-              <StyledLink path="https://www.plataformalions.com/" newtab>{t('Saiba mais na Plataforma Lions')}</StyledLink>
+              {t('lions_platform_step_4')}
             </ListItem>
           </ListContainer>
         </ListWrapper>
