@@ -54,6 +54,20 @@ export function Solar() {
 
         <Text text={t('solar_text_1')} />
         <Text text={t('solar_text_2')} />
+        <Column>
+          <Subtitle text={t('solar_subtitle_1')} />
+          <Column>
+            <Text text={t('solar_text_1_part_1')} />
+            <Text text={t('solar_text_1_part_2')} />
+            <Text text={t('solar_text_1_part_3')} />
+            <Text text={t('solar_text_1_part_4')} />
+            <Text text={t('solar_text_1_part_5')} />
+            <Text text={t('solar_text_1_part_6')} />
+
+
+
+          </Column>
+ </Column>
 
         <ListWrapper>
           <ListContainer>
