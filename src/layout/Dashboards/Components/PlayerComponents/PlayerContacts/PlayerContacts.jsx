@@ -9,89 +9,30 @@ import { MessageCenter } from '../../../../../components/elements/ChatElements/M
 export function PlayerContacts() {
   const { t } = useTranslation();
 
-  const [contactsMessages, setContactsMessages] = useState([
+  // Dados de teste para o chat
+  const [contactsData, setContactsData] = useState([
     {
       id: 1,
       avatar: '/assets/images/profile/spfc.jpg',
       alt: 'São Paulo FC',
-      title: 'Sâo Paulo',
-      subtitle: 'Ganhar libertadores? vou nadakkkkk',
+      title: 'São Paulo',
+      subtitle: 'Olá',
       date: new Date(),
-      unread: 1,
-      accepted: undefined,
+      unread: 0,
+      accepted: true,
       active: false,
 
       messages: [
         {
           position: 'left',
           type: 'text',
-          text: 'Ganhar libertadores? vou nadakkkkk',
+          text: 'Olá',
           date: new Date(),
         },
         {
           position: 'right',
           type: 'text',
-          text: 'Ganha ai manokk',
-          date: new Date(),
-        },
-        {
-          position: 'left',
-          type: 'text',
-          text: 'Ganhar libertadores? vou nadakkkkk',
-          date: new Date(),
-        },
-        {
-          position: 'right',
-          type: 'text',
-          text: 'Ganha ai manokk',
-          date: new Date(),
-        },
-        {
-          position: 'left',
-          type: 'text',
-          text: 'Ganhar libertadores? vou nadakkkkk',
-          date: new Date(),
-        },
-        {
-          position: 'right',
-          type: 'text',
-          text: 'Ganha ai manokk',
-          date: new Date(),
-        },
-        {
-          position: 'left',
-          type: 'text',
-          text: 'Ganhar libertadores? vou nadakkkkk',
-          date: new Date(),
-        },
-        {
-          position: 'right',
-          type: 'text',
-          text: 'Ganha ai manokk',
-          date: new Date(),
-        },
-        {
-          position: 'left',
-          type: 'text',
-          text: 'Ganhar libertadores? vou nadakkkkk',
-          date: new Date(),
-        },
-        {
-          position: 'right',
-          type: 'text',
-          text: 'Ganha ai manokk',
-          date: new Date(),
-        },
-        {
-          position: 'left',
-          type: 'text',
-          text: 'Ganhar libertadores? vou nadakkkkk',
-          date: new Date(),
-        },
-        {
-          position: 'right',
-          type: 'text',
-          text: 'Ganha ai manokk',
+          text: 'Olá',
           date: new Date(),
         },
       ],
@@ -200,7 +141,7 @@ export function PlayerContacts() {
 
   return (
     <Styled.PlayerContactsContainer>
-      <MessageCenter data={contactsMessages} />
+      <MessageCenter data={contactsData} />
     </Styled.PlayerContactsContainer>
   );
 }

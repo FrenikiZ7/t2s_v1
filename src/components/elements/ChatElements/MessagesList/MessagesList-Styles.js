@@ -52,7 +52,6 @@ export const MessagesListContainer = styled.div`
      }
 
 
-
      //Container das mensagens
      .rce-container-clist {
       width: 100%;

@@ -783,12 +783,15 @@
 
 	"club_text": "Trabalhamos com clubes de todos os níveis, incluindo amadores, profissionais e semi profissionais",
 
+	"club_step_1_title": "Crie sua conta",
 	"club_step_2_title": "Edite seu perfil",
 	"club_step_3_title": "Mostre seu talento",
 	"club_step_4_title": "Busque talentoss",
+
 	"club_step_1_part_3": "Selecione a opção 'Clube' para se cadastrar como um clube em busca de novos talentos.",
 	"club_step_2_part_3": "Acesse 'Editar perfil' e complete seu perfil! Revele suas conquistas memoráveis, o estádio que te coroa e o treinador que te impulsiona.",
 	"club_step_3_part_3": "Inclua fotos e vídeos que demonstrem os jogadores treinando, momentos de destaque em competições ou o dia a dia do seu clube.",
+
 	"club_step_4_part_1": "Acesse a seção 'Minhas oportunidades' para visualizar suas oportunidades disponíveis.",
 	"club_step_4_part_2": "Clique no ícone '+' para iniciar a criação de uma nova oportunidade.",
 	"club_step_4_part_3": "Clique em uma oportunidade existente para editar seus detalhes a qualquer momento.",
@@ -1180,5 +1183,18 @@
 	"_text_5": "",
 	"_text_6": "",
 	"_text_7": "",
-	"_text_8": ""
+	"_text_8": "",
+
+	"------------------------------------------ MessageCenter": "------------------------------------------",
+
+	"chat_warning_1": "Proteja suas informações! Não forneça dados nem clique em links enviados.",
+	"chat_reject_message": "Você não aceitou esse chat",
+	"accept": "Aceitar",
+	"reject": "Rejeitar",
+	"type_your_message": "Digite sua mensagem",
+	"send": "Enviar",
+	"search_your_messages": "Pesquise suas mensagens",
+	"no_more_messages": "Você não possui mais mensagens",
+	"": "",
+	"": ""
 }

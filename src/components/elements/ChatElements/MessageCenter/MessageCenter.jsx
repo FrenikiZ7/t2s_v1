@@ -1,5 +1,5 @@
 import Prop from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import * as Styled from './MessageCenter-styles';
 import { MessagesList } from '../MessagesList/MessagesList';
 import { Chat } from '../Chat/Chat';
@@ -7,39 +7,42 @@ import { Chat } from '../Chat/Chat';
 export function MessageCenter({ data }) {
   const [selectedContact, setSelectedContact] = useState(null);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1050);
-  const [contactsMessages, setContactsMessages] = useState([]);
+  const [contactsData, setContactsData] = useState([]);
 
+  // Define o contato ativo quando um contato é selecionado
   useEffect(() => {
-    const updatedContacts = contactsMessages.map((contact) => ({
+    const updatedContacts = contactsData.map((contact) => ({
       ...contact,
       active: selectedContact?.id === contact.id,
     }));
-    setContactsMessages(updatedContacts);
+    setContactsData(updatedContacts);
   }, [selectedContact]);
 
+  // Atualiza o estado contactsData sempre que data mudar
   useEffect(() => {
-    setContactsMessages(data);
+    setContactsData(data);
   }, [data]);
 
-  const handleSelectedContact = (contact) => {
-    setContactsMessages((prevData) => {
-      const updatedContacts = prevData.map((ctt) => (ctt.id === contact.id
-        ? { ...ctt, unread: 0 }
-        : ctt));
+  // Seleciona o contato e marca como lido
+  const handleSelectedContact = useCallback((contact) => {
+    setContactsData((prevData) => {
+      const updatedContacts = prevData.map((ctt) => (ctt.id === contact.id ? { ...ctt, unread: 0 } : ctt));
 
       const updatedContact = updatedContacts.find((ctt) => ctt.id === contact.id);
       setSelectedContact(updatedContact);
 
       return updatedContacts;
     });
-  };
+  }, []);
 
-  const resetSelectedContact = () => {
-    setSelectedContact();
-  };
+  // Reseta o estado selectedContact para null
+  const resetSelectedContact = useCallback(() => {
+    setSelectedContact(null);
+  }, []);
 
-  const handleSendMessage = (newMessage) => {
-    setContactsMessages((prevData) => {
+  // Adiciona uma nova mensagem ao contato selecionado
+  const handleSendMessage = useCallback((newMessage) => {
+    setContactsData((prevData) => {
       const updatedContacts = prevData.map((contact) => (contact.id === selectedContact.id
         ? { ...contact, messages: [...contact.messages, newMessage] }
         : contact));
@@ -49,56 +52,54 @@ export function MessageCenter({ data }) {
 
       return updatedContacts;
     });
-  };
+  }, [selectedContact]);
 
-  const handleAcceptMessage = (status) => {
-    setContactsMessages((prevData) => {
-      const updatedContacts = prevData.map((contact) => (contact.id === selectedContact.id
-        ? { ...contact, accepted: status }
-        : contact));
+  // Aceita ou rejeita o contato com base no status fornecido
+  const handleAcceptContact = useCallback((status) => {
+    setContactsData((prevData) => {
+      const updatedContacts = prevData.map((contact) => (contact.id === selectedContact.id ? { ...contact, accepted: status } : contact));
 
       const updatedContact = updatedContacts.find((contact) => contact.id === selectedContact.id);
       setSelectedContact(updatedContact);
 
       return updatedContacts;
     });
-  };
+  }, [selectedContact]);
+
+  // Monitora o tamanho da tela e atualiza o estado isLargeScreen
+  const handleResize = useCallback(() => {
+    setIsLargeScreen(window.innerWidth > 1050);
+  }, []);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth > 1050);
-    };
-
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [handleResize]);
 
   return (
+  // Em telas grandes, o chat e a lista de mensagens são exibidos simultaneamente
+  // Em telas pequenas, apenas um dos dois é exibido por vez
     <Styled.MessageCenterContainer>
-
       {isLargeScreen ? (
         <MessagesList
-          contactsMessages={contactsMessages}
-          onClick={handleSelectedContact}
+          contacts={contactsData}
+          onClickContact={handleSelectedContact}
         />
       ) : (
-        <>
-          {!selectedContact && (
-          <MessagesList
-            contactsMessages={contactsMessages}
-            onClick={handleSelectedContact}
-          />
-          )}
-        </>
+        !selectedContact && (
+        <MessagesList
+          contacts={contactsData}
+          onClickContact={handleSelectedContact}
+        />
+        )
       )}
-
       {selectedContact && (
         <Chat
           contact={selectedContact}
           sendMessage={handleSendMessage}
-          acceptMessage={handleAcceptMessage}
+          acceptContact={handleAcceptContact}
           closeChat={resetSelectedContact}
         />
       )}
