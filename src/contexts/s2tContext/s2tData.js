@@ -271,20 +271,13 @@ export const s2tData = {
 
       {
         id: '12',
-        src: '/assets/images/benefits/american_studies.jpg',
-        title: 'american_education',
-        path: '/benefits/american-studies',
-      },
-
-      {
-        id: '13',
         src: '/assets/images/benefits/telemedicine.jpg',
         title: 'telemedicine_usa',
         path: '/benefits/telemedicine-usa',
       },
 
       {
-        id: '14',
+        id: '13',
         src: '/assets/images/benefits/solar.jpg',
         title: 'solar',
         path: '/benefits/solar',
@@ -295,7 +288,9 @@ export const s2tData = {
 
   videos: {
     trending: [
-
+      { id: 1, url: 'https://www.youtube.com/watch?v=v2gGiVHJ24E' },
+      { id: 2, url: '/assets/videos/silas.mp4' },
+      { id: 3, url: 'https://vimeo.com/953545193' },
     ],
   },
 

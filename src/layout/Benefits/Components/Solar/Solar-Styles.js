@@ -14,12 +14,15 @@ export const SolarContainer = styled.article`
      display: flex;
      flex-direction: column;
 
+
      ${AuthContainer} {
       display: flex;
       min-width: 700px;
       height: auto;
       align-items: center;
       justify-content: center;
+
+
 
       @media ${theme.medias.smallpc} {
         min-width: 0px;
