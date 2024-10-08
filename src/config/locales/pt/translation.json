@@ -572,9 +572,15 @@
 	"investments_text_00": "A area de investimentos da T2S tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo.Para acessar:",
 	"investments_text_1": "Permite que os investidores minimizem riscos ao alocar seus recursos em diferentes ativos, aumentando a segurança financeira.",
 	"investments_text_2": "Os investidores têm acesso a análises de mercado e estratégias elaboradas por especialistas, ajudando a maximizar retornos.",
+<<<<<<< HEAD
     "investments_text_3": "Investir em ações, títulos e imóveis oferece a oportunidade de obter rendimentos superiores em comparação com contas de poupança.",
 	"investments_text_4": "Os investimentos ajudam a construir um patrimônio ao longo do tempo, proporcionando segurança financeira na aposentadoria.",
     "investments_text_5": "Investir em empresas permite que os investidores participem diretamente do crescimento e sucesso dos negócios.",
+=======
+	"investments_text_3": "Investir em ações, títulos e imóveis oferece a oportunidade de obter rendimentos superiores em comparação com contas de poupança.",
+	"investments_text_4": "Os investimentos ajudam a construir um patrimônio ao longo do tempo, proporcionando segurança financeira na aposentadoria.",
+	"investments_text_5": "Investir em empresas permite que os investidores participem diretamente do crescimento e sucesso dos negócios.",
+>>>>>>> main
 
 	"investments_step_1": "Clique em qualquer um dos tipos de investimentos abaixo.",
 	"investments_step_2": "Você será direcionado automaticamente para o nosso site de investimentos.",
@@ -583,6 +589,7 @@
 
 	"investments_subtitle_1": "Diversificação de Portfólio",
 	"investments_subtitle_2": "Acesso a Expertise",
+<<<<<<< HEAD
     "investments_subtitle_3": "Rendimentos Potenciais",
     "investments_subtitle_4": "Planejamento para o Futuro",
 	"investments_subtitle_5": "Participação no Crescimento Econômico",
@@ -590,6 +597,12 @@
 
 
 
+=======
+	"investments_subtitle_3": "Rendimentos Potenciais",
+	"investments_subtitle_4": "Planejamento para o Futuro",
+	"investments_subtitle_5": "Participação no Crescimento Econômico",
+
+>>>>>>> main
 	"welcome_t2s_english": "Boas-vindas à area de inglês da T2S!",
 	"english_text_0": "Aqui, você encontrará informações essenciais para melhorar seu aprendizado de inglês e expandir seu vocabulário.",
 	"english_text_00": "A área de estudos de inglês lhe oferece acesso a diversas plataformas, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:",
@@ -610,7 +623,11 @@
 	"interchange_text_0": "Aqui, você encontrará informações essenciais para planejar seu intercâmbio e aproveitar ao máximo sua experiência no exterior.",
 	"interchange_text_00": "A área de intercâmbio tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:",
 	"interchange_text_1": "Oferece programas personalizados para melhorar o desempenho atlético.",
+<<<<<<< HEAD
     "interchange_text_2": "Proporciona atividades físicas e acadêmicas para jovens.",
+=======
+	"interchange_text_2": "Proporciona atividades físicas e acadêmicas para jovens.",
+>>>>>>> main
 	"interchange_text_3": "O programa de intercâmbio estimula a participação em competições esportivas, desenvolvendo habilidades como trabalho em equipe e disciplina, enquanto constrói a confiança dos jovens ao enfrentarem desafios.",
 	"interchange_text_4": "Integra aprendizado e desenvolvimento esportivo, visando formar líderes.",
 	"interchange_text_5": "O programa de intercâmbio conta com uma ampla rede de parceiros, que abrange instituições acadêmicas e esportivas internacionais. Essas parcerias possibilitam que os participantes tenham acesso a experiências diversas e de alta qualidade, em áreas como educação, cultura e atividades esportivas, garantindo uma vivência enriquecedora e completa.",
@@ -620,8 +637,13 @@
 	"interchange_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 	"interchange_subtitle_1": "Treinamento Pessoal Elite",
 	"interchange_subtitle_2": "Aulas Após a Escola",
+<<<<<<< HEAD
     "interchange_subtitle_3": "Incentivo à Competição",
     "interchange_subtitle_4": "Educação",
+=======
+	"interchange_subtitle_3": "Incentivo à Competição",
+	"interchange_subtitle_4": "Educação",
+>>>>>>> main
 	"interchange_subtitle_5": "Parcerias no Intercâmbio",
 
 	"welcome_t2s_studies": "Boas-vindas à area de estudos da T2S!",
@@ -632,9 +654,20 @@
 	"studies_step_3": "Crie sua conta ou faça login, se já tiver uma.",
 	"studies_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 
-	"welcome_t2s_solar": "",
-	"solar_text_1": "",
-	"solar_text_2": "",
+	"welcome_t2s_solar": "Conheça o grupo Jireh Energy",
+	"solar_text_1": "Sabemos que adotar a energia solar pode ser complicado. Estamos aqui como seu guia especializado em cada etapa do processo. Com os nossos clientes, estamos a criar um planeta movido pelo sol. O grupo Jireh Energy, além de serviços e produtos, também é corretor de algumas das empresas líderes do mercado como Sun Run, Freedom Forever e Apricot Solar.",
+	"solar_text_2": " ",
+	"solar_subtitle_1":" Vantagens",
+	"solar_text_1_part_1": " - Benefícios ambientais + econômicos da energia solar",
+	"solar_text_1_part_2": " - Fonte de energia renovável",
+	"solar_text_1_part_3": " - A instalação pode ser feita em telhados, fachadas e no solo",
+	"solar_text_1_part_4": " - $0 Opções de adiantamento",
+	"solar_text_1_part_5": " - Aumento do valor da propriedade",
+	"solar_text_1_part_6": " - Instalação sem complicações",
+
+
+
+
 
 	"solar_step_1": "",
 	"solar_step_2": "",
@@ -652,12 +685,13 @@
 	"welcome_t2s_crowdfunding": "Boas-vindas à area de Crowdfunding da T2S!",
 	"crowdfunding_text_1": "Aqui, você encontrará informações essenciais para lançar e financiar seu projeto através de crowdfunding.",
 	"crowdfunding_text_2": "A área de crowdfunding tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:",
-	"crowfunding_step_1": "Clique em qualquer uma das opções de Crowdfunding",
-	"crowfunding_step_2": "Você será direcionado automaticamente para a nossa plataforma de Crowdfunding",
-	"crowfunding_step_3": "Crie sua conta ou faça login, se já tiver uma.",
-	"crowfunding_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
+	"crowdfunding_step_1": "Clique em qualquer uma das opções de Crowdfunding",
+	"crowdfunding_step_2": "Você será direcionado automaticamente para a nossa plataforma de Crowdfunding",
+	"crowdfunding_step_3": "Crie sua conta ou faça login, se já tiver uma.",
+	"crowdfunding_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 
 	"welcome_t2s_crypto_wallet": "Boas-vindas à Crypto Wallet da T2S!",
+<<<<<<< HEAD
 	"crypto_wallet_text_0": "Aqui, você encontrará informações essenciais para gerenciar suas criptomoedas e proteger seus ativos digitais.",
 	"crypto_wallet_text_00": "A área de crypto wallet tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:”",
 	"crypto_wallet_text_1": "Site em Construção: Estamos trabalhando para trazer esta página para você em breve. Fique atento!",
@@ -665,10 +699,16 @@
 	"crypto_wallet_text_3": "Algumas carteiras suportam várias criptomoedas, permitindo que os usuários gerenciem diferentes ativos em uma única interface.",
 	"crypto_wallet_text_4": "Oferecem simplicidade no envio e recebimento de fundos, geralmente com código QR ou endereços de carteira digital.",
 
+=======
+	"crypto_wallet_text_1": "Aqui, você encontrará informações essenciais para gerenciar suas criptomoedas e proteger seus ativos digitais.",
+	"crypto_wallet_text_2": "A área de crypto wallet tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:”",
+	"crypto_wallet_text_3": "As crypto wallets mantêm suas moedas digitais protegidas com chaves privadas e públicas, garantindo que apenas o proprietário tenha acesso aos fundos.",
+>>>>>>> main
 	"crypto_wallet_step_1": "Clique em qualquer um dos tipos de carteiras abaixo.",
 	"crypto_wallet_step_2": "Você será direcionado automaticamente para o nosso site de crypto wallet.",
 	"crypto_wallet_step_3": "Crie sua conta ou faça login, se já tiver uma.",
 	"crypto_wallet_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
+	"crypto_wallet_subtitle_3": "Armazenamento Seguro de Criptomoedas",
 
 
 	"crypto_wallet_subtitle_1": "Armazenamento Seguro de Criptomoedas",
@@ -680,11 +720,19 @@
 	"lions_platform_text_0": "Aqui, você encontra tudo para tornar sua vida mais incrível: ofertas, experiências e muito mais!",
 	"lions_platform_text_00": "A plataforma Lions tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo seus benefícios.Para acessar:",
 	"lions_platform_text_1": "Acesso instantâneo a uma vasta seleção de filmes e documentários, disponível em qualquer dispositivo.",
+<<<<<<< HEAD
     "lions_platform_text_2": "Consultas médicas remotas com profissionais qualificados, oferecendo conveniência e segurança.",
     "lions_platform_text_3": "Cursos personalizados para todos os níveis, tornando o aprendizado de idiomas acessível e divertido.",
     "lions_platform_text_4": "Acesso a uma ampla gama de eBooks de diferentes gêneros, permitindo leitura imersiva em qualquer lugar.",
 	"lions_platform_text_5": "Oportunidade de estudar em outro país, aprimorando habilidades linguísticas e culturais.",
     "lions_platform_text_6": "Gerenciamento de finanças em tempo real, com funcionalidades como transferências e investimentos em um único aplicativo.",
+=======
+	"lions_platform_text_2": "Consultas médicas remotas com profissionais qualificados, oferecendo conveniência e segurança.",
+	"lions_platform_text_3": "Cursos personalizados para todos os níveis, tornando o aprendizado de idiomas acessível e divertido.",
+	"lions_platform_text_4": "Acesso a uma ampla gama de eBooks de diferentes gêneros, permitindo leitura imersiva em qualquer lugar.",
+	"lions_platform_text_5": "Oportunidade de estudar em outro país, aprimorando habilidades linguísticas e culturais.",
+	"lions_platform_text_6": "Gerenciamento de finanças em tempo real, com funcionalidades como transferências e investimentos em um único aplicativo.",
+>>>>>>> main
 
 	"lions_platform_step_1": "Clique em qualquer um dos benefícios abaixo.",
 	"lions_platform_step_2": "Você será direcionado automaticamente para o site da plataforma lions",
@@ -693,10 +741,17 @@
 
 	"lions_platform_subtitle_1": "Streaming de Vídeos",
 	"lions_platform_subtitle_2": "Telemedicina",
+<<<<<<< HEAD
     "lions_platform_subtitle_3": "Aprendizado de Inglês Online",
     "lions_platform_subtitle_4": "Plataforma de Livros",
     "lions_platform_subtitle_5": "Intercâmbio Cultural",
     "lions_platform_subtitle_6": "Banco Digital",
+=======
+	"lions_platform_subtitle_3": "Aprendizado de Inglês Online",
+	"lions_platform_subtitle_4": "Plataforma de Livros",
+	"lions_platform_subtitle_5": "Intercâmbio Cultural",
+	"lions_platform_subtitle_6": "Banco Digital",
+>>>>>>> main
 
 	"welcome_t2s_telemedicine_usa": "Boas-vindas à area de telemedicina da T2S!",
 	"telemedicine_usa_text_1": "Aqui, você encontrará informações essenciais para acessar serviços de telemedicina e receber o cuidado médico que você precisa.",
@@ -800,12 +855,15 @@
 
 	"club_text": "Trabalhamos com clubes de todos os níveis, incluindo amadores, profissionais e semi profissionais",
 
+	"club_step_1_title": "Crie sua conta",
 	"club_step_2_title": "Edite seu perfil",
 	"club_step_3_title": "Mostre seu talento",
 	"club_step_4_title": "Busque talentoss",
+
 	"club_step_1_part_3": "Selecione a opção 'Clube' para se cadastrar como um clube em busca de novos talentos.",
 	"club_step_2_part_3": "Acesse 'Editar perfil' e complete seu perfil! Revele suas conquistas memoráveis, o estádio que te coroa e o treinador que te impulsiona.",
 	"club_step_3_part_3": "Inclua fotos e vídeos que demonstrem os jogadores treinando, momentos de destaque em competições ou o dia a dia do seu clube.",
+
 	"club_step_4_part_1": "Acesse a seção 'Minhas oportunidades' para visualizar suas oportunidades disponíveis.",
 	"club_step_4_part_2": "Clique no ícone '+' para iniciar a criação de uma nova oportunidade.",
 	"club_step_4_part_3": "Clique em uma oportunidade existente para editar seus detalhes a qualquer momento.",
@@ -1197,5 +1255,18 @@
 	"_text_5": "",
 	"_text_6": "",
 	"_text_7": "",
-	"_text_8": ""
+	"_text_8": "",
+
+	"------------------------------------------ MessageCenter": "------------------------------------------",
+
+	"chat_warning_1": "Proteja suas informações! Não forneça dados nem clique em links enviados.",
+	"chat_reject_message": "Você não aceitou esse chat",
+	"accept": "Aceitar",
+	"reject": "Rejeitar",
+	"type_your_message": "Digite sua mensagem",
+	"send": "Enviar",
+	"search_your_messages": "Pesquise suas mensagens",
+	"no_more_messages": "Você não possui mais mensagens",
+	"": "",
+	"": ""
 }

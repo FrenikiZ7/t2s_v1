@@ -123,70 +123,70 @@ export const s2tData = {
         id: 1,
         src: '/assets/images/users/athletes.png',
         title: 'players',
-        path: '/register',
+        path: 'users/player',
       },
 
       {
         id: 2,
         src: '/assets/images/users/scouts.png',
         title: 'scout',
-        path: '/register',
+        path: 'users/staff',
       },
 
       {
         id: 3,
         src: '/assets/images/users/business.png',
         title: 'agent',
-        path: '/register',
+        path: 'users/agent',
       },
 
       {
         id: 4,
         src: '/assets/images/users/clubs.png',
         title: 'clubs',
-        path: '/register',
+        path: 'users/club',
       },
 
       {
         id: 5,
         src: '/assets/images/users/facultys.png',
         title: 'universities',
-        path: '/register',
+        path: 'users/university',
       },
 
       {
         id: 6,
         src: '/assets/images/users/leagues.png',
         title: 'leagues',
-        path: '/register',
+        path: 'users/league',
       },
 
       {
         id: 7,
         src: '/assets/images/users/schools.jpg',
         title: 'schools',
-        path: '/register',
+        path: 'users/university',
       },
 
       {
         id: 8,
         src: '/assets/images/users/staff.jpg',
         title: 'staff',
-        path: '/register',
+        path: 'users/staff',
       },
 
       {
         id: 9,
         src: '/assets/images/users/exchangeAgencies.jpg',
         title: 'exchange_agencies',
-        path: '/register',
+        path: 'users/agency',
       },
 
       {
         id: 10,
         src: '/assets/images/users/fans.jpg',
         title: 'fans',
-        path: '/register',
+        path: 'users/fan',
       },
     ],
 
@@ -271,20 +271,13 @@ export const s2tData = {
 
       {
         id: '12',
-        src: '/assets/images/benefits/american_studies.jpg',
-        title: 'american_education',
-        path: '/benefits/american-studies',
-      },
-
-      {
-        id: '13',
         src: '/assets/images/benefits/telemedicine.jpg',
         title: 'telemedicine_usa',
         path: '/benefits/telemedicine-usa',
       },
 
       {
-        id: '14',
+        id: '13',
         src: '/assets/images/benefits/solar.jpg',
         title: 'solar',
         path: '/benefits/solar',
@@ -295,7 +288,9 @@ export const s2tData = {
 
   videos: {
     trending: [
-
+      { id: 1, url: 'https://www.youtube.com/watch?v=v2gGiVHJ24E' },
+      { id: 2, url: '/assets/videos/silas.mp4' },
+      { id: 3, url: 'https://vimeo.com/953545193' },
     ],
   },
 

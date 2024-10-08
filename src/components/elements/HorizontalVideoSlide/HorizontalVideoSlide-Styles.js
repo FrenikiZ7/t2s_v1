@@ -97,7 +97,6 @@ export const HorizontalVideoSlideElement = styled.div`
 
    .swiper-slide {
      height: 100%;
-     width: 100%;
      background: rgba(0,0,0,0.5);
      border: ${theme.borders.xwhite};
      border-radius: 12px;

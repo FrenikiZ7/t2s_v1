@@ -6,6 +6,7 @@ import { S2tContext } from '../../../../../contexts/s2tContext/S2tContext';
 import { VerticalSoloSlide } from '../../../../../components/elements/VerticalSoloSlide/VerticalSoloSlide';
 import { BannerSlide } from '../../../../../components/elements/BannerSlide/BannerSlide';
 import { VerticalVideoSlide } from '../../../../../components/elements/VerticalVideoSlide/VerticalVideoSlide';
+import { HorizontalVideoSlide } from '../../../../../components/elements/HorizontalVideoSlide/HorizontalVideoSlide';
 
 export function PlayerHome() {
   const { t } = useTranslation();
@@ -21,14 +22,12 @@ export function PlayerHome() {
       </BannerSlide>
 
       {/* temporário, requer mudanças nos item passados */}
-      <BannerSlide title={t('trending_videos')} slidesperview={2}>
-
-        <VerticalVideoSlide size="300px" items={s2tState.news} title={t('professional')} />
-        <VerticalVideoSlide size="300px" items={s2tState.news} title={t('semi_professional')} />
-        <VerticalVideoSlide size="300px" items={s2tState.news} title={t('university')} />
-        <VerticalVideoSlide size="300px" items={s2tState.news} title={t('amateur')} />
-        <VerticalVideoSlide size="300px" items={s2tState.news} title={t('recreational')} />
-
+      <BannerSlide slidesperview={2} title={t('trending_videos')} backgroundimagesrc="/assets/images/backgrounds/slider-bg-2.png" backgroundfixed>
+        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('professional')} />
+        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('semi_professional')} />
+        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('university')} />
+        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('amateur')} />
+        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('recreational')} />
       </BannerSlide>
       {/* temporário, requer mudanças nos item passados */}
 

@@ -1,12 +1,14 @@
 import styled, { css } from 'styled-components';
 import { ButtonElement } from '../../Button/Button-Styles';
-import { fadeIn } from '../../../../styles/animations';
+import {
+  fadeIn, slideIn, slideInRight, slideOut,
+} from '../../../../styles/animations';
 import { LinkContainer } from '../../StyledLink/StyledLink-Styles';
 import { RowContainer } from '../../../RowContainer/Row-Styles.js';
+import { IconContainer } from '../../IconDiv/IconDiv-Styles.js';
 
 export const ChatWrapper = styled.div`
   ${({ theme }) => css`
-    animation: ${fadeIn} 500ms;
     width: 100%;
     max-width: 600px;
     height: 100%;
@@ -21,7 +23,7 @@ export const ChatWrapper = styled.div`
      }
 
      .rce-smsg {
-      width: 100%;
+      min-width: 95%;
       background: rgba(0,0,0,0.4);
       border: ${theme.borders.white};
     }
@@ -40,31 +42,25 @@ export const ChatContainer = styled.div`
     height: 100%;
     font-family: ${theme.fonts.primary};
     background: rgba(0,0,0,0.4);
-    padding: ${theme.spacings.small};
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: ${theme.spacings.medium};
 
 
+    //Container das mensagens
     .rce-container-mlist {
       color: ${theme.colors.black};  
-      max-height: 400px;
-      padding: ${theme.spacings.small};
+      max-height: 300px;
+      min-height: 300px;
       width: 100%;
-    }
-
-    // Div das mensagens
-    .rce-mlist {
-      
     }
 
     // Container individual de cada mensagem
     .rce-container-mbox {
       width: 100%;
       min-width: 100px;
+      animation: ${slideIn} 500ms;
     }
 
     // Mensagem em si
@@ -78,6 +74,7 @@ export const ChatContainer = styled.div`
     }
 
     ${RowContainer} {
+      margin: ${theme.spacings.xsmall};
       width: 100%;
       justify-content: center;
 
@@ -100,7 +97,25 @@ export const ChatHeader = styled.div`
     gap: ${theme.spacings.small};
     border-radius: 12px 12px 0px 0px;
     font-weight: 600;
+    
+    ${IconContainer} {
+      width: 30px;
+      display: none;
+      animation: ${slideInRight} 500ms;
 
+      @media (max-width: 1050px) {
+        display: flex;
+      }
+    }
+
+    ${LinkContainer} {
+      font-size: ${theme.sizes.medium};
+
+      @media ${theme.medias.mobile} {
+        font-size: ${theme.sizes.small};
+
+      }
+    }
   `}
 `;
 
@@ -112,9 +127,6 @@ export const ChatFooter = styled.div`
     font-family: ${theme.fonts.primary};
     border-radius: 0px 0px 12px 12px;
     padding: ${theme.spacings.small};
-    height: auto;
-    max-height: 300px;
-    overflow-y: auto;
 
     display: flex;
     flex-direction: column;
@@ -147,6 +159,10 @@ export const ChatFooter = styled.div`
      min-width: 0;  
      width: 100%;
      transition: all 300ms ease-in-out;
+
+     @media ${theme.medias.smallmobile} {
+      max-height: 30px;
+     }
     
       &:hover {
         border: ${theme.borders.secondary};

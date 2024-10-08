@@ -59,13 +59,34 @@ export function CryptoWallet() {
 
 
 
+
         <ListWrapper>
           <ListContainer>
           <ListItem>
               {t('crypto_wallet_text_1')}
             </ListItem>
 
+<<<<<<< HEAD
            
+=======
+            <ListItem>
+              {t('crypto_wallet_text_2')}
+            </ListItem>
+
+            <ListItem>
+              {t('crypto_wallet_step_1')}
+            </ListItem>
+
+            <ListItem>
+              {t('crypto_wallet_step_2')}
+            </ListItem>
+            <ListItem>
+              {t('crypto_wallet_step_3')}
+            </ListItem>
+            <ListItem>
+              {t('crypto_wallet_step_4')}
+            </ListItem>
+>>>>>>> main
           </ListContainer>
         </ListWrapper>
       </Banner>

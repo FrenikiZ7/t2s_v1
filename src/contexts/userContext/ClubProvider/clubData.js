@@ -17,7 +17,7 @@ export const clubData = {
 
     // Fotos ou vídeos no perfil do usuário
     photos: [
-
+      { src: '/assets/images/background.png' },
     ],
 
     videos: [

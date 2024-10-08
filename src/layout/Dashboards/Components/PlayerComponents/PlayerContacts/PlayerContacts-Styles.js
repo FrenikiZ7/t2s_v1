@@ -12,41 +12,7 @@ export const PlayerContactsContainer = styled.article`
     border-radius: 12px;
     width: 100%;
     height: 100%;
-    display: flex;
-    padding: ${theme.spacings.xxlarge};
-    flex-direction: row;
     gap: ${theme.spacings.small};
     font-family: ${theme.fonts.primary};
-
-    @media ${theme.medias.smallpc} {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    ${VerticalLongSlideWrapper} {
-      width: 60%;
-
-      @media ${theme.medias.tablet} {
-        width: 100%;
-      }
-    }
-
-   
-
-
-
-  
-
-     //Estilos do placeholder
-    > section {
-      width: 100%;
-      height: 1000px;
-      background: rgba(0,0,0,0.5);
-
-      @media ${theme.medias.tablet} {
-        display: none;
-      }
-    }
   `}
 `;
