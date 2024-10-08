@@ -33,8 +33,30 @@ export function CryptoWallet() {
 
         <Title text={t('welcome_t2s_crypto_wallet')} uppercase />
 
-        <Text text={t('crypto_wallet_text_1')} />
-        <Text text={t('crypto_wallet_text_2')} />
+        <Text text={t('crypto_wallet_text_0')} />
+        <Text text={t('crypto_wallet_text_00')} />
+
+
+        <Column>
+          <Subtitle text={t('crypto_wallet_subtitle_1')} uppercase />
+          <Text text={t('crypto_wallet_text_1')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('crypto_wallet_subtitle_2')} uppercase />
+          <Text text={t('crypto_wallet_text_2')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('crypto_wallet_subtitle_3')} uppercase />
+          <Text text={t('crypto_wallet_text_3')} />
+        </Column>
+
+        <Column>
+          <Subtitle text={t('crypto_wallet_subtitle_4')} uppercase />
+          <Text text={t('crypto_wallet_text_4')} />
+        </Column>
+
 
 
         <ListWrapper>
@@ -43,23 +65,7 @@ export function CryptoWallet() {
               {t('crypto_wallet_text_1')}
             </ListItem>
 
-            <ListItem>
-              {t('crypto_wallet_text_2')}
-            </ListItem>
-
-            <ListItem>
-              {t('crypto_wallet_step_1')}
-            </ListItem>
-
-            <ListItem>
-              {t('crypto_wallet_step_2')}
-            </ListItem>
-            <ListItem>
-              {t('crypto_wallet_step_3')}
-            </ListItem>
-            <ListItem>
-              {t('crypto_wallet_step_4')}
-            </ListItem>
+           
           </ListContainer>
         </ListWrapper>
       </Banner>
