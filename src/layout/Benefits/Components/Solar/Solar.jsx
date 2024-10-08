@@ -62,6 +62,8 @@ export function Solar() {
             <Text text={t('solar_text_2_part_4')} />
             <Text text={t('solar_text_2_part_5')} />
             <Text text={t('solar_text_2_part_6')} />
+            <Text text={t('solar_text_2_part_7')} />
+
 
 
 
