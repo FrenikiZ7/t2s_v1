@@ -629,7 +629,7 @@
 	"studies_step_3": "Crie sua conta ou faça login, se já tiver uma.",
 	"studies_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 
-	
+
 	"welcome_t2s_solar": "Conheça o grupo Jireh Energy",
 	"solar_text_1": "Sabemos que adotar a energia solar pode ser complicado. Estamos aqui como seu guia especializado em cada etapa do processo. Com os nossos clientes, estamos a criar um planeta movido pelo sol. O grupo Jireh Energy, além de serviços e produtos, também é corretor de algumas das empresas líderes do mercado como Sun Run, Freedom Forever e Apricot Solar.",
 	
@@ -640,9 +640,6 @@
 	"solar_text_2_part_4": " - $0 Opções de adiantamento",
 	"solar_text_2_part_5": " - Aumento do valor da propriedade",
 	"solar_text_2_part_6": " - Instalação sem complicações",
-
-
-
 
 	"solar_step_1": "Clique em alguma das opções abaixo.",
 	"solar_step_2": "Você será direcionado automaticamente para o nosso site de Jired Energy.",
@@ -698,8 +695,16 @@
 	"lions_platform_subtitle_6": "Banco Digital",
 
 	"welcome_t2s_telemedicine_usa": "Boas-vindas à area de telemedicina da T2S!",
-	"telemedicine_usa_text_1": "Aqui, você encontrará informações essenciais para acessar serviços de telemedicina e receber o cuidado médico que você precisa.",
-	"telemedicine_usa_text_2": "A área de telemedicina da T2S tem seu próprio site, onde você encontra tudo o que precisa para acessar os serviços de saúde remotamente. Esses serviços são exclusivos para os Estados Unidos. Para acessar:",
+	"telemedicine_usa_text_1": "Aqui, você encontrará qo cuidado médico que você precisa.",
+	"telemedicine_usa_text_2": "Esses serviços são exclusivos para os Estados Unidos. Para acessar:",
+	"telemedicine_usa_text_3": "A telemedicina nos EUA tem crescido significativamente nos últimos anos, oferecendo diversos benefícios tanto para pacientes quanto para profissionais de saúde. ",
+	"telemedicine_usa_text_4":"Principais benefícios:",
+	"telemedicine_usa_text_5":"- Acessibilidade Ampliada",
+	"telemedicine_usa_text_6":"- Conveniência",
+	"telemedicine_usa_text_7":"- Redução de Custos",
+	"telemedicine_usa_text_8":"- Melhoria no Gerenciamento de Doenças Crônicas",
+	"telemedicine_usa_text_9":"- Integração com Tecnologia e muitas outras vantagens",
+
 	"telemedicine_usa_step_1": "Clique em alguma das opções abaixo.",
 	"telemedicine_usa_step_2": "Você será direcionado automaticamente para o nosso site de telemedicina.",
 	"telemedicine_usa_step_3": "Crie sua conta ou faça login, se já tiver uma.",
