@@ -572,15 +572,10 @@
 	"investments_text_00": "A area de investimentos da T2S tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo.Para acessar:",
 	"investments_text_1": "Permite que os investidores minimizem riscos ao alocar seus recursos em diferentes ativos, aumentando a segurança financeira.",
 	"investments_text_2": "Os investidores têm acesso a análises de mercado e estratégias elaboradas por especialistas, ajudando a maximizar retornos.",
-<<<<<<< HEAD
-    "investments_text_3": "Investir em ações, títulos e imóveis oferece a oportunidade de obter rendimentos superiores em comparação com contas de poupança.",
-	"investments_text_4": "Os investimentos ajudam a construir um patrimônio ao longo do tempo, proporcionando segurança financeira na aposentadoria.",
-    "investments_text_5": "Investir em empresas permite que os investidores participem diretamente do crescimento e sucesso dos negócios.",
-=======
+
 	"investments_text_3": "Investir em ações, títulos e imóveis oferece a oportunidade de obter rendimentos superiores em comparação com contas de poupança.",
 	"investments_text_4": "Os investimentos ajudam a construir um patrimônio ao longo do tempo, proporcionando segurança financeira na aposentadoria.",
 	"investments_text_5": "Investir em empresas permite que os investidores participem diretamente do crescimento e sucesso dos negócios.",
->>>>>>> main
 
 	"investments_step_1": "Clique em qualquer um dos tipos de investimentos abaixo.",
 	"investments_step_2": "Você será direcionado automaticamente para o nosso site de investimentos.",
@@ -589,20 +584,14 @@
 
 	"investments_subtitle_1": "Diversificação de Portfólio",
 	"investments_subtitle_2": "Acesso a Expertise",
-<<<<<<< HEAD
-    "investments_subtitle_3": "Rendimentos Potenciais",
-    "investments_subtitle_4": "Planejamento para o Futuro",
-	"investments_subtitle_5": "Participação no Crescimento Econômico",
 
 
 
 
-=======
 	"investments_subtitle_3": "Rendimentos Potenciais",
 	"investments_subtitle_4": "Planejamento para o Futuro",
 	"investments_subtitle_5": "Participação no Crescimento Econômico",
 
->>>>>>> main
 	"welcome_t2s_english": "Boas-vindas à area de inglês da T2S!",
 	"english_text_0": "Aqui, você encontrará informações essenciais para melhorar seu aprendizado de inglês e expandir seu vocabulário.",
 	"english_text_00": "A área de estudos de inglês lhe oferece acesso a diversas plataformas, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:",
@@ -623,11 +612,9 @@
 	"interchange_text_0": "Aqui, você encontrará informações essenciais para planejar seu intercâmbio e aproveitar ao máximo sua experiência no exterior.",
 	"interchange_text_00": "A área de intercâmbio tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:",
 	"interchange_text_1": "Oferece programas personalizados para melhorar o desempenho atlético.",
-<<<<<<< HEAD
-    "interchange_text_2": "Proporciona atividades físicas e acadêmicas para jovens.",
-=======
+
 	"interchange_text_2": "Proporciona atividades físicas e acadêmicas para jovens.",
->>>>>>> main
+
 	"interchange_text_3": "O programa de intercâmbio estimula a participação em competições esportivas, desenvolvendo habilidades como trabalho em equipe e disciplina, enquanto constrói a confiança dos jovens ao enfrentarem desafios.",
 	"interchange_text_4": "Integra aprendizado e desenvolvimento esportivo, visando formar líderes.",
 	"interchange_text_5": "O programa de intercâmbio conta com uma ampla rede de parceiros, que abrange instituições acadêmicas e esportivas internacionais. Essas parcerias possibilitam que os participantes tenham acesso a experiências diversas e de alta qualidade, em áreas como educação, cultura e atividades esportivas, garantindo uma vivência enriquecedora e completa.",
@@ -637,13 +624,10 @@
 	"interchange_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 	"interchange_subtitle_1": "Treinamento Pessoal Elite",
 	"interchange_subtitle_2": "Aulas Após a Escola",
-<<<<<<< HEAD
-    "interchange_subtitle_3": "Incentivo à Competição",
-    "interchange_subtitle_4": "Educação",
-=======
+
 	"interchange_subtitle_3": "Incentivo à Competição",
 	"interchange_subtitle_4": "Educação",
->>>>>>> main
+
 	"interchange_subtitle_5": "Parcerias no Intercâmbio",
 
 	"welcome_t2s_studies": "Boas-vindas à area de estudos da T2S!",
@@ -691,24 +675,13 @@
 	"crowdfunding_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 
 	"welcome_t2s_crypto_wallet": "Boas-vindas à Crypto Wallet da T2S!",
-<<<<<<< HEAD
-	"crypto_wallet_text_0": "Aqui, você encontrará informações essenciais para gerenciar suas criptomoedas e proteger seus ativos digitais.",
-	"crypto_wallet_text_00": "A área de crypto wallet tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:”",
-	"crypto_wallet_text_1": "Site em Construção: Estamos trabalhando para trazer esta página para você em breve. Fique atento!",
-	"crypto_wallet_text_2": "Permitem que os usuários enviem e recebam criptomoedas de qualquer lugar do mundo, facilitando transações internacionais sem intermediários.",
-	"crypto_wallet_text_3": "Algumas carteiras suportam várias criptomoedas, permitindo que os usuários gerenciem diferentes ativos em uma única interface.",
-	"crypto_wallet_text_4": "Oferecem simplicidade no envio e recebimento de fundos, geralmente com código QR ou endereços de carteira digital.",
-
-=======
 	"crypto_wallet_text_1": "Aqui, você encontrará informações essenciais para gerenciar suas criptomoedas e proteger seus ativos digitais.",
 	"crypto_wallet_text_2": "A área de crypto wallet tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:”",
 	"crypto_wallet_text_3": "As crypto wallets mantêm suas moedas digitais protegidas com chaves privadas e públicas, garantindo que apenas o proprietário tenha acesso aos fundos.",
->>>>>>> main
 	"crypto_wallet_step_1": "Clique em qualquer um dos tipos de carteiras abaixo.",
 	"crypto_wallet_step_2": "Você será direcionado automaticamente para o nosso site de crypto wallet.",
 	"crypto_wallet_step_3": "Crie sua conta ou faça login, se já tiver uma.",
 	"crypto_wallet_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
-	"crypto_wallet_subtitle_3": "Armazenamento Seguro de Criptomoedas",
 
 
 	"crypto_wallet_subtitle_1": "Armazenamento Seguro de Criptomoedas",
@@ -720,19 +693,11 @@
 	"lions_platform_text_0": "Aqui, você encontra tudo para tornar sua vida mais incrível: ofertas, experiências e muito mais!",
 	"lions_platform_text_00": "A plataforma Lions tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo seus benefícios.Para acessar:",
 	"lions_platform_text_1": "Acesso instantâneo a uma vasta seleção de filmes e documentários, disponível em qualquer dispositivo.",
-<<<<<<< HEAD
-    "lions_platform_text_2": "Consultas médicas remotas com profissionais qualificados, oferecendo conveniência e segurança.",
-    "lions_platform_text_3": "Cursos personalizados para todos os níveis, tornando o aprendizado de idiomas acessível e divertido.",
-    "lions_platform_text_4": "Acesso a uma ampla gama de eBooks de diferentes gêneros, permitindo leitura imersiva em qualquer lugar.",
-	"lions_platform_text_5": "Oportunidade de estudar em outro país, aprimorando habilidades linguísticas e culturais.",
-    "lions_platform_text_6": "Gerenciamento de finanças em tempo real, com funcionalidades como transferências e investimentos em um único aplicativo.",
-=======
 	"lions_platform_text_2": "Consultas médicas remotas com profissionais qualificados, oferecendo conveniência e segurança.",
 	"lions_platform_text_3": "Cursos personalizados para todos os níveis, tornando o aprendizado de idiomas acessível e divertido.",
 	"lions_platform_text_4": "Acesso a uma ampla gama de eBooks de diferentes gêneros, permitindo leitura imersiva em qualquer lugar.",
 	"lions_platform_text_5": "Oportunidade de estudar em outro país, aprimorando habilidades linguísticas e culturais.",
 	"lions_platform_text_6": "Gerenciamento de finanças em tempo real, com funcionalidades como transferências e investimentos em um único aplicativo.",
->>>>>>> main
 
 	"lions_platform_step_1": "Clique em qualquer um dos benefícios abaixo.",
 	"lions_platform_step_2": "Você será direcionado automaticamente para o site da plataforma lions",
@@ -741,17 +706,11 @@
 
 	"lions_platform_subtitle_1": "Streaming de Vídeos",
 	"lions_platform_subtitle_2": "Telemedicina",
-<<<<<<< HEAD
-    "lions_platform_subtitle_3": "Aprendizado de Inglês Online",
-    "lions_platform_subtitle_4": "Plataforma de Livros",
-    "lions_platform_subtitle_5": "Intercâmbio Cultural",
-    "lions_platform_subtitle_6": "Banco Digital",
-=======
+
 	"lions_platform_subtitle_3": "Aprendizado de Inglês Online",
 	"lions_platform_subtitle_4": "Plataforma de Livros",
 	"lions_platform_subtitle_5": "Intercâmbio Cultural",
 	"lions_platform_subtitle_6": "Banco Digital",
->>>>>>> main
 
 	"welcome_t2s_telemedicine_usa": "Boas-vindas à area de telemedicina da T2S!",
 	"telemedicine_usa_text_1": "Aqui, você encontrará informações essenciais para acessar serviços de telemedicina e receber o cuidado médico que você precisa.",
@@ -832,9 +791,57 @@
 	"generic_step_3_part_2": "No carrosel de mídias utilize o botão '+' para selecionar e enviar seus melhores conteúdos.",
 	"generic_step_3_part_3": "Inclua fotos e vídeos que demonstrem momentos relacionadas à sua carreira.",
 
-	
-	"league_step_1_part_2": "Preencha os dados da sua liga com atenção, completando todos os campos obrigatórios.",
+	"league_text": "LIGAS",
+
+	"league_step_1_title": "Registrar Nova Liga",
+	"league_step_2_title": "Editar Liga",
+	"league_step_3_title": "Envio de Conteúdos",
+	"league_step_4_title": "Detalhes da Liga",
+
 	"league_step_1_part_3": "Selecione o perfil 'Liga' durante o processo de cadastro.",
+	"league_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
+	"league_step_3_part_3": "Após enviar suas mídias, você pode rearranjá-las arrastando-as no carrossel para criar uma apresentação visual atraente e organizada.",
+
+	"league_step_4_part_1": "Revise o formato e a estrutura da competição para garantir que todos os participantes compreendam as regras.",
+	"league_step_4_part_2": "Verifique como as fases da liga serão organizadas e quais critérios serão usados para a classificação.",
+	"league_step_4_part_3": "Confirme os prazos e datas-chave da competição, incluindo início e término das inscrições e dos jogos.",
+	"league_step_4_part_4": "Confira as recompensas disponíveis para os participantes e veja como serão distribuídas ao longo da competição.",
+
+
+
+	"agency_text": "AGÊNCIA DE INTERCÂMBIO",
+
+	"agency_step_1_title": "Registrar Nova Agencia",
+	"agency_step_2_title": "Editar Agencia",
+	"agency_step_3_title": "Envio de Conteúdos",
+	"agency_step_4_title": "Detalhes da Agencia",
+
+	"agency_step_1_part_3": "Selecione o perfil 'Agencia' durante o processo de cadastro.",
+	"agency_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
+	"agency_step_3_part_3": "Após enviar suas mídias, você pode rearranjá-las arrastando-as no carrossel para criar uma apresentação visual atraente e organizada.",
+
+	"agency_step_4_part_1": "Identifique os valores e a proposta da sua agência de intercâmbio, destacando o que a torna única no mercado.",
+    "agency_step_4_part_2": "Descreva os tipos de programas de intercâmbio que sua agência oferece, como estudos, trabalho ou voluntariado, para atrair diferentes perfis de clientes.",
+    "agency_step_4_part_3": "Indique os destinos disponíveis para os programas de intercâmbio, destacando as principais características de cada um.",
+	"agency_step_4_part_4": "Revise as informações sobre custos e taxas associadas aos programas, garantindo transparência e clareza para os futuros clientes.",
+
+
+	"university_text": "UNIVERSIDADE",
+
+	"university_step_1_title": "Registrar Nova Universidade",
+	"university_step_2_title": "Editar Universidade",
+	"university_step_3_title": "Envio de Conteúdos",
+	"university_step_4_title": "Detalhes da Universidade",
+
+	"university_step_1_part_3": "Selecione o perfil 'Universidade' durante o processo de cadastro.",
+	"university_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
+	"university_step_3_part_3": "Após enviar suas mídias, você pode rearranjá-las arrastando-as no carrossel para criar uma apresentação visual atraente e organizada.",
+
+	"university_step_4_part_1": "Forneça uma breve descrição da sua universidade, explicando sua missão e os valores que orientam sua educação.",
+  	"university_step_4_part_2": "Descreva a proposta educacional da sua universidade, incluindo os cursos oferecidos e a abordagem pedagógica adotada.",
+	"university_step_4_part_3": "Indique as instalações e recursos disponíveis para os alunos, como bibliotecas, laboratórios e espaços de convivência.",
+	"university_step_4_part_4": "Revise as informações sobre o corpo docente e sua qualificação, destacando a experiência e a formação dos professores.",
+
 
 
 	"player_text": "Trabalhamos com atletas de todos os níveis, incluindo amadores, profissionais, semi profissionais e de categorias de base",
@@ -1267,6 +1274,5 @@
 	"send": "Enviar",
 	"search_your_messages": "Pesquise suas mensagens",
 	"no_more_messages": "Você não possui mais mensagens",
-	"": "",
 	"": ""
 }

@@ -66,9 +66,6 @@ export function CryptoWallet() {
               {t('crypto_wallet_text_1')}
             </ListItem>
 
-<<<<<<< HEAD
-           
-=======
             <ListItem>
               {t('crypto_wallet_text_2')}
             </ListItem>
@@ -86,7 +83,7 @@ export function CryptoWallet() {
             <ListItem>
               {t('crypto_wallet_step_4')}
             </ListItem>
->>>>>>> main
+
           </ListContainer>
         </ListWrapper>
       </Banner>
