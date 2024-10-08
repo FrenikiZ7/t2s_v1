@@ -629,6 +629,7 @@
 	"studies_step_3": "Crie sua conta ou faça login, se já tiver uma.",
 	"studies_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 
+	
 	"welcome_t2s_solar": "Conheça o grupo Jireh Energy",
 	"solar_text_1": "Sabemos que adotar a energia solar pode ser complicado. Estamos aqui como seu guia especializado em cada etapa do processo. Com os nossos clientes, estamos a criar um planeta movido pelo sol. O grupo Jireh Energy, além de serviços e produtos, também é corretor de algumas das empresas líderes do mercado como Sun Run, Freedom Forever e Apricot Solar.",
 	
@@ -643,11 +644,10 @@
 
 
 
-
-	"solar_step_1": "",
-	"solar_step_2": "",
-	"solar_step_3": "",
-	"solar_step_4": "",
+	"solar_step_1": "Clique em alguma das opções abaixo.",
+	"solar_step_2": "Você será direcionado automaticamente para o nosso site de Jired Energy.",
+	"solar_step_3": "Crie sua conta ou faça login, se já tiver uma.",
+	"solar_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 
 	"welcome_t2s_american_studies": "Boas-vindas à area de estudos americanos da T2S!",
 	"american_studies_text_1": "Aqui, você encontrará informações essenciais para planejar seus estudos a distância com ensino dos Estados Unidos e aproveitar ao máximo sua experiência acadêmica.",
