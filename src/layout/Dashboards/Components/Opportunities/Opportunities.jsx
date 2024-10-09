@@ -25,7 +25,8 @@ export function Opportunities() {
   const getProposals = (type) => s2tState.proposals[playerState.profile.info.modality || 'male']?.[playerState.profile.info.competitiveCategory || 'professional']?.[type || 'clubs'] || [];
 
   const proposals = [
-    s2tState.staffProposals,
+    ...getProposals('agents'),
+    ...getProposals('clubs'),
   ];
 
   return (
