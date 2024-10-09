@@ -1,5 +1,5 @@
 import Prop, { bool } from 'prop-types';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { Fullscreen } from '@styled-icons/material-outlined';
@@ -14,34 +14,39 @@ import { ReportModal } from '../../ReportModal/ReportModal';
 import { ReportIcon } from '../../ReportIcon/ReportIcon';
 import { Row } from '../../../RowContainer/Row';
 import { theme } from '../../../../styles/theme';
+import { Text } from '../../Text/Text';
 
 // Galeria de vídeos utilizada quando o usuário acessa o perfil de outro usuário
 export function PublicVideoSlide({
-  items, title,
+  items, title, slidesPerView = 2,
 }) {
   const { t } = useTranslation();
   const [reportingVideo, setReportingVideo] = useState('');
-  const [fullscreenVideo, setFullscreenVideo] = useState('');
+  const [videosData, setVideosData] = useState([]);
 
-  const handleFullscreen = (item) => {
-    setFullscreenVideo(item.src);
+  const handleReporting = (video) => {
+    setReportingVideo(reportingVideo ? '' : video.id);
   };
 
-  const handleReporting = (item) => {
-    setReportingVideo(reportingVideo ? '' : item.id);
-  };
+  useEffect(() => {
+    setVideosData(items);
+  }, [items]);
 
   return (
     <Styled.PublicVideoSlideWrapper>
       <Styled.PublicVideoSlideElement>
         <Title text={title} uppercase />
         <Swiper
-          slidesPerView={2}
+          slidesPerView={slidesPerView}
           spaceBetween={15}
           navigation
           zoom
           lazy="true"
           breakpoints={{
+            // Breakpoint for tablet screens
+            1240: {
+              slidesPerView,
+            },
             // Breakpoint for tablet screens
             768: {
               slidesPerView: 2,
@@ -53,18 +58,17 @@ export function PublicVideoSlide({
           }}
         >
 
-          {items && items.map((item) => (
-            <SwiperSlide key={item.id}>
+          {videosData && videosData.length > 0 && videosData.map((video) => (
+            <SwiperSlide key={video.id}>
 
               <Styled.MediaWrapper>
 
                 <ReactPlayer
-                  url={item.url}
+                  url={video.url}
                   width="100%"
                   height="100%"
                   controls
                   playsinline
-
                 />
 
                 <Row>
@@ -72,14 +76,14 @@ export function PublicVideoSlide({
                   <Styled.BottomIconsWrapper>
 
                     <FavoriteIcon
-                      isfavorite={item.isfavorite}
-                      id={item.id}
+                      isfavorite={video.isfavorite}
+                      id={video.id}
                       color={theme.colors.black}
                     />
 
                     <ReportIcon
-                      isreporting={reportingVideo === item.id}
-                      onclick={() => handleReporting(item)}
+                      isreporting={reportingVideo === video.id}
+                      onclick={() => handleReporting(video)}
                       color={theme.colors.black}
                     />
 
@@ -88,8 +92,8 @@ export function PublicVideoSlide({
                   <Styled.BottomIconsWrapper>
 
                     <RateIcons
-                      ratevalue={item.rateValue}
-                      mediaid={item.id}
+                      ratevalue={video.rateValue}
+                      mediaid={video.id}
                       color={theme.colors.black}
                     />
 
@@ -115,4 +119,5 @@ PublicVideoSlide.propTypes = {
   // n faço ideia oq é isso, só está assim pq foi o unico q n deu erro no console
   items: Prop.arrayOf(Prop.object).isRequired,
   title: Prop.string,
+  slidesPerView: Prop.number,
 };

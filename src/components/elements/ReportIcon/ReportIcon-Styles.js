@@ -19,7 +19,6 @@ export const ReportIconElement = styled.div`
     > svg {
      color: ${isreporting ? theme.colors.red : color};
      padding: 2px;
-     background: ${isreporting && 'black'};
     }
   }
   `}

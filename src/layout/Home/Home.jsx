@@ -22,7 +22,10 @@ import { MiniSlide } from '../../components/elements/MiniSlide/MiniSlide';
 import { useAuth } from '../../contexts/AuthContext/AuthContext';
 import { PublicVideoSlide } from '../../components/elements/ProfileSlideElements/PublicVideoSlide/PublicVideoSlide';
 import { HorizontalVideoSlide } from '../../components/elements/HorizontalVideoSlide/HorizontalVideoSlide';
-import { Row } from '../../components/RowContainer/Row';
+import { Banner } from '../../components/elements/Banner/Banner';
+import { Column } from '../../components/ColumnContainer/Column';
+import { Subtitle } from '../../components/elements/Subtitle/Subtitle';
+import { TrendingVideos } from '../../components/elements/TrendingVideos/TrendingVideos';
 
 export function Home() {
   const { t, i18n } = useTranslation(); // Hook do i18next para tradução
@@ -287,13 +290,7 @@ export function Home() {
 
       <Slide items={s2tState.photos?.usersType || []} />
 
-      <BannerSlide title={t('trending_videos')} backgroundimagesrc="/assets/images/backgrounds/slider-bg-2.png" backgroundfixed>
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('professional')} />
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('semi_professional')} />
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('university')} />
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('amateur')} />
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('recreational')} />
-      </BannerSlide>
+      <TrendingVideos slidesPerView={3} backgroundImageSrc="/assets/images/backgrounds/slider-bg-2.png" />
 
       <Slide items={s2tState.photos?.benefits || []} title={t('benefits')} />
 

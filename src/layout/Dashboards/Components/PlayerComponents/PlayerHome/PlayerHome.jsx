@@ -7,6 +7,7 @@ import { VerticalSoloSlide } from '../../../../../components/elements/VerticalSo
 import { BannerSlide } from '../../../../../components/elements/BannerSlide/BannerSlide';
 import { VerticalVideoSlide } from '../../../../../components/elements/VerticalVideoSlide/VerticalVideoSlide';
 import { HorizontalVideoSlide } from '../../../../../components/elements/HorizontalVideoSlide/HorizontalVideoSlide';
+import { TrendingVideos } from '../../../../../components/elements/TrendingVideos/TrendingVideos';
 
 export function PlayerHome() {
   const { t } = useTranslation();
@@ -21,17 +22,9 @@ export function PlayerHome() {
         <VerticalMiniSlide title={t('ranking')} type="referralrank" items={s2tState.rankings.referral} />
       </BannerSlide>
 
-      {/* temporário, requer mudanças nos item passados */}
-      <BannerSlide slidesperview={2} title={t('trending_videos')} backgroundimagesrc="/assets/images/backgrounds/slider-bg-2.png" backgroundfixed>
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('professional')} />
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('semi_professional')} />
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('university')} />
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('amateur')} />
-        <HorizontalVideoSlide items={s2tState.videos?.trending || []} title={t('recreational')} />
-      </BannerSlide>
-      {/* temporário, requer mudanças nos item passados */}
+      <TrendingVideos slidesPerView={2} />
 
-      <BannerSlide slidesperview={2} backgroundimagesrc="/assets/images/backgrounds/slider-bg-1.png" gradientdirection="to top">
+      <BannerSlide slidesperview={2} backgroundimagesrc="/assets/images/backgrounds/slider-bg-2.png" gradientdirection="to top">
         <VerticalMiniSlide title={t('events')} type="events" items={s2tState.events} />
         <VerticalMiniSlide title={t('news')} type="news" items={s2tState.news} />
       </BannerSlide>

@@ -65,8 +65,6 @@ export const OwnerVideoSlideElement = styled.div`
      border-radius: 12px;
    }
 
-   
-
 
 
    ${FloatingMenuContainer} {
@@ -238,6 +236,7 @@ export const VideoUpload = styled.div`
 
       & svg {
        width: 40%;
+       max-width: 100%;
       }
      }
   `}  

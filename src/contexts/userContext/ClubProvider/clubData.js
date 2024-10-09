@@ -17,13 +17,13 @@ export const clubData = {
 
     // Fotos ou vídeos no perfil do usuário
     photos: [
-      { src: '/assets/images/background.png' },
+
     ],
 
     videos: [
-      { url: 'https://vimeo.com/953545193', id: 2 },
-      { url: '/assets/videos/silas.mp4', id: 1 },
-      { url: 'https://vimeo.com/953545193', id: 3 },
+      // { url: 'https://www.youtube.com/watch?v=v2gGiVHJ24E', id: 2 },
+      // { url: '/assets/videos/silas.mp4', id: 1 },
+      // { url: 'https://vimeo.com/953545193', id: 3 },
     ],
 
     // Histórico de clubes do usuário

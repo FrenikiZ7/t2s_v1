@@ -24,12 +24,9 @@ export const IconContainer = styled.div`
     
       & svg {
 
-        width: 30px;
-        height: 30px;
-
-        @media ${theme.medias.mobile} {
-         width: 25px;
-        }
+        width: 100%;
+        height: 100%;
+        max-width: 30px;
 
         transition: all 500ms ease-in-out ;
         color: ${active ? activecolor : color};

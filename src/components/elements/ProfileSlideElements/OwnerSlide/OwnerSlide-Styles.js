@@ -62,14 +62,18 @@ export const OwnerSlideElement = styled.div`
      background-size: cover;
      background-position: center;
      transition: all 500ms ease-in-out;
-
-
+    
       &:hover {
        box-shadow: 0px 0px 5px 2px inset ${theme.colors.secondary};
       }
 
-      & svg {
-       width: 40%;
+      ${IconContainer} {
+        width: 100%;
+
+        & svg {
+          width: 40%;
+          max-width: 100%;
+        }
       }
    }
  `}
@@ -121,7 +125,7 @@ export const TopIconsWrapper = styled.div`
     z-index: 100;
 
     ${IconContainer} {
-      width: auto;
+      width: 100%;
       height: 100%;
       
       > svg {

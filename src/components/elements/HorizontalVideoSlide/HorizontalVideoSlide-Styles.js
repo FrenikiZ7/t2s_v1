@@ -86,7 +86,7 @@ export const HorizontalVideoSlideElement = styled.div`
       }
 
       @media ${theme.medias.smallmobile} { 
-        height: 210px;
+        height: 250px;
       }
 
       @media (max-width: 280px) {
@@ -114,7 +114,6 @@ export const MediaWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: ${theme.spacings.xsmall};
     padding: ${theme.spacings.medium};
 
     ${IconContainer} {

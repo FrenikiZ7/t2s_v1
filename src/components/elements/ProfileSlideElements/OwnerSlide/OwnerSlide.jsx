@@ -1,5 +1,5 @@
 import Prop, { bool } from 'prop-types';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { Add as AddIcon } from '@styled-icons/material-outlined/Add';
@@ -26,16 +26,21 @@ export function OwnerSlide({
   const [newImage, setNewImage] = useState('');
   const { t } = useTranslation();
   const { currentUser } = useAuth();
+  const [imagesData, setImagesData] = useState([]);
 
-  const handleFullscreen = (item) => {
-    setFullscreenImage(item.src);
+  useEffect(() => {
+    setImagesData(items);
+  }, [items]);
+
+  const handleFullscreen = (image) => {
+    setFullscreenImage(image.src);
   };
 
-  const handleIsDeleting = (item) => {
-    setDeleteImage(deleteImage === item.id ? '' : item.id);
+  const handleIsDeleting = (image) => {
+    setDeleteImage(deleteImage === image.id ? '' : image.id);
   };
 
-  const handleConfirmDelete = (item) => {
+  const handleConfirmDelete = (image) => {
     // lógica para excluir imagem
     setDeleteImage('');
   };
@@ -89,18 +94,17 @@ export function OwnerSlide({
           }}
         >
 
-          {items && items.map((item) => (
+          {imagesData && imagesData.length > 0 && imagesData.map((image) => (
             <SwiperSlide
-              key={item.id}
-              lazy={item.type === 'video'}
+              key={image.id}
             >
               <Styled.MediaWrapper>
 
                 <Styled.TopIconsWrapper>
 
                   <IconDiv
-                    onclick={() => handleIsDeleting(item)}
-                    active={deleteImage === item.id}
+                    onclick={() => handleIsDeleting(image)}
+                    active={deleteImage === image.id}
                     activecolor={theme.colors.red}
                     hovercolor={theme.colors.lightred}
                   >
@@ -110,15 +114,15 @@ export function OwnerSlide({
                 </Styled.TopIconsWrapper>
 
                 <div className="swiper-zoom-container">
-                  <img src={item.src} alt={item.alt} />
+                  <img src={image.src} alt={image.alt} />
                 </div>
 
                 <Styled.BottomIconsWrapper>
 
                   <IconDiv
-                    active={fullscreenImage === item.src}
+                    active={fullscreenImage === image.src}
                     name={t('fullscreen')}
-                    onclick={() => handleFullscreen(item)}
+                    onclick={() => handleFullscreen(image)}
                   >
                     <Fullscreen />
                   </IconDiv>
@@ -127,11 +131,11 @@ export function OwnerSlide({
 
                 <Column>
                   <Popup
-                    isopen={deleteImage === item.id}
+                    isopen={deleteImage === image.id}
                     title={t('delete_image_question')}
                     firstoption={t('yes')}
                     secondoption={t('no')}
-                    onfirstclick={() => handleConfirmDelete(item)}
+                    onfirstclick={() => handleConfirmDelete(image)}
                     onsecondclick={() => handleIsDeleting('')}
                   />
                 </Column>

@@ -12,6 +12,9 @@ import { GridLayoutContainer } from '../../components/GridLayout/GridLayout-Styl
 import { AuthDropdownContainer, DropdownButton, DropdownItem } from '../../components/elements/AuthElements/AuthDropdown/AuthDropdown-Styles.js';
 import { MobileNavContainer } from '../../components/MobileNav/MobileNav-Styles.js';
 import { BannerContainer } from '../../components/elements/Banner/Banner-Styles.js';
+import { ColumnContainer } from '../../components/ColumnContainer/Column-Styles.js';
+import { SubtitleElement } from '../../components/elements/Subtitle/Subtitle-Styles.js';
+import { PublicVideoSlideElement } from '../../components/elements/ProfileSlideElements/PublicVideoSlide/PublicVideoSlide-Styles.js';
 
 export const HomePage = styled.main`
   ${({ theme }) => css`
@@ -122,24 +125,6 @@ export const HomePage = styled.main`
     @media ${theme.medias.mobile} {
       font-size: ${theme.sizes.xsmall};
     }
-
-
-  }
-
-  ${RowContainer} {
-    animation: ${fadeIn} 2000ms;
-    justify-content: center;
-    align-items: center;
-    margin-top: ${theme.spacings.medium};
-
-
-    @media ${theme.medias.smallpc} {
-      flex-direction: row;
-    }
-
-    @media ${theme.medias.mobile} {
-      /* flex-direction: column; */
-    }
   }
 
   ${AuthDropdownContainer} {
@@ -155,10 +140,5 @@ export const HomePage = styled.main`
     padding: ${theme.spacings.xsmall};
   }
 
-  ${BannerContainer} {
-    height: 270px;
-    border: none;
-  }
- 
   `}
 `;

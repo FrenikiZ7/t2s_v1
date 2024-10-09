@@ -287,11 +287,22 @@ export const s2tData = {
   },
 
   videos: {
-    trending: [
-      { id: 1, url: 'https://www.youtube.com/watch?v=v2gGiVHJ24E' },
-      { id: 2, url: '/assets/videos/silas.mp4' },
-      { id: 3, url: 'https://vimeo.com/953545193' },
-    ],
+    trending: {
+      professional: [
+      ],
+
+      semiProfessionall: [
+      ],
+
+      academic: [
+      ],
+
+      amateur: [
+      ],
+
+      recreational: [
+      ],
+    },
   },
 
   users: {
@@ -327,6 +338,33 @@ export const s2tData = {
       personalTrainers: [],
     },
   },
+
+  staffProposals: [
+    {
+      opportunityId: 0,
+      details: {
+        from: 'N/A', // Tipo de perfil do usuário que publicou a proposta
+        date: '01-06-2024',
+        disponibility: '01-06-2024',
+        category: 'professional',
+        yearsOfExperience: '5',
+        languages: 'Inglês',
+        passports: 'EUA',
+        opportunity: 'scout',
+        country: 'EUA',
+        org: 'MLS',
+        certificatesOrlicenses: 'License XBA',
+        courses: 'Couch empires XL',
+        payment: {
+          minPayment: '1200',
+          maxPayment: '2000',
+          currency: '$',
+        },
+      },
+      description: 'Desc',
+      requirements: 'Req',
+    },
+  ],
 
   proposals: {
 
@@ -462,6 +500,7 @@ export const s2tData = {
   formOptions: {
 
     profileType: [
+      { value: 'player', text: 'Atleta' },
       { value: 'club', text: 'Clube' },
       { value: 'league', text: 'Liga' },
       { value: 'university', text: 'Universidade' },
@@ -489,6 +528,8 @@ export const s2tData = {
       { value: 'scout', text: 'Scout' },
       { value: 'coach', text: 'Técnico' },
       { value: 'personal_trainer', text: '' },
+      { value: 'marketing_social_media', text: 'Marketing (Redes sociais)' },
+      { value: 'marketing_sponsorship', text: 'Marketing (Patrocínios)' },
     ],
 
     agencyProfileType: [

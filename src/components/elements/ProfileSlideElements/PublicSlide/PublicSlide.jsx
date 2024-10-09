@@ -1,5 +1,5 @@
 import Prop, { bool } from 'prop-types';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { Fullscreen } from '@styled-icons/material-outlined';
@@ -20,13 +20,18 @@ export function PublicSlide({
   const { t } = useTranslation();
   const [reportingImage, setReportingImage] = useState('');
   const [fullscreenImage, setFullscreenImage] = useState('');
+  const [imagesData, setImagesData] = useState([]);
 
-  const handleFullscreen = (item) => {
-    setFullscreenImage(item.src);
+  useEffect(() => {
+    setImagesData(items);
+  }, [items]);
+
+  const handleFullscreen = (image) => {
+    setFullscreenImage(image.src);
   };
 
-  const handleReporting = (item) => {
-    setReportingImage(reportingImage ? '' : item.id);
+  const handleReporting = (image) => {
+    setReportingImage(reportingImage ? '' : image.id);
   };
 
   return (
@@ -51,40 +56,40 @@ export function PublicSlide({
           }}
         >
 
-          {items && items.map((item) => (
-            <SwiperSlide key={item.id}>
+          {imagesData && imagesData.length > 0 && imagesData.map((image) => (
+            <SwiperSlide key={image.id}>
 
               <Styled.MediaWrapper>
 
                 <Styled.TopIconsWrapper>
 
                   <ReportIcon
-                    isreporting={reportingImage === item.id}
-                    onclick={() => handleReporting(item)}
+                    isreporting={reportingImage === image.id}
+                    onclick={() => handleReporting(image)}
                   />
 
                   <FavoriteIcon
-                    isfavorite={item.isfavorite}
-                    id={item.id}
+                    isfavorite={image.isfavorite}
+                    id={image.id}
                   />
 
                 </Styled.TopIconsWrapper>
 
                 <div className="swiper-zoom-container">
-                  <img src={item.src} alt={item.alt} />
+                  <img src={image.src} alt={image.alt} />
                 </div>
 
                 <Styled.BottomIconsWrapper>
 
                   <RateIcons
-                    ratevalue={item.rateValue}
-                    mediaid={item.id}
+                    ratevalue={image.rateValue}
+                    mediaid={image.id}
                   />
 
                   <IconDiv
-                    active={fullscreenImage === item.src}
+                    active={fullscreenImage === image.src}
                     name={t('fullscreen')}
-                    onclick={() => handleFullscreen(item)}
+                    onclick={() => handleFullscreen(image)}
                   >
                     <Fullscreen />
                   </IconDiv>

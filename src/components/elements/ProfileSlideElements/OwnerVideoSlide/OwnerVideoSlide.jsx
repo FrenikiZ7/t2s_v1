@@ -1,5 +1,5 @@
 import Prop, { bool } from 'prop-types';
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { Add as AddIcon } from '@styled-icons/material-outlined/Add';
@@ -48,6 +48,8 @@ import { FanContext } from '../../../../contexts/userContext/FanProvider/FanCont
 export function OwnerVideoSlide({
   items, title, profileType,
 }) {
+  const [videosData, setVideosData] = useState([]);
+
   const playerContext = useContext(PlayerContext);
   const { playerState, playerDispatch } = playerContext;
 
@@ -75,19 +77,19 @@ export function OwnerVideoSlide({
 
   const { currentUser } = useAuth();
 
-  const handleIsDeleting = (item) => {
-    setDeleteVideo(deleteVideo === item.url ? '' : item.url);
+  const handleIsDeleting = (video) => {
+    setDeleteVideo(deleteVideo === video.url ? '' : video.url);
   };
 
-  const handleConfirmDelete = (item) => {
+  const handleConfirmDelete = (video) => {
     const actions = {
-      player: () => removePlayerVideo(playerDispatch, item),
-      club: () => removeClubVideo(clubDispatch, item),
-      agency: () => removeAgencyVideo(agencyDispatch, item),
-      university: () => removeUniversityVideo(universityDispatch, item),
-      league: () => removeLeagueVideo(leagueDispatch, item),
-      fan: () => removeFanVideo(fanDispatch, item),
-      staff: () => removeStaffVideo(staffDispatch, item),
+      player: () => removePlayerVideo(playerDispatch, video),
+      club: () => removeClubVideo(clubDispatch, video),
+      agency: () => removeAgencyVideo(agencyDispatch, video),
+      university: () => removeUniversityVideo(universityDispatch, video),
+      league: () => removeLeagueVideo(leagueDispatch, video),
+      fan: () => removeFanVideo(fanDispatch, video),
+      staff: () => removeStaffVideo(staffDispatch, video),
     };
 
     const action = actions[profileType];
@@ -95,6 +97,10 @@ export function OwnerVideoSlide({
 
     setDeleteVideo('');
   };
+
+  useEffect(() => {
+    setVideosData(items);
+  }, [items]);
 
   return (
     <Styled.OwnerVideoSlideWrapper>
@@ -118,15 +124,15 @@ export function OwnerVideoSlide({
           }}
         >
 
-          {items && items.map((item) => (
+          {videosData && videosData.length > 0 && videosData.map((video) => (
             <SwiperSlide
-              key={item.url}
+              key={video.url}
 
             >
               <Styled.MediaWrapper>
 
                 <ReactPlayer
-                  url={item.url}
+                  url={video.url}
                   width="100%"
                   height="100%"
                   controls
@@ -137,8 +143,8 @@ export function OwnerVideoSlide({
                   <Styled.BottomIconsWrapper>
 
                     <IconDiv
-                      onclick={() => handleIsDeleting(item)}
-                      active={deleteVideo === item.url}
+                      onclick={() => handleIsDeleting(video)}
+                      active={deleteVideo === video.url}
                       activecolor={theme.colors.red}
                       hovercolor={theme.colors.lightred}
                       color={theme.colors.white}
@@ -151,11 +157,11 @@ export function OwnerVideoSlide({
 
                 <Column>
                   <Popup
-                    isopen={deleteVideo === item.url}
+                    isopen={deleteVideo === video.url}
                     title={t('delete_video_question')}
                     firstoption="Sim"
                     secondoption="Não"
-                    onfirstclick={() => handleConfirmDelete(item)}
+                    onfirstclick={() => handleConfirmDelete(video)}
                     onsecondclick={() => handleIsDeleting('')}
                   />
                 </Column>

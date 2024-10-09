@@ -64,10 +64,8 @@ export function Solar() {
             <Text text={t('solar_text_1_part_5')} />
             <Text text={t('solar_text_1_part_6')} />
 
-
-
           </Column>
- </Column>
+        </Column>
 
         <ListWrapper>
           <ListContainer>

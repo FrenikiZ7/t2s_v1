@@ -17,8 +17,16 @@ export const RateIconsElement = styled.div`
     transition: all 500ms ease-in-out;
     animation-fill-mode: forwards;
 
+    >svg {
+      width: 30px;
+      @media ${theme.medias.mobile} {
+       width: 25px;
+      }
+    }
+
     &:hover {
       > svg {
+        width: 30px;
         transform: scale(1);
         box-shadow: 0px 0px 10px 2px ${theme.colors.gold};
      }
