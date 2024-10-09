@@ -2,20 +2,21 @@ import React, { useContext } from 'react';
 import Prop from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import * as Styled from './MyOpportunities-Styles';
-import { GridEditableProposals } from '../../../../components/elements/GridEditableProposals/GridEditableProposals';
+import { GridEditableProposals } from '../../../../components/elements/ProposalElements/GridEditableProposals/GridEditableProposals';
 
-export function MyOpportunities({ opportunities }) {
+export function MyOpportunities({ playerOpportunities, staffOpportunities }) {
   const { t } = useTranslation();
-  console.log(opportunities);
   return (
     <Styled.MyOpportunitiesContainer>
 
-      <GridEditableProposals title={t('my_opportunities')} items={opportunities} />
+      <GridEditableProposals type="player" title={t('my_opportunities_player')} items={playerOpportunities} />
+      <GridEditableProposals type="staff" title={t('my_opportunities_staff')} items={staffOpportunities} />
 
     </Styled.MyOpportunitiesContainer>
   );
 }
 
 MyOpportunities.propTypes = {
-  opportunities: Prop.arrayOf(Prop.object),
+  playerOpportunities: Prop.arrayOf(Prop.object),
+  staffOpportunities: Prop.arrayOf(Prop.object),
 };

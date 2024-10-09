@@ -8,7 +8,7 @@ import { EventMiniCard } from '../EventsElements/EventMiniCard/EventMiniCard';
 import { NewsCard } from '../NewsCard/NewsCard';
 import { RankCard } from '../RankCard/RankCard';
 import { ContactCard } from '../ContactCard/ContactCard';
-import { ProposalMiniCard } from '../ProposalMiniCard/ProposalMiniCard';
+import { ProposalMiniCard } from '../ProposalElements/ProposalMiniCard/ProposalMiniCard';
 
 export function VerticalMiniSlide({ items, title, type }) {
   const { t } = useTranslation();

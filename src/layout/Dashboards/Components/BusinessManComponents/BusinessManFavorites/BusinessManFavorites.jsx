@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import * as Styled from './BusinessManFavorites-Style';
 import { S2tContext } from '../../../../../contexts/s2tContext/S2tContext';
-import { GridProposals } from '../../../../../components/elements/GridProposals/GridProposals';
+import { GridProposals } from '../../../../../components/elements/ProposalElements/GridProposals/GridProposals';
 import { PublicVideoSlide } from '../../../../../components/elements/ProfileSlideElements/PublicVideoSlide/PublicVideoSlide';
 
 export function BusinessManFavorites() {

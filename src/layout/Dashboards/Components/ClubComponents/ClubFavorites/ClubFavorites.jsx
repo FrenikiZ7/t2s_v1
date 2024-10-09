@@ -18,9 +18,9 @@ export function ClubFavorites() {
       Aqui estou passando todos apenas para ter um exemplo */}
       <GridPlayers title={t('favorite_players')} items={s2tState.users.players} publicview />
 
-      <PublicVideoSlide items={s2tState.videos.trending} title={t('trending_videos')} publicview />
+      <PublicVideoSlide items={s2tState?.videos?.trending || []} title={t('trending_videos')} publicview />
 
-      <PublicVideoSlide items={s2tState.videos.trending} title={t('favorite_videos')} publicview />
+      <PublicVideoSlide items={s2tState?.videos?.trending || []} title={t('favorite_videos')} publicview />
     </Styled.ClubFavoritesContainer>
   );
 }

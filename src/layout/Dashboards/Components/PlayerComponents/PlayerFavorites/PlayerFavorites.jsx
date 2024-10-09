@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import * as Styled from './PlayerFavorites-Style';
 import { S2tContext } from '../../../../../contexts/s2tContext/S2tContext';
 import { PlayerContext } from '../../../../../contexts/userContext/PlayerProvider/PlayerContext';
-import { GridProposals } from '../../../../../components/elements/GridProposals/GridProposals';
+import { GridProposals } from '../../../../../components/elements/ProposalElements/GridProposals/GridProposals';
 import { PublicSlide } from '../../../../../components/elements/ProfileSlideElements/PublicSlide/PublicSlide';
 import { PublicVideoSlide } from '../../../../../components/elements/ProfileSlideElements/PublicVideoSlide/PublicVideoSlide';
 
