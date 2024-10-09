@@ -31,8 +31,18 @@ export function TelemedicineUsa() {
 
         <Title text={t('welcome_t2s_telemedicine_usa')} uppercase />
 
+        <Text text={t('telemedicine_usa_text_3')} />
+        <Text text={t('telemedicine_usa_text_4')} />
+        <Text text={t('telemedicine_usa_text_5')} />
+        <Text text={t('telemedicine_usa_text_6')} />
+        <Text text={t('telemedicine_usa_text_7')} />
+        <Text text={t('telemedicine_usa_text_8')} />
+        <Text text={t('telemedicine_usa_text_9')} />
         <Text text={t('telemedicine_usa_text_1')} />
         <Text text={t('telemedicine_usa_text_2')} />
+
+
+
 
         <ListWrapper>
           <ListContainer>
