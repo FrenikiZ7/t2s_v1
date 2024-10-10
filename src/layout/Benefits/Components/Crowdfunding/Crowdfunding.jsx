@@ -33,6 +33,15 @@ export function Crowdfunding() {
 
         <Text text={t('crowdfunding_text_1')} />
         <Text text={t('crowdfunding_text_2')} />
+        <Text text={t('crowdfunding_text_3')} />
+        <Text text={t('crowdfunding_text_4')} />
+        <Text text={t('crowdfunding_text_5')} />
+        <Text text={t('crowdfunding_text_6')} />
+        <Text text={t('crowdfunding_text_7')} />
+        <Text text={t('crowdfunding_text_8')} />
+        <Text text={t('crowdfunding_text_9')} />
+
+
 
         <ListWrapper>
           <ListContainer>
