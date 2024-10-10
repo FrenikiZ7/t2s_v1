@@ -837,12 +837,10 @@
 	"university_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
 	"university_step_3_part_3": "Após enviar suas mídias, você pode rearranjá-las arrastando-as no carrossel para criar uma apresentação visual atraente e organizada.",
 
-	"university_step_4_part_1": "Forneça uma breve descrição da sua universidade, explicando sua missão e os valores que orientam sua educação.",
-  	"university_step_4_part_2": "Descreva a proposta educacional da sua universidade, incluindo os cursos oferecidos e a abordagem pedagógica adotada.",
-	"university_step_4_part_3": "Indique as instalações e recursos disponíveis para os alunos, como bibliotecas, laboratórios e espaços de convivência.",
-	"university_step_4_part_4": "Revise as informações sobre o corpo docente e sua qualificação, destacando a experiência e a formação dos professores.",
-
-
+	"university_step_4_part_1": "Forneça uma breve descrição da sua universidade, incluindo sua missão e valores, e como a plataforma pode ajudar a cadastrar clubes e promover atividades esportivas.",
+  	"university_step_4_part_2": "Descreva a proposta educacional da sua universidade, incluindo cursos e abordagens pedagógicas, além de oportunidades em atividades esportivas que abrem novos caminhos para os alunos.",
+  	"university_step_4_part_3": "Indique as instalações e recursos disponíveis, como bibliotecas e laboratórios, e como a plataforma pode ajudar a divulgá-los.",
+  	"university_step_4_part_4": "Revise como sua universidade pode utilizar a plataforma para promover atividades esportivas, facilitando a interação entre alunos e clubes.",
 
 	"player_text": "Trabalhamos com atletas de todos os níveis, incluindo amadores, profissionais, semi profissionais e de categorias de base",
 	"how_it_works": "Como funciona",
