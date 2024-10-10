@@ -2,23 +2,24 @@ import Prop from 'prop-types';
 import React, { useState } from 'react';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 import { useTranslation } from 'react-i18next';
-import * as Styled from './ProposalModal-Styles';
-import { Title } from '../Title/Title';
-import { GridTwoColumn } from '../../GridTwoColumn/GridTwoColumn';
-import { Button } from '../Button/Button';
-import { theme } from '../../../styles/theme';
-import { Subtitle } from '../Subtitle/Subtitle';
-import { InfoInRow } from '../InfoInRow/InfoInRow';
-import { Text } from '../Text/Text';
-import { ColumnContainer } from '../../ColumnContainer/Column-Styles';
-import { TextArea } from '../TextArea/TextArea';
-import { Row } from '../../RowContainer/Row';
-import { IconDiv } from '../IconDiv/IconDiv';
-import { GridLayout } from '../../GridLayout/GridLayout';
+import * as Styled from './StaffProposalModal-Styles';
+import { Title } from '../../Title/Title';
+import { GridTwoColumn } from '../../../GridTwoColumn/GridTwoColumn';
+import { Button } from '../../Button/Button';
+import { theme } from '../../../../styles/theme';
+import { Subtitle } from '../../Subtitle/Subtitle';
+import { InfoInRow } from '../../InfoInRow/InfoInRow';
+import { Text } from '../../Text/Text';
+import { ColumnContainer } from '../../../ColumnContainer/Column-Styles';
+import { TextArea } from '../../TextArea/TextArea';
+import { Row } from '../../../RowContainer/Row';
+import { IconDiv } from '../../IconDiv/IconDiv';
+import { GridLayout } from '../../../GridLayout/GridLayout';
+import { FavoriteIcon } from '../../FavoriteIcon/FavoriteIcon';
 
-import { FavoriteIcon } from '../FavoriteIcon/FavoriteIcon';
-
-export function ProposalModal({ proposal, onclick, isapplied }) {
+export function StaffProposalModal({
+  proposal, onclick, isapplied,
+}) {
   const { t } = useTranslation();
 
   const handleSubmitMessage = (e) => {
@@ -36,7 +37,7 @@ export function ProposalModal({ proposal, onclick, isapplied }) {
 
   return (
 
-    <Styled.ProposalModalElement>
+    <Styled.StaffProposalModalElement>
 
       {proposal && (
       <>
@@ -62,13 +63,27 @@ export function ProposalModal({ proposal, onclick, isapplied }) {
           {proposal.details.org && <InfoInRow infotitle={t('league')} info={proposal.details.org} uppercase />}
           {proposal.details.country && <InfoInRow infotitle={t('country')} info={proposal.details.country} uppercase />}
           {proposal.details.category && <InfoInRow infotitle={t('category')} info={proposal.details.category} uppercase />}
+          {proposal.details.yearsOfExperience && <InfoInRow infotitle={t('years_of_experience')} info={proposal.details.yearsOfExperience} uppercase />}
+          {proposal.details.languages && <InfoInRow infotitle={t('languages')} info={proposal.details.languages} uppercase />}
+          {proposal.details.passports && <InfoInRow infotitle={t('passports')} info={proposal.details.passports} uppercase />}
           {proposal.details.opportunity && <InfoInRow infotitle={t('position')} info={proposal.details.opportunity} uppercase />}
-          {proposal.details.minHeight && <InfoInRow infotitle={t('minimum_height')} info={`${proposal.details.minHeight} M`} uppercase />}
-          {proposal.details.age.minAge && <InfoInRow infotitle={t('minimum_age')} info={`${proposal.details.age.minAge} ${t('years')}`} uppercase />}
-          {proposal.details.age.maxAge && <InfoInRow infotitle={t('maximum_age')} info={`${proposal.details.age.maxAge} ${t('years')}`} uppercase />}
           {proposal.details.payment.minPayment && <InfoInRow infotitle={t('payment')} info={`${proposal.details.payment.minPayment} | ${proposal.details.payment.maxPayment} ${proposal.details.payment.currency}`} uppercase />}
 
         </GridTwoColumn>
+
+        {proposal.details.certificatesOrLicenses && (
+        <ColumnContainer>
+          <Subtitle text={t('required_certificates_or_licenses')} uppercase />
+          <Text text={proposal.details.certificatesOrLicenses} />
+        </ColumnContainer>
+        )}
+
+        {proposal.details.coursesOrTrainings && (
+        <ColumnContainer>
+          <Subtitle text={t('required_courses_or_trainings')} uppercase />
+          <Text text={proposal.details.coursesOrTrainings} />
+        </ColumnContainer>
+        )}
 
         {proposal.description && (
         <ColumnContainer>
@@ -136,7 +151,7 @@ export function ProposalModal({ proposal, onclick, isapplied }) {
             </>
           ) : (
             <Button
-              text={t('opportunity_message_sent')}
+              text={t('opportunity_message_send')}
               bgcolor={theme.colors.darkgray}
               bghover={theme.colors.darkgray}
               textcolor={theme.colors.white}
@@ -150,12 +165,12 @@ export function ProposalModal({ proposal, onclick, isapplied }) {
       </>
       )}
 
-    </Styled.ProposalModalElement>
+    </Styled.StaffProposalModalElement>
 
   );
 }
 
-ProposalModal.propTypes = {
+StaffProposalModal.propTypes = {
   proposal: Prop.func,
   onclick: Prop.func,
   isapplied: Prop.bool,

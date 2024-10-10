@@ -175,7 +175,7 @@ export function NewProposal({ onclick }) {
 
             <AuthDropdown
               title={t('which_currency')}
-              placeholder={t('select_currency_opportunity')}
+              placeholder={t('select_currency')}
               id="playerOpportunityMaymentCurrency"
               options={s2tState.formOptions.currency}
               required

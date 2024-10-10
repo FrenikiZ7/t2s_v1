@@ -120,6 +120,7 @@ import { AgencyPage } from './layout/Users/Components/Agency/AgencyPage';
 import { FanPage } from './layout/Users/Components/Fan/FanPage';
 import { AgentPage } from './layout/Users/Components/Agent/AgentPage';
 import { LeaguePage } from './layout/Users/Components/League/LeaguePage';
+import { StaffOpportunities } from './layout/Dashboards/Components/StaffOpportunities/STaffOpportunities';
 
 register();
 
@@ -208,11 +209,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="profile" element={<StaffProfile />} />
                                 <Route path="profile-edit" element={<EditProfile type="staff" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
+                                <Route path="my-opportunities" element={<MyOpportunities playerOpportunities={s2tData.proposals.male.professional.clubs} />} />
+                                <Route path="staff-opportunities" element={<StaffOpportunities />} />
                                 <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
+                                <Route path="players" element={<Players />} />
                                 <Route path="favorites" element={<StaffFavorites />} />
                                 <Route path="messages" element={<h1>Em construção... :)</h1>} />
                                 <Route path="events" element={<Events />} />
+                                <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
                                 <Route path="friends" element={<Friends friends={playerData.friends} />} />
                                 <Route path="store" element={<Store />} />
                                 <Route path="my-events" element={<MyEvents events={s2tData.events} />} />
@@ -223,6 +228,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                               <Route path="/business-man-dashboard/" element={<BusinessManDashboard />}>
                                 <Route path="" element={<BusinessManHome />} />
                                 <Route path="profile" element={<BusinessManProfile />} />
+                                <Route path="players" element={<Players />} />
                                 <Route path="profile-edit" element={<EditProfile type="business-man" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
                                 <Route path="staff" element={<Staff />} />
@@ -244,6 +250,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="my-squad" element={<MySquad />} />
                                 <Route path="profile-edit" element={<EditProfile type="club" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
+                                <Route path="staff-opportunities" element={<StaffOpportunities />} />
                                 <Route path="my-opportunities" element={<MyOpportunities staffOpportunities={s2tData.staffProposals} playerOpportunities={s2tData.proposals.male.professional.clubs} />} />
                                 <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
@@ -264,7 +271,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="my-squad" element={<MySquad />} />
                                 <Route path="profile-edit" element={<EditProfile type="league" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="my-opportunities" element={<MyOpportunities opportunities={s2tData.proposals.male.professional.agents} />} />
+                                <Route path="staff-opportunities" element={<StaffOpportunities />} />
+                                <Route path="my-opportunities" element={<MyOpportunities staffOpportunities={s2tData.staffProposals} playerOpportunities={s2tData.proposals.male.professional.clubs} />} />
                                 <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
@@ -284,7 +292,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="my-squad" element={<MySquad />} />
                                 <Route path="profile-edit" element={<EditProfile type="agency" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="my-opportunities" element={<MyOpportunities opportunities={s2tData.proposals.male.professional.clubs} />} />
+                                <Route path="staff-opportunities" element={<StaffOpportunities />} />
+                                <Route path="my-opportunities" element={<MyOpportunities staffOpportunities={s2tData.staffProposals} playerOpportunities={s2tData.proposals.male.professional.clubs} />} />
                                 <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />
@@ -304,7 +313,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                                 <Route path="my-squad" element={<MySquad />} />
                                 <Route path="profile-edit" element={<EditProfile type="university" />} />
                                 <Route path="opportunities" element={<Opportunities />} />
-                                <Route path="my-opportunities" element={<MyOpportunities />} />
+                                <Route path="staff-opportunities" element={<StaffOpportunities />} />
+                                <Route path="my-opportunities" element={<MyOpportunities staffOpportunities={s2tData.staffProposals} playerOpportunities={s2tData.proposals.male.professional.clubs} />} />
                                 <Route path="staff" element={<Staff />} />
                                 <Route path="clubs" element={<Clubs />} />
                                 <Route path="players" element={<Players />} />

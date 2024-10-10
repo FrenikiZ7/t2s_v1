@@ -162,7 +162,7 @@ export function EditProposal({ onclick, proposal }) {
 
             <AuthDropdown
               title={t('which_currency')}
-              placeholder={t('select_currency_opportunity')}
+              placeholder={t('select_currency')}
               id="editPlayerOpportunityMaymentCurrency"
               options={s2tState.formOptions.currency}
               selectedvalue={proposalData.details.payment.currency}

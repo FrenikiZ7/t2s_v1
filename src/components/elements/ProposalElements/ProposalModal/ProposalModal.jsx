@@ -63,8 +63,8 @@ export function ProposalModal({ proposal, onclick, isapplied }) {
           {proposal.details.category && <InfoInRow infotitle={t('category')} info={proposal.details.category} uppercase />}
           {proposal.details.opportunity && <InfoInRow infotitle={t('position')} info={proposal.details.opportunity} uppercase />}
           {proposal.details.minHeight && <InfoInRow infotitle={t('minimum_height')} info={`${proposal.details.minHeight} M`} uppercase />}
-          {proposal.details.age.minAge && <InfoInRow infotitle={t('minimum_age')} info={`${proposal.details.age.minAge} ${t('years')}`} uppercase />}
-          {proposal.details.age.maxAge && <InfoInRow infotitle={t('maximum_age')} info={`${proposal.details.age.maxAge} ${t('years')}`} uppercase />}
+          {proposal.details.age && <InfoInRow infotitle={t('minimum_age')} info={`${proposal.details.age.minAge} ${t('years')}`} uppercase />}
+          {proposal.details.age && <InfoInRow infotitle={t('maximum_age')} info={`${proposal.details.age.maxAge} ${t('years')}`} uppercase />}
           {proposal.details.payment.minPayment && <InfoInRow infotitle={t('payment')} info={`${proposal.details.payment.minPayment} | ${proposal.details.payment.maxPayment} ${proposal.details.payment.currency}`} uppercase />}
 
         </GridTwoColumn>
@@ -135,7 +135,7 @@ export function ProposalModal({ proposal, onclick, isapplied }) {
             </>
           ) : (
             <Button
-              text={t('opportunity_message_sent')}
+              text={t('opportunity_message_send')}
               bgcolor={theme.colors.darkgray}
               bghover={theme.colors.darkgray}
               textcolor={theme.colors.white}

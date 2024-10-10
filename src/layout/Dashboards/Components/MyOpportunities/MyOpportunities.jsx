@@ -9,9 +9,8 @@ export function MyOpportunities({ playerOpportunities, staffOpportunities }) {
   return (
     <Styled.MyOpportunitiesContainer>
 
-      <GridEditableProposals type="player" title={t('my_opportunities_player')} items={playerOpportunities} />
-      <GridEditableProposals type="staff" title={t('my_opportunities_staff')} items={staffOpportunities} />
-
+      {playerOpportunities && <GridEditableProposals type="player" title={t('my_opportunities_player')} items={playerOpportunities} />}
+      {staffOpportunities && <GridEditableProposals type="staff" title={t('my_opportunities_staff')} items={staffOpportunities} />}
     </Styled.MyOpportunitiesContainer>
   );
 }

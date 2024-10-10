@@ -94,6 +94,14 @@ export function AgencyNav() {
         />
 
         <StyledLink
+          active={activeLink === '/agency-dashboard/my-events'}
+          path="my-events"
+          text={t('my_events')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
+        <StyledLink
           active={activeLink === '/agency-dashboard/favorites'}
           path="favorites"
           text={t('favorites')}
@@ -121,14 +129,6 @@ export function AgencyNav() {
           active={activeLink === '/agency-dashboard/store'}
           path="store"
           text={t('store')}
-          color={theme.colors.white}
-          hovercolor={theme.colors.black}
-        />
-
-        <StyledLink
-          active={activeLink === '/agency-dashboard/my-events'}
-          path="my-events"
-          text={t('my_events')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />

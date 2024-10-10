@@ -6,11 +6,31 @@ import { Title } from '../../Title/Title';
 import { GridLayoutContainer } from '../../../GridLayout/GridLayout-Styles';
 import { ProposalCard } from '../ProposalCard/ProposalCard';
 import { ProposalModal } from '../ProposalModal/ProposalModal';
-import { FilterProposals } from '../../FilterProposals/FilterProposals';
+import { FilterProposals } from '../FilterProposals/FilterProposals';
 import { Text } from '../../Text/Text';
+import { StaffProposalModal } from '../StaffProposalModal/StaffProposalModal';
+import { FilterStaffProposals } from '../FilterStaffProposals/FilterStaffProposals';
 
-export function GridProposals({ items, title, selectedproposal }) {
+export function GridProposals({
+  items, title, selectedproposal, type = 'player',
+}) {
   const { t } = useTranslation();
+
+  const normalizedType = type.toLowerCase();
+
+  const proposalModalComponents = {
+    player: ProposalModal,
+    staff: StaffProposalModal,
+  };
+
+  const filterProposalComponents = {
+    player: FilterProposals,
+    staff: FilterStaffProposals,
+  };
+
+  const FilterProposalComponent = filterProposalComponents[normalizedType];
+  const ProposalModalComponent = proposalModalComponents[normalizedType];
+
   // Pagination stuff
   const [pageNumber, setPageNumber] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(8);
@@ -60,7 +80,7 @@ export function GridProposals({ items, title, selectedproposal }) {
     <Styled.GridProposalsContainer>
 
       {title && <Title text={title} uppercase />}
-      <FilterProposals />
+      <FilterProposalComponent />
 
       <Styled.ModalContainer>
 
@@ -80,7 +100,6 @@ export function GridProposals({ items, title, selectedproposal }) {
                 id={item.opportunityId}
                 key={item.opportunityId}
                 publicview
-
               />
             ))}
           </GridLayoutContainer>
@@ -108,10 +127,7 @@ export function GridProposals({ items, title, selectedproposal }) {
 
         {/* Renderiza um modal com os dados do card clicado pelo usuário */}
         {selectedProposal && (
-          <ProposalModal
-            proposal={selectedProposal}
-            onclick={() => setSelectedProposal(null)}
-          />
+          <ProposalModalComponent proposal={selectedProposal} onclick={() => setSelectedProposal(null)} />
         )}
 
       </Styled.ModalContainer>
@@ -123,5 +139,6 @@ export function GridProposals({ items, title, selectedproposal }) {
 GridProposals.propTypes = {
   title: Prop.string,
   items: Prop.arrayOf(Prop.object),
+  type: Prop.string,
   // n faço ideia oq é isso, só está assim pq foi o unico q n deu erro no console
 };

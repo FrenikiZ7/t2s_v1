@@ -157,7 +157,7 @@ export function EditStaffProposal({ onclick, proposal }) {
               id="editStaffOpportunityCourses_input"
               placeholder={t('course_training_name')}
               title={t('required_courses_or_trainings')}
-              value={proposalData.details.courses}
+              value={proposalData.details.coursesOrTrainings}
               onChange={(e) => setProposalData((prevData) => ({ ...prevData, details: { ...prevData.details, courses: e.target.value } }))}
             />
 

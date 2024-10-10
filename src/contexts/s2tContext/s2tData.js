@@ -195,7 +195,7 @@ export const s2tData = {
         id: '1',
         src: '/assets/images/benefits/podcast.png',
         title: 'podcast',
-        path: 'https://showcase2transfer.eitvcloud.com/pages/5',
+        path: 'https://talent2show.eitvcloud.com/pages/5',
       },
 
       {
@@ -289,6 +289,10 @@ export const s2tData = {
   videos: {
     trending: {
       professional: [
+        // { url: 'https://www.youtube.com/watch?v=AKlbX2gYxSM', id: 1 },
+        // { url: 'https://www.youtube.com/watch?v=hZqilXP9E3o', id: 2 },
+        // { url: 'https://www.youtube.com/watch?v=AKlbX2gYxSM', id: 3 },
+        // { url: 'https://www.youtube.com/watch?v=hZqilXP9E3o', id: 4 },
       ],
 
       semiProfessionall: [
@@ -353,17 +357,43 @@ export const s2tData = {
         opportunity: 'scout',
         country: 'EUA',
         org: 'MLS',
-        certificatesOrlicenses: 'License XBA',
-        courses: 'Couch empires XL',
+        certificatesOrLicenses: 'License XBA',
+        coursesOrTrainings: 'Couch empires XL',
         payment: {
           minPayment: '1200',
           maxPayment: '2000',
           currency: '$',
         },
       },
-      description: 'Desc',
-      requirements: 'Req',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit nisl et leo porta egestas. Duis risus dolor, dignissim non gravida at, gravida non augue. Ut vulputate, nulla sed eleifend euismod, tellus libero rhoncus sem, vitae lobortis ipsum tellus ut diam. Integer fermentum nisi velit, sed posuere felis vestibulum vel',
+      requirements: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit nisl et leo porta egestas. Duis risus dolor, dignissim non gravida at, gravida non augue. Ut vulputate, nulla sed eleifend euismod, tellus libero rhoncus sem, vitae lobortis ipsum tellus ut diam. Integer fermentum nisi velit, sed posuere felis vestibulum vel',
     },
+
+    {
+      opportunityId: 0,
+      details: {
+        from: 'N/A', // Tipo de perfil do usuário que publicou a proposta
+        date: '01-06-2024',
+        disponibility: '01-06-2024',
+        category: 'professional',
+        yearsOfExperience: '5',
+        languages: 'Inglês',
+        passports: 'EUA',
+        opportunity: 'scout',
+        country: 'EUA',
+        org: 'MLS',
+        certificatesOrLicenses: 'License XBA',
+        coursesOrTrainings: 'Couch empires XL',
+        payment: {
+          minPayment: '1200',
+          maxPayment: '2000',
+          currency: '$',
+        },
+      },
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit nisl et leo porta egestas. Duis risus dolor, dignissim non gravida at, gravida non augue. Ut vulputate, nulla sed eleifend euismod, tellus libero rhoncus sem, vitae lobortis ipsum tellus ut diam. Integer fermentum nisi velit, sed posuere felis vestibulum vel',
+      requirements: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit nisl et leo porta egestas. Duis risus dolor, dignissim non gravida at, gravida non augue. Ut vulputate, nulla sed eleifend euismod, tellus libero rhoncus sem, vitae lobortis ipsum tellus ut diam. Integer fermentum nisi velit, sed posuere felis vestibulum vel',
+    },
+
   ],
 
   proposals: {
@@ -640,8 +670,12 @@ export const s2tData = {
     ],
 
     opportunityType: [
-      { value: 'scouts', text: 'Scouts' },
-      { value: 'clubs', text: 'Clubes' },
+      { value: 'club', text: 'Clube' },
+      { value: 'league', text: 'Liga' },
+      { value: 'university', text: 'Universidade' },
+      { value: 'staff', text: 'Comissão técnica' },
+      { value: 'agency', text: 'Agência' },
+      { value: 'agent', text: 'Empresário' },
     ],
 
     reportMedia: [

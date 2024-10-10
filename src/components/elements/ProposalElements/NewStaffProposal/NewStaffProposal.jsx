@@ -38,8 +38,8 @@ export function NewStaffProposal({ onclick }) {
       opportunity: '',
       country: '',
       org: '',
-      certificatesOrlicenses: '',
-      courses: '',
+      certificatesOrLicenses: '',
+      coursesOrTrainings: '',
       payment: {
         minPayment: '',
         maxPayment: '',
@@ -96,7 +96,7 @@ export function NewStaffProposal({ onclick }) {
             />
 
             <AuthDropdown
-              title={t('which_area_opportunity')}
+              title={t('area')}
               placeholder={t('select_area')}
               id="staffOpportunityArea"
               required
@@ -117,7 +117,7 @@ export function NewStaffProposal({ onclick }) {
               type="number"
               name="staffOpportunityYearsOfExperience_input"
               id="staffOpportunityYearsOfExperience_input"
-              placeholder={t('which_years_of_experience')}
+              placeholder={t('which_years_of_experience_opportunity')}
               title={t('years_of_experience')}
               value={proposalData.details.yearsOfExperience}
               onChange={(e) => setProposalData((prevData) => ({ ...prevData, details: { ...prevData.details, yearsOfExperience: e.target.value } }))}
@@ -147,7 +147,7 @@ export function NewStaffProposal({ onclick }) {
               type="date"
               name="staffOpportunityDisponibility_input"
               id="staffOpportunityDisponibility_input"
-              title={t('which_disponibility_date')}
+              title={t('which_disponibility_date_opportunity')}
               value={proposalData.details.disponibility}
               onChange={(e) => setProposalData((prevData) => ({ ...prevData, details: { ...prevData.details, disponibility: e.target.value } }))}
             />
@@ -156,7 +156,7 @@ export function NewStaffProposal({ onclick }) {
               type="text"
               name="staffOpportunityCertificateOrLicenses_input"
               id="staffOpportunityCertificateOrLicenses_input"
-              placeholder={t('certificate_license_name')}
+              placeholder={t('certificate_or_license_name')}
               title={t('required_certificates_or_licenses')}
               value={proposalData.details.certificatesOrlicenses}
               onChange={(e) => setProposalData((prevData) => ({ ...prevData, details: { ...prevData.details, certificatesOrlicenses: e.target.value } }))}
@@ -166,9 +166,9 @@ export function NewStaffProposal({ onclick }) {
               type="text"
               name="staffOpportunityCourses_input"
               id="staffOpportunityCourses_input"
-              placeholder={t('course_training_name')}
+              placeholder={t('course_or_training_name')}
               title={t('required_courses_or_trainings')}
-              value={proposalData.details.courses}
+              value={proposalData.details.coursesOrTranings}
               onChange={(e) => setProposalData((prevData) => ({ ...prevData, details: { ...prevData.details, courses: e.target.value } }))}
             />
 
@@ -176,7 +176,7 @@ export function NewStaffProposal({ onclick }) {
               type="text"
               name="staffOpportunityMininumPayment_input"
               id="staffOpportunityMininumPayment_input"
-              placeholder={t('which_minimum_payment')}
+              placeholder={t('which_minimum_payment_opportunity')}
               title={t('minimum_payment')}
               required
               value={proposalData.details.payment.minPayment}
@@ -187,7 +187,7 @@ export function NewStaffProposal({ onclick }) {
               type="text"
               name="staffOpportunityMaximumPayment_input"
               id="staffOpportunityMaximumPayment_input"
-              placeholder={t('which_maximum_payment')}
+              placeholder={t('which_maximum_payment_opportunity')}
               title={t('maximum_payment')}
               value={proposalData.details.payment.maxPayment}
               onChange={(e) => setProposalData((prevData) => ({ ...prevData, details: { ...prevData.details, payment: { ...prevData.details.payment, maxPayment: e.target.value } } }))} // Atualize aqui
@@ -207,7 +207,7 @@ export function NewStaffProposal({ onclick }) {
           <ColumnContainer>
             <Subtitle text={t('description')} uppercase />
             <TextArea
-              placeholder={t('insert_description')}
+              placeholder={t('insert_description_opportunity')}
               name="staffOpportunityDescription"
               value={proposalData.description}
               onChange={(e) => setProposalData((prevData) => ({ ...prevData, description: e.target.value }))}
@@ -217,7 +217,7 @@ export function NewStaffProposal({ onclick }) {
           <ColumnContainer>
             <Subtitle text={t('requirements')} uppercase />
             <TextArea
-              placeholder={t('insert_requirements')}
+              placeholder={t('insert_requirements_opportunity')}
               name="staffOpportunityRequirements"
               value={proposalData.requirements}
               onChange={(e) => setProposalData((prevData) => ({ ...prevData, requirements: e.target.value }))}

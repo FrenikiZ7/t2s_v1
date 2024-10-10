@@ -55,12 +55,23 @@ export function BusinessManNav() {
           hovercolor={theme.colors.black}
         />
         <StyledLink
+          active={activeLink === '/business-man-dashboard/players'}
+          path="players"
+          text={t('players')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+        <StyledLink
           active={activeLink === '/business-man-dashboard/favorites'}
           path="favorites"
           text={t('favorites')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
+      </Styled.BusinessManNav>
+
+      <Styled.BusinessManNav>
 
         <StyledLink
           active={activeLink === '/business-man-dashboard/events'}
@@ -69,6 +80,15 @@ export function BusinessManNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
+        <StyledLink
+          active={activeLink === '/business-man-dashboard/my-events'}
+          path="my-events"
+          text={t('my_events')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
         <StyledLink
           active={activeLink === '/business-man-dashboard/messages'}
           path="messages"
@@ -76,10 +96,6 @@ export function BusinessManNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
-
-      </Styled.BusinessManNav>
-
-      <Styled.BusinessManNav>
 
         <StyledLink
           active={activeLink === '/business-man-dashboard/friends'}
@@ -92,14 +108,6 @@ export function BusinessManNav() {
           active={activeLink === '/business-man-dashboard/store'}
           path="store"
           text={t('store')}
-          color={theme.colors.white}
-          hovercolor={theme.colors.black}
-        />
-
-        <StyledLink
-          active={activeLink === '/business-man-dashboard/my-events'}
-          path="my-events"
-          text={t('my_events')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />

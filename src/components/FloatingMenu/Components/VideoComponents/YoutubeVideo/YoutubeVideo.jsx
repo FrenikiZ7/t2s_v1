@@ -62,26 +62,6 @@ export function YoutubeVideo({ onCloseClick, onBackClick, profileType }) {
 
   const handleVideoUpload = (e) => {
     e.preventDefault();
-
-    const actions = {
-      player: () => addPlayerVideo(playerDispatch, videoData),
-      club: () => addClubVideo(clubDispatch, videoData),
-      agency: () => addAgencyVideo(agencyDispatch, videoData),
-      university: () => addUniversityVideo(universityDispatch, videoData),
-      league: () => addLeagueVideo(leagueDispatch, videoData),
-      fan: () => addFanVideo(fanDispatch, videoData),
-      staff: () => addStaffVideo(staffDispatch, videoData),
-    };
-
-    if (videoData.url) {
-      // Se existir uma URL preenchida, é disparado uma função baseada na prop ProfileType
-      const action = actions[profileType];
-      action();
-      onCloseClick();
-    } else {
-      // Caso não existir é exibido uma mensagem de erro
-      setMessage(t('insert_video_url'));
-    }
   };
 
   return (

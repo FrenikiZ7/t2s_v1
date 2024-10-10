@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
-import { GridTwoColumnContainer } from '../../GridTwoColumn/GridTwoColumn-Styles';
-import { SubtitleElement } from '../Subtitle/Subtitle-Styles';
-import { slideIn } from '../../../styles/animations';
-import { RowContainer } from '../../RowContainer/Row-Styles.js';
-import { ButtonElement } from '../Button/Button-Styles.js';
-import { GridLayoutContainer } from '../../GridLayout/GridLayout-Styles.js';
+import { GridTwoColumnContainer } from '../../../GridTwoColumn/GridTwoColumn-Styles.js';
+import { SubtitleElement } from '../../Subtitle/Subtitle-Styles.js';
+import { slideIn } from '../../../../styles/animations.js';
+import { RowContainer } from '../../../RowContainer/Row-Styles.js.js';
+import { ButtonElement } from '../../Button/Button-Styles.js';
+import { GridLayoutContainer } from '../../../GridLayout/GridLayout-Styles.js';
 
-export const ProposalModalElement = styled.div`
+export const StaffProposalModalElement = styled.div`
   ${({ theme }) => css`
      animation: ${slideIn} 500ms;
 
@@ -23,6 +23,7 @@ export const ProposalModalElement = styled.div`
      z-index: 5000; 
 
      width: 70%;
+     min-height: 400px;
      padding: ${theme.spacings.xxlarge};
 
 

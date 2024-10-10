@@ -33,6 +33,7 @@ export function StaffNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
         <StyledLink
           active={activeLink === '/staff-dashboard/opportunities'}
           path="opportunities"
@@ -40,6 +41,23 @@ export function StaffNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
+        <StyledLink
+          active={activeLink === '/staff-dashboard/staff-opportunities'}
+          path="staff-opportunities"
+          text={t('staff_opportunities')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
+        <StyledLink
+          active={activeLink === '/staff-dashboard/my-opportunities'}
+          path="my-opportunities"
+          text={t('my_opportunities')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
         <StyledLink
           active={activeLink === '/staff-dashboard/staff'}
           path="staff"
@@ -54,10 +72,15 @@ export function StaffNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
+      </Styled.StaffNav>
+
+      <Styled.StaffNav>
+
         <StyledLink
-          active={activeLink === '/staff-dashboard/favorites'}
-          path="favorites"
-          text={t('favorites')}
+          active={activeLink === '/staff-dashboard/players'}
+          path="players"
+          text={t('players')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
@@ -69,6 +92,23 @@ export function StaffNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
+
+        <StyledLink
+          active={activeLink === '/staff-dashboard/my-events'}
+          path="my-events"
+          text={t('my_events')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
+        <StyledLink
+          active={activeLink === '/staff-dashboard/favorites'}
+          path="favorites"
+          text={t('favorites')}
+          color={theme.colors.white}
+          hovercolor={theme.colors.black}
+        />
+
         <StyledLink
           active={activeLink === '/staff-dashboard/messages'}
           path="messages"
@@ -76,10 +116,6 @@ export function StaffNav() {
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />
-
-      </Styled.StaffNav>
-
-      <Styled.StaffNav>
 
         <StyledLink
           active={activeLink === '/staff-dashboard/friends'}
@@ -92,14 +128,6 @@ export function StaffNav() {
           active={activeLink === '/staff-dashboard/store'}
           path="store"
           text={t('store')}
-          color={theme.colors.white}
-          hovercolor={theme.colors.black}
-        />
-
-        <StyledLink
-          active={activeLink === '/staff-dashboard/my-events'}
-          path="my-events"
-          text={t('my_events')}
           color={theme.colors.white}
           hovercolor={theme.colors.black}
         />

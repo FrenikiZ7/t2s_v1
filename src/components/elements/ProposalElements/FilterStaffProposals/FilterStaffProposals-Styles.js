@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
-import { GridLayoutContainer } from '../../GridLayout/GridLayout-Styles';
-import { slideIn } from '../../../styles/animations';
-import { RowContainer } from '../../RowContainer/Row-Styles.js';
-import { AuthDropdownContainer, DropdownButton, DropdownItem } from '../AuthElements/AuthDropdown/AuthDropdown-Styles.js';
-import { IconContainer } from '../IconDiv/IconDiv-Styles.js';
+import { GridLayoutContainer } from '../../../GridLayout/GridLayout-Styles.js';
+import { slideIn } from '../../../../styles/animations.js';
+import { RowContainer } from '../../../RowContainer/Row-Styles.js.js';
+import { AuthDropdownContainer, DropdownButton, DropdownItem } from '../../AuthElements/AuthDropdown/AuthDropdown-Styles.js';
+import { IconContainer } from '../../IconDiv/IconDiv-Styles.js';
 
-export const FilterProposalsContainer = styled.div`
+export const FilterStaffProposalsContainer = styled.div`
   ${({ theme, isopen }) => css`
     animation: ${slideIn} 500ms;
     width: 100%;

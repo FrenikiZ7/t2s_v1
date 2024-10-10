@@ -4,18 +4,18 @@ import { OptionsOutline as OptionsIcons } from '@styled-icons/evaicons-outline/O
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import * as Styled from './FilterProposals-Styles';
-import { AuthInput } from '../AuthElements/AuthInput/AuthInput';
-import { AuthDropdown } from '../AuthElements/AuthDropdown/AuthDropdown';
-import { AuthWrapper } from '../AuthElements/AuthWrapper/AuthWrapper';
-import { AuthForm } from '../AuthElements/AuthForm/AuthForm';
-import { GridLayout } from '../../GridLayout/GridLayout';
-import { AuthSearch } from '../AuthElements/AuthSearch/AuthSearch';
-import { Row } from '../../RowContainer/Row';
-import { IconDiv } from '../IconDiv/IconDiv';
-import { AuthLayout } from '../AuthElements/AuthLayout/AuthLayout';
-import { SearchWrapper } from '../AuthElements/AuthSearch/AuthSearch-Styles';
-import { S2tContext } from '../../../contexts/s2tContext/S2tContext';
-import { filterPlayerProposals, searchPlayerProposals } from '../../../contexts/s2tContext/s2tActions';
+import { AuthInput } from '../../AuthElements/AuthInput/AuthInput';
+import { AuthDropdown } from '../../AuthElements/AuthDropdown/AuthDropdown';
+import { AuthWrapper } from '../../AuthElements/AuthWrapper/AuthWrapper';
+import { AuthForm } from '../../AuthElements/AuthForm/AuthForm';
+import { GridLayout } from '../../../GridLayout/GridLayout';
+import { AuthSearch } from '../../AuthElements/AuthSearch/AuthSearch';
+import { Row } from '../../../RowContainer/Row';
+import { IconDiv } from '../../IconDiv/IconDiv';
+import { AuthLayout } from '../../AuthElements/AuthLayout/AuthLayout';
+import { SearchWrapper } from '../../AuthElements/AuthSearch/AuthSearch-Styles';
+import { S2tContext } from '../../../../contexts/s2tContext/S2tContext';
+import { filterPlayerProposals, searchPlayerProposals } from '../../../../contexts/s2tContext/s2tActions';
 
 export function FilterProposals() {
   const s2tContext = useContext(S2tContext);
@@ -56,7 +56,7 @@ export function FilterProposals() {
 
           <Row>
             <AuthDropdown
-              id="filterOpportunityType"
+              id="filterPlayerOpportunityType"
               options={s2tState.formOptions.opportunityType}
               placeholder={t('all')}
               onDropdownChange={(option) => setFilterData((prevData) => ({ ...prevData, opportunityType: option }))}
@@ -67,8 +67,8 @@ export function FilterProposals() {
                 <OptionsIcons />
               </IconDiv>
               <AuthSearch
-                name="searchProposals"
-                id="searchProposals"
+                name="searchPlayerOpportunity"
+                id="searchPlayerOpportunity"
                 onChange={(e) => setSearchData(e.target.value)}
               />
             </SearchWrapper>
@@ -78,7 +78,7 @@ export function FilterProposals() {
           <AuthLayout isopen={isOpen}>
 
             <AuthDropdown
-              id="filterCompetitiveLevel"
+              id="filterPlayerOpportunityCompetitiveLevel"
               placeholder={t('competitive_level')}
               options={s2tState.formOptions.competitiveLevels}
               otheroption
@@ -86,7 +86,7 @@ export function FilterProposals() {
             />
 
             <AuthDropdown
-              id="filterAgeCategory"
+              id="filterPlayerOpportunityAgeCategory"
               placeholder={t('category')}
               options={s2tState.formOptions.ageCategory}
               onDropdownChange={(option) => setFilterData((prevData) => ({ ...prevData, ageCategory: option }))}
@@ -94,13 +94,13 @@ export function FilterProposals() {
 
             <AuthDropdown
               placeholder={t('position')}
-              id="filterPosition"
+              id="filterPlayerOpportunityPosition"
               options={s2tState.formOptions.positions}
               onDropdownChange={(option) => setFilterData((prevData) => ({ ...prevData, position: option }))}
             />
 
             <AuthDropdown
-              id="filterLeague"
+              id="filterPlayerOpportunityLeague"
               placeholder={t('league')}
               options={s2tState.formOptions.league}
               otheroption
@@ -108,7 +108,7 @@ export function FilterProposals() {
             />
 
             <AuthDropdown
-              id="filterLeg"
+              id="filterPlayerOpportunityBestLeg"
               placeholder={t('best_leg')}
               options={s2tState.formOptions.leg}
               onDropdownChange={(option) => setFilterData((prevData) => ({ ...prevData, bestLeg: option }))}
@@ -116,48 +116,48 @@ export function FilterProposals() {
 
             <AuthInput
               type="number"
-              name="filterMinimumAge_input"
-              id="filterMinimumAge_input"
+              name="filterPlayerOpportunityMinimumAge_input"
+              id="filterPlayerOpportunityMinimumAge_input"
               placeholder={t('minimum_age')}
-              onChange={(e) => setFilterData((prevData) => ({ ...prevData, league: e.target.value }))}
+              onChange={(e) => setFilterData((prevData) => ({ ...prevData, minimumAge: e.target.value }))}
             />
 
             <AuthInput
               type="number"
-              name="filterMaximumAge_input"
-              id="filterMaximumAge_input"
+              name="filterPlayerOpportunityMaximumAge_input"
+              id="filterPlayerOpportunityMaximumAge_input"
               placeholder={t('maximum_age')}
               onChange={(e) => setFilterData((prevData) => ({ ...prevData, maximumAge: e.target.value }))}
             />
 
             <AuthInput
               type="number"
-              name="filterMinimumHeigth_input"
-              id="filterMinimumHeight_input"
+              name="filterPlayerOpportunityMinimumHeigth_input"
+              id="filterPlayerOpportunityMinimumHeight_input"
               placeholder={t('minimum_height')}
               onChange={(e) => setFilterData((prevData) => ({ ...prevData, minimumAge: e.target.value }))}
             />
 
             <AuthInput
               type="number"
-              name="filterMinimumPayment_input"
-              id="filterMinimumPayment_input"
+              name="filterPlayerOpportunityMinimumPayment_input"
+              id="filterPlayerOpportunityMinimumPayment_input"
               placeholder={t('minimum_payment')}
               onChange={(e) => setFilterData((prevData) => ({ ...prevData, minimumPayment: e.target.value }))}
             />
 
             <AuthInput
               type="number"
-              name="filterMaximumPayment_input"
-              id="filterMaximumPayment_input"
+              name="filterPlayerOpportunityMaximumPayment_input"
+              id="filterPlayerOpportunityMaximumPayment_input"
               placeholder={t('maximum_payment')}
               onChange={(e) => setFilterData((prevData) => ({ ...prevData, maximumPayment: e.target.value }))}
             />
 
             <AuthInput
               type="text"
-              name="filterCountry_input"
-              id="filterCountrycountry_input"
+              name="filterPlayerOpportunityCountry_input"
+              id="filterPlayerOpportunityCountry_input"
               placeholder={t('country')}
               onChange={(e) => setFilterData((prevData) => ({ ...prevData, country: e.target.value }))}
             />
