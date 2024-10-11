@@ -11,7 +11,7 @@ import { IconDiv } from '../../IconDiv/IconDiv';
 import { Subtitle } from '../../Subtitle/Subtitle';
 import { GridTwoColumn } from '../../../GridTwoColumn/GridTwoColumn';
 import { InfoInRow } from '../../InfoInRow/InfoInRow';
-import { ColumnContainer } from '../../../ColumnContainer/Column-Styles';
+import { Column } from '../../../ColumnContainer/Column';
 import { Text } from '../../Text/Text';
 import { Button } from '../../Button/Button';
 import { theme } from '../../../../styles/theme';
@@ -22,18 +22,19 @@ import { GridOneColumn } from '../../../GridOneColumn/GridOneColumn';
 import { AuthForm } from '../../AuthElements/AuthForm/AuthForm';
 import { StyledLink } from '../../StyledLink/StyledLink';
 
-export function EventModal({ event, onclick }) {
+export function EventModal({ event, onclick, ownerview }) {
   const [isRegistering, setIsRegistering] = useState();
   const { t } = useTranslation();
 
   return (
     <Styled.EventModalContainer>
+      {event && (
       <>
         <Row>
           {event.title && <Title text={event.title} uppercase />}
           <IconDiv
             onclick={onclick}
-            name="Fechar Evento"
+            name={t('close_event')}
             hovercolor={theme.colors.red}
           >
             <CloseIcon />
@@ -46,18 +47,28 @@ export function EventModal({ event, onclick }) {
           {event.organizer && <InfoInRow infotitle={t('organizer')} info={event.organizer} uppercase />}
           {event.startDate && <InfoInRow infotitle={t('start_date')} info={event.startDate} uppercase />}
           {event.endDate && <InfoInRow infotitle={t('end_date')} info={event.endDate} uppercase />}
-          {event.startHour && <InfoInRow infotitle={t('hour')} info={`${event.startHour}h`} uppercase />}
+          {event.startHour && <InfoInRow infotitle={t('start_hour')} info={`${event.startHour}h`} uppercase />}
+          {event.endHour && <InfoInRow infotitle={t('end_hour')} info={`${event.endHour}h`} uppercase />}
           {event.country && <InfoInRow infotitle={t('country')} info={event.country} uppercase />}
           {event.state && <InfoInRow infotitle={t('state')} info={event.state} uppercase />}
           {event.zipCode && <InfoInRow infotitle={t('zip_code')} info={event.zipCode} uppercase />}
-          {event.adress && <InfoInRow infotitle={t('adress')} info={event.adress} uppercase />}
           {event.platform && <InfoInRow infotitle={t('platform')} info={event.platform} uppercase />}
+
         </GridOneColumn>
 
-        <ColumnContainer>
+        {event.adress && (
+          <Column>
+            <Subtitle text={t('adress')} uppercase />
+            <Text text={event.adress} />
+          </Column>
+        )}
+
+        {event.description && (
+        <Column>
           <Subtitle text={t('description')} uppercase />
-          {event.description && <Text text={event.description} />}
-        </ColumnContainer>
+          <Text text={event.description} />
+        </Column>
+        )}
 
         {/* {isRegistering && (
           <AuthForm>
@@ -154,7 +165,7 @@ export function EventModal({ event, onclick }) {
           />
         )} */}
 
-        {event.path && (
+        {event.path && !ownerview && (
         <Button
           path={event.path}
           text={t('participate')}
@@ -168,7 +179,7 @@ export function EventModal({ event, onclick }) {
         )}
 
       </>
-
+      )}
     </Styled.EventModalContainer>
   );
 }
@@ -176,4 +187,5 @@ export function EventModal({ event, onclick }) {
 EventModal.propTypes = {
   event: Prop.arrayOf(Prop.object).isRequired,
   onclick: Prop.func,
+  ownerview: Prop.bool,
 };

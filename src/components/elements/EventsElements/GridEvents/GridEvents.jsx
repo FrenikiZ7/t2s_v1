@@ -58,15 +58,7 @@ export function GridEvents({ items, selectedevent }) {
           {displayItems.map((item) => (
             <EventCard
               key={item.id}
-              imagesrc={item.src || '/assets/images/others/leagues.png'}
-              title={item.title}
-              subtitle={item.subtitle}
-              organizer={item.organizer}
-              startDate={item.startDate}
-              startHour={item.startHour}
-              country={item.country}
-              state={item.state}
-              platform={item.platform}
+              event={item}
               onClick={() => setSelectedEvent(item)}
             />
           ))}

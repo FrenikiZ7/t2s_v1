@@ -34,12 +34,14 @@ export function NewEvent({ onclick }) {
     startDate: '',
     endDate: '',
     startHour: '',
+    endHour: '',
     format: '',
     country: '',
     state: '',
     zipCode: '',
     adress: '',
     bannerImage: '',
+    path: '',
   });
 
   const { t } = useTranslation();
@@ -57,6 +59,7 @@ export function NewEvent({ onclick }) {
 
     if (eventData) {
       addEvent(s2tDispatch, eventData);
+      onclick();
     }
   };
 
@@ -181,6 +184,15 @@ export function NewEvent({ onclick }) {
             />
 
             <AuthInput
+              type="time"
+              name="eventEndHour_input"
+              id="eventEndHour_input"
+              title={t('event_end_hour')}
+              value={eventData.endHour}
+              onChange={(e) => setEventData((prevData) => ({ ...prevData, endHour: e.target.value }))}
+            />
+
+            <AuthInput
               type="date"
               name="eventStartDate_input"
               id="eventStartDate_input"
@@ -204,6 +216,17 @@ export function NewEvent({ onclick }) {
               id="eventImage_input"
               text={t('select_event_banner')}
               onChange={(e) => handleEventImage(e)}
+            />
+
+            <AuthInput
+              type="text"
+              name="eventUrl_input"
+              id="eventUrl_input"
+              title={t('event_url')}
+              placeholder={t('insert_event_url')}
+              value={eventData.path}
+              onChange={(e) => setEventData((prevData) => ({ ...prevData, path: e.target.value }))}
+              required
             />
 
           </AuthLayout>
@@ -240,7 +263,3 @@ export function NewEvent({ onclick }) {
     </Styled.NewEventContainer>
   );
 }
-
-NewEvent.propTypes = {
-  onclick: Prop.func,
-};

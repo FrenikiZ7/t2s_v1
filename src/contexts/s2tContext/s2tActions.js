@@ -12,8 +12,16 @@ export const editProposal = (dispatch, proposalData) => {
   dispatch({ type: types.edit_proposal, payload: proposalData });
 };
 
+export const removeProposal = (dispatch, proposalData) => {
+  dispatch({ type: types.remove_proposal, payload: proposalData });
+};
+
 export const addEvent = (dispatch, eventData) => {
   dispatch({ type: types.add_event, payload: eventData });
+};
+
+export const removeEvent = (dispatch, eventData) => {
+  dispatch({ type: types.remove_event, payload: eventData });
 };
 
 export const reportMedia = (dispatch, mediaData) => {

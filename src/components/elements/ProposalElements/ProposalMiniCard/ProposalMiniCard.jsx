@@ -26,21 +26,25 @@ export function ProposalMiniCard({
   return (
     <Styled.ProposalMiniCardContainer onClick={() => handleCardClick(item)}>
 
-      {/* <Styled.ProposalImage src={imagesrc} alt="Foto de perfil" /> */}
+      {item && (
+      <>
+        {/* <Styled.ProposalImage src={imagesrc} alt="Foto de perfil" /> */}
 
-      <IconDiv hovercolor="none">
-        <FormNew />
-      </IconDiv>
+        <IconDiv hovercolor="none">
+          <FormNew />
+        </IconDiv>
 
-      <Styled.Line />
+        <Styled.Line />
 
-      <Column>
-        <Styled.ProposalText>
-          {item.details.from && <Text text={item.details.from} />}
-          {item.details.opportunity && <Text text={item.details.opportunity} uppercase />}
-          {item.details.category && <Text text={item.details.category} />}
-        </Styled.ProposalText>
-      </Column>
+        <Column>
+          <Styled.ProposalText>
+            {item.details.from && <Text text={item.details.from} />}
+            {item.details.opportunity && <Text text={item.details.opportunity} uppercase />}
+            {item.details.category && <Text text={item.details.category} />}
+          </Styled.ProposalText>
+        </Column>
+      </>
+      )}
 
     </Styled.ProposalMiniCardContainer>
   );

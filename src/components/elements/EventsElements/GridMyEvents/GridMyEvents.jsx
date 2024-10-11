@@ -72,15 +72,8 @@ export function GridMyEvents({ items }) {
               {displayItems.map((item) => (
                 <EventCard
                   key={item.id}
-                  imagesrc={item.src}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  organizer={item.organizer}
-                  startDate={item.startDate}
-                  startHour={item.startHour}
-                  country={item.country}
-                  state={item.state}
-                  platform={item.platform}
+                  ownerview
+                  event={item}
                   onClick={() => setSelectedEvent(item)}
                 />
               ))}
@@ -109,7 +102,7 @@ export function GridMyEvents({ items }) {
       )}
 
       {selectedEvent && (
-        <EventModal event={selectedEvent} onclick={() => setSelectedEvent()} />
+        <EventModal ownerview event={selectedEvent} onclick={() => setSelectedEvent()} />
       )}
     </Styled.GridMyEventsContainer>
   );

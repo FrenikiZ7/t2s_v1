@@ -155,16 +155,14 @@ export function OwnerVideoSlide({
                   </Styled.BottomIconsWrapper>
                 </Row>
 
-                <Column>
-                  <Popup
-                    isopen={deleteVideo === video.url}
-                    title={t('delete_video_question')}
-                    firstoption="Sim"
-                    secondoption="Não"
-                    onfirstclick={() => handleConfirmDelete(video)}
-                    onsecondclick={() => handleIsDeleting('')}
-                  />
-                </Column>
+                <Popup
+                  isopen={deleteVideo === video.url}
+                  title={t('delete_video_question')}
+                  firstoption="Sim"
+                  secondoption="Não"
+                  onfirstclick={() => handleConfirmDelete(video)}
+                  onsecondclick={() => handleIsDeleting('')}
+                />
 
               </Styled.MediaWrapper>
 

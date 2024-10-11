@@ -160,10 +160,9 @@ export const MediaWrapper = styled.div`
       border: ${theme.borders.xtransparent}; */
     }
 
-    ${RowContainer} {
+    > ${RowContainer} {
       justify-content: space-between;
       align-items: center;
-      /* gap: ${theme.spacings.large} */
 
       @media ${theme.medias.smallpc} {
         flex-direction: row;

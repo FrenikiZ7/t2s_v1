@@ -88,16 +88,8 @@ export function GridProposals({
           <GridLayoutContainer>
             {displayItems.map((item) => (
               <ProposalCard
-                from={item.details.from}
-                date={item.details.date}
-                opportunity={item.details.opportunity}
-                category={item.details.category}
-                country={item.details.country}
-                org={item.details.org}
-                orglogo={item.details.orgLogo}
-                orgpath={item.details.orgPath}
+                proposal={item}
                 onclick={() => handleCardClick(item)}
-                id={item.opportunityId}
                 key={item.opportunityId}
                 publicview
               />

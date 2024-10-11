@@ -11,7 +11,9 @@ import { Text } from '../Text/Text';
 import { Button } from '../Button/Button';
 import { Row } from '../../RowContainer/Row';
 
-export function RemoveIcon({ id, message }) {
+export function RemoveIcon({
+  id, message, onRemove, onCancelRemove,
+}) {
   const [isRemoving, setIsRemoving] = useState();
   const { t } = useTranslation();
 
@@ -23,11 +25,13 @@ export function RemoveIcon({ id, message }) {
   const HandleRemove = (e) => {
     e.stopPropagation();
     setIsRemoving(false);
+    onRemove();
   };
 
   const HandleCancelRemove = (e) => {
     e.stopPropagation();
     setIsRemoving(false);
+    onCancelRemove();
   };
 
   return (
@@ -84,4 +88,6 @@ RemoveIcon.propTypes = {
     Prop.number,
   ]),
   message: Prop.string,
+  onRemove: Prop.func,
+  onCancelRemove: Prop.func,
 };

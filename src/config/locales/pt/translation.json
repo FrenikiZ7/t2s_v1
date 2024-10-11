@@ -90,6 +90,7 @@
 	"delete_image_question": "Tem certeza que deseja excluir essa imagem?",
 	"delete_video_question": "Tem certeza que deseja excluir esse vídeo?",
 	"delete_opportunity_question": "Tem certeza de que deseja excluir esta oportunidade?",
+	"delete_event_question": "Tem certeza de que deseja excluir este evento?",
 	"text_copied_sucess": "Texto copiado com sucesso!",
 	"text_copy_error": "Erro ao copiar o texto!",
 	"fill_all_fields": "Por favor, preencha todos os campos",
@@ -683,7 +684,6 @@
 	"crowdfunding_text_8": "- Inovação e criatividade",
 	"crowdfunding_text_9": "A área de crowdfunding tem seu próprio site, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:",
 
-	
 	"crowdfunding_step_1": "Clique em qualquer uma das opções de Crowdfunding",
 	"crowdfunding_step_2": "Você será direcionado automaticamente para a nossa plataforma de Crowdfunding",
 	"crowdfunding_step_3": "Crie sua conta ou faça login, se já tiver uma.",
@@ -755,7 +755,7 @@
 	"------------------------------------------ Events": "------------------------------------------ ",
 	"organizer": "Organizador(a)",
 	"start_date": "Data de início",
-	"end_date": "Data do fim",
+	"end_date": "Data de término",
 	"hour": "Horário",
 	"platform": "Plataforma",
 	"close_event": "Fechar Evento",
@@ -785,11 +785,16 @@
 	"insert_zip_code": "Insira o CEP",
 	"insert_rest_adress": "Insira o restante do endereço",
 	"what_event_platform": "Qual plataforma será realizado o evento",
+	"start_hour": "Horário de início",
+	"end_hour": "Horário de término",
 	"event_start_hour": "Horário de início do evento",
+	"event_end_hour": "Horário de término do evento",
 	"event_start_date": "Data de início do evento",
 	"event_end_date": "Data do fim do evento",
 	"select_event_banner": "Selecione a imagem de capa para o seu evento (16:9)",
 	"insert_more_event_details": "Insira mais detalhes sobre o evento",
+	"event_url": "URL do evento",
+	"insert_event_url": "Insira a URL do evento",
 
 	"------------------------------------------ Userspage": "------------------------------------------ ",
 

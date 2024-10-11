@@ -1,7 +1,11 @@
 export const show_data = 'show_data';
 export const add_proposal = 'add_proposal';
+export const remove_proposal = 'remove_proposal';
 export const edit_proposal = 'edit_proposal';
+
 export const add_event = 'add_event';
+export const remove_event = 'remove_event';
+
 export const report_media = 'report_media';
 
 // filters

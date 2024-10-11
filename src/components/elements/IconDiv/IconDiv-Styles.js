@@ -8,7 +8,8 @@ export const IconContainer = styled.div`
       transition: all 500ms ease-in-out ;
       width: 40px;
       display: flex;
-      align-items: center;     
+      align-items: center;   
+      justify-content: center;  
       animation: ${active ? spin360Right : spin360Left} 1000ms;
 
       &:hover {
