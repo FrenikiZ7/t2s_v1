@@ -2,6 +2,33 @@ import * as types from './s2tTypes';
 
 export const s2tReducer = (state, action) => {
   switch (action.type) {
+    case types.add_image:
+      console.log(action.payload);
+      // função disparada no handleVideoUpload dos componentes FloatingMenu > VideoComponents > YoutubeVideo, VimeoVideo
+      // action.payload contém os dados que vem do formulário de adição de vídeo
+
+    case types.remove_image:
+      console.log(action.payload);
+      // função disparada no handleVideoUpload dos componentes FloatingMenu > VideoComponents > YoutubeVideo, VimeoVideo
+      // action.payload contém os dados que vem do formulário de adição de vídeo
+
+    case types.add_video_url:
+      console.log(action.payload);
+      // função disparada no handleVideoUpload dos componentes FloatingMenu > VideoComponents > YoutubeVideo, VimeoVideo
+      // action.payload contém os dados que vem do formulário de adição de vídeo
+
+    case types.add_video_file:
+      console.log(action.payload);
+
+      // função disparada no confirmVideoUpload do componente FloatingMenu > VideoComponents > T2sVideo
+      // action.payload contém os dados que vem do formulário de adição de vídeo
+
+    case types.remove_video:
+      console.log(action.payload);
+
+      // função disparada no handleConfirmDelete do componente profileSlideElements > OwnerVideoSlide
+      // action.payload contém os dados do vídeo que está sendo solicitado a remoção
+
     case types.add_proposal:
       // função disparada no handleSubmit do componente proposalElements > newProposal
       // action.payload contém os dados que vem do formulário de criação de proposta/oportunidade

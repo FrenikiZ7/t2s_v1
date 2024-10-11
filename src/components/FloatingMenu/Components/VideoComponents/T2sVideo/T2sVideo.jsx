@@ -1,5 +1,5 @@
 import Prop from 'prop-types';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import { Close } from '@styled-icons/evaicons-solid';
@@ -14,39 +14,32 @@ import { IconDiv } from '../../../../elements/IconDiv/IconDiv';
 import { Row } from '../../../../RowContainer/Row';
 import { AuthFile } from '../../../../elements/AuthElements/AuthFile/AuthFile';
 import { useAuth } from '../../../../../contexts/AuthContext/AuthContext';
+import { addVideoFile } from '../../../../../contexts/s2tContext/s2tActions';
+
+import { S2tContext } from '../../../../../contexts/s2tContext/S2tContext';
 
 export function T2sVideo({ onCloseClick, onBackClick }) {
   const { t } = useTranslation();
   const { currentUser } = useAuth();
   const [newVideo, setNewVideo] = useState('');
 
-  const confirmAddVideo = async (event) => {
+  const s2tContext = useContext(S2tContext);
+  const { s2tState, s2tDispatch } = s2tContext;
+
+  const confirmVideoUpload = async (event) => {
     event.preventDefault();
     onCloseClick();
-
-    // if (!currentUser) {
-    //   console.error(t('not_logged'));
-    //   return;
-    // }
 
     const newFile = newVideo;
 
     if (newFile) {
-      try {
-        const response = await axios.post(`https://talent2show.onrender.com/api/userVideos/${currentUser.id}/upload`, newFile, {
-          headers: {
-            'Content-Type': 'multipart/form-data',
-          },
-        });
-        setNewVideo(undefined);
-        onCloseClick();
-      } catch (error) {
-        console.error(t('video_upload_error'), error);
-      }
+      addVideoFile(s2tDispatch, newFile);
+      setNewVideo(undefined);
+      onCloseClick();
     }
   };
 
-  const handleAddVideo = async (event) => {
+  const handleUploadVideo = async (event) => {
     event.preventDefault();
 
     const newFile = event.target.files[0];
@@ -76,13 +69,13 @@ export function T2sVideo({ onCloseClick, onBackClick }) {
         </IconDiv>
       </Row>
 
-      <AuthForm onSubmit={confirmAddVideo}>
+      <AuthForm onSubmit={confirmVideoUpload}>
 
         {/* <AuthInput title={t('name')} type="text" placeholder={t('video_name')} /> */}
         <AuthFile
           id="addVideo"
           accept="video/*"
-          onChange={handleAddVideo}
+          onChange={handleUploadVideo}
         />
 
         <AuthButton

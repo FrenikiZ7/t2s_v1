@@ -1,5 +1,5 @@
 import Prop, { bool } from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { Add as AddIcon } from '@styled-icons/material-outlined/Add';
@@ -16,6 +16,8 @@ import { ImageModal } from '../../ImageModal/ImageModal';
 import { Popup } from '../../Popup/Popup';
 import { Column } from '../../../ColumnContainer/Column';
 import { useAuth } from '../../../../contexts/AuthContext/AuthContext';
+import { addImage, removeImage } from '../../../../contexts/s2tContext/s2tActions';
+import { S2tContext } from '../../../../contexts/s2tContext/S2tContext';
 
 // Galeria de fotos utilizada quando o usuário acessa o próprio perfil
 export function OwnerSlide({
@@ -27,6 +29,9 @@ export function OwnerSlide({
   const { t } = useTranslation();
   const { currentUser } = useAuth();
   const [imagesData, setImagesData] = useState([]);
+
+  const s2tContext = useContext(S2tContext);
+  const { s2tState, s2tDispatch } = s2tContext;
 
   useEffect(() => {
     setImagesData(items);
@@ -41,34 +46,22 @@ export function OwnerSlide({
   };
 
   const handleConfirmDelete = (image) => {
-    // lógica para excluir imagem
-    setDeleteImage('');
+    if (image) {
+      removeImage(s2tDispatch, image);
+      setDeleteImage('');
+    }
   };
 
-  const handleAddImage = async (event) => {
-    if (!currentUser) {
-      console.error(t('not_logged'));
-      return;
-    }
+  const handleUploadImage = async (event) => {
+    // if (!currentUser) {
+    //   console.error(t('not_logged'));
+    //   return;
+    // }
 
     const newFile = event.target.files[0];
-    console.log(newFile);
 
     if (newFile) {
-      const formData = new FormData();
-      formData.append('image_file', newFile);
-
-      try {
-        const response = await axios.post(`https://talent2show.onrender.com/api/userPhotos/${currentUser.id}/upload`, formData, {
-          headers: {
-            'Content-Type': 'multipart/form-data',
-          },
-        });
-
-        setNewImage(response.data.image_file);
-      } catch (error) {
-        console.error(t('image_upload_error'), error);
-      }
+      addImage(s2tDispatch, newFile);
     }
   };
 
@@ -146,7 +139,7 @@ export function OwnerSlide({
           ))}
 
           <SwiperSlide>
-            <AuthIconFile onChange={handleAddImage} id="addImage" accept="image/*" hovercolor={theme.colors.secondary} name={t('add_photo_button')}>
+            <AuthIconFile onChange={handleUploadImage} id="addImage" accept="image/*" hovercolor={theme.colors.secondary} name={t('add_photo_button')}>
               <AddIcon />
             </AuthIconFile>
           </SwiperSlide>

@@ -28,6 +28,8 @@ import { LeagueContext } from '../../../../../contexts/userContext/LeagueProvide
 import { UniversityContext } from '../../../../../contexts/userContext/UniversityProvider/UniversityContext';
 import { StaffContext } from '../../../../../contexts/userContext/StaffProvider/StaffContext';
 import { FanContext } from '../../../../../contexts/userContext/FanProvider/FanContext';
+import { addVideoUrl } from '../../../../../contexts/s2tContext/s2tActions';
+import { S2tContext } from '../../../../../contexts/s2tContext/S2tContext';
 
 export function YoutubeVideo({ onCloseClick, onBackClick, profileType }) {
   const playerContext = useContext(PlayerContext);
@@ -51,6 +53,9 @@ export function YoutubeVideo({ onCloseClick, onBackClick, profileType }) {
   const fanContext = useContext(FanContext);
   const { fanState, fanDispatch } = fanContext;
 
+  const s2tContext = useContext(S2tContext);
+  const { s2tState, s2tDispatch } = s2tContext;
+
   const { t } = useTranslation();
 
   const [videoData, setVideoData] = useState({
@@ -63,21 +68,8 @@ export function YoutubeVideo({ onCloseClick, onBackClick, profileType }) {
   const handleVideoUpload = (e) => {
     e.preventDefault();
 
-    const actions = {
-      player: () => addPlayerVideo(playerDispatch, videoData),
-      club: () => addClubVideo(clubDispatch, videoData),
-      agency: () => addAgencyVideo(agencyDispatch, videoData),
-      university: () => addUniversityVideo(universityDispatch, videoData),
-      league: () => addLeagueVideo(leagueDispatch, videoData),
-      fan: () => addFanVideo(fanDispatch, videoData),
-      staff: () => addStaffVideo(staffDispatch, videoData),
-
-    };
-
     if (videoData.url) {
-      // Se existir uma URL preenchida, é disparado uma função baseada na prop ProfileType
-      const action = actions[profileType];
-      action();
+      addVideoUrl(s2tDispatch, videoData);
       onCloseClick();
     } else {
       // Caso não existir é exibido uma mensagem de erro

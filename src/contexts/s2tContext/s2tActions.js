@@ -4,6 +4,26 @@ export const showData = (dispatch) => {
   dispatch({ type: types.show_data, payload: [] });
 };
 
+export const addImage = (dispatch, imageData) => {
+  dispatch({ type: types.add_image, payload: imageData });
+};
+
+export const removeImage = (dispatch, imageData) => {
+  dispatch({ type: types.remove_image, payload: imageData });
+};
+
+export const addVideoUrl = (dispatch, videoData) => {
+  dispatch({ type: types.add_video_url, payload: videoData });
+};
+
+export const addVideoFile = (dispatch, videoData) => {
+  dispatch({ type: types.add_video_file, payload: videoData });
+};
+
+export const removeVideo = (dispatch, videoData) => {
+  dispatch({ type: types.remove_video, payload: videoData });
+};
+
 export const addProposal = (dispatch, proposalData) => {
   dispatch({ type: types.add_proposal, payload: proposalData });
 };

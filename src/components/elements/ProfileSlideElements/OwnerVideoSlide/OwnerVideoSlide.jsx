@@ -43,6 +43,8 @@ import { LeagueContext } from '../../../../contexts/userContext/LeagueProvider/L
 import { UniversityContext } from '../../../../contexts/userContext/UniversityProvider/UniversityContext';
 import { StaffContext } from '../../../../contexts/userContext/StaffProvider/StaffContext';
 import { FanContext } from '../../../../contexts/userContext/FanProvider/FanContext';
+import { removeVideo } from '../../../../contexts/s2tContext/s2tActions';
+import { S2tContext } from '../../../../contexts/s2tContext/S2tContext';
 
 // Galeria de vídeos utilizada quando o usuário acessa o próprio perfil
 export function OwnerVideoSlide({
@@ -71,6 +73,9 @@ export function OwnerVideoSlide({
   const fanContext = useContext(FanContext);
   const { fanState, fanDispatch } = fanContext;
 
+  const s2tContext = useContext(S2tContext);
+  const { s2tState, s2tDispatch } = s2tContext;
+
   const { t } = useTranslation();
   const [deleteVideo, setDeleteVideo] = useState('');
   const [isUploading, setIsUploading] = useState(false);
@@ -82,20 +87,9 @@ export function OwnerVideoSlide({
   };
 
   const handleConfirmDelete = (video) => {
-    const actions = {
-      player: () => removePlayerVideo(playerDispatch, video),
-      club: () => removeClubVideo(clubDispatch, video),
-      agency: () => removeAgencyVideo(agencyDispatch, video),
-      university: () => removeUniversityVideo(universityDispatch, video),
-      league: () => removeLeagueVideo(leagueDispatch, video),
-      fan: () => removeFanVideo(fanDispatch, video),
-      staff: () => removeStaffVideo(staffDispatch, video),
-    };
-
-    const action = actions[profileType];
-    action();
-
-    setDeleteVideo('');
+    if (video) {
+      removeVideo(s2tDispatch, video);
+    }
   };
 
   useEffect(() => {
