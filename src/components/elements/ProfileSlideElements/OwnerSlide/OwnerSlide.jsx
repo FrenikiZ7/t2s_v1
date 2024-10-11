@@ -52,7 +52,7 @@ export function OwnerSlide({
     }
   };
 
-  const handleUploadImage = async (event) => {
+  const handleImageUpload = async (event) => {
     // if (!currentUser) {
     //   console.error(t('not_logged'));
     //   return;
@@ -139,7 +139,7 @@ export function OwnerSlide({
           ))}
 
           <SwiperSlide>
-            <AuthIconFile onChange={handleUploadImage} id="addImage" accept="image/*" hovercolor={theme.colors.secondary} name={t('add_photo_button')}>
+            <AuthIconFile onChange={handleImageUpload} id="addImage" accept="image/*" hovercolor={theme.colors.secondary} name={t('add_photo_button')}>
               <AddIcon />
             </AuthIconFile>
           </SwiperSlide>
