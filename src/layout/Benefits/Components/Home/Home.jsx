@@ -13,6 +13,7 @@ import { StyledLink } from '../../../../components/elements/StyledLink/StyledLin
 import { ListContainer, ListItem, ListWrapper } from '../../../../components/elements/List/List-Styles';
 import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
+import { Column } from '../../../../components/ColumnContainer/Column';
 
 export function Home() {
   useEffect(() => {
@@ -31,8 +32,10 @@ export function Home() {
 
         <Title text={t('welcome_t2s_benefits')} uppercase />
 
-        <Text text={t('benefits_text_1')} />
-        <Text text={t('benefits_text_2')} />
+        <Column>
+          <Text text={t('benefits_text_1')} />
+          <Text text={t('benefits_text_2')} />
+        </Column>
 
       </Banner>
 
