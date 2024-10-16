@@ -13,6 +13,7 @@ import { StyledLink } from '../../../../components/elements/StyledLink/StyledLin
 import { ListContainer, ListItem, ListWrapper } from '../../../../components/elements/List/List-Styles';
 import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
+import { Column } from '../../../../components/ColumnContainer/Column';
 
 export function Crowdfunding() {
   useEffect(() => {
@@ -31,17 +32,23 @@ export function Crowdfunding() {
 
         <Title text={t('welcome_t2s_crowdfunding')} uppercase />
 
-        <Text text={t('crowdfunding_text_1')} />
-        <Text text={t('crowdfunding_text_2')} />
-        <Text text={t('crowdfunding_text_3')} />
-        <Text text={t('crowdfunding_text_4')} />
-        <Text text={t('crowdfunding_text_5')} />
-        <Text text={t('crowdfunding_text_6')} />
-        <Text text={t('crowdfunding_text_7')} />
-        <Text text={t('crowdfunding_text_8')} />
-        <Text text={t('crowdfunding_text_9')} />
+        <Column>
+          <Text text={t('crowdfunding_text_1')} />
+        </Column>
 
+        <Column>
+          <Text text={t('crowdfunding_text_2')} />
+          <Text text={t('crowdfunding_text_3')} />
+          <Text text={t('crowdfunding_text_4')} />
+          <Text text={t('crowdfunding_text_5')} />
+          <Text text={t('crowdfunding_text_6')} />
+          <Text text={t('crowdfunding_text_7')} />
+          <Text text={t('crowdfunding_text_8')} />
+        </Column>
 
+        <Column>
+          <Text text={t('crowdfunding_text_9')} />
+        </Column>
 
         <ListWrapper>
           <ListContainer>

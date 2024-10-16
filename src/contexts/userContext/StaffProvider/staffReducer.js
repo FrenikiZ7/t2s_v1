@@ -48,22 +48,41 @@ export const staffReducer = (state, action) => {
         },
       };
 
-    case types.add_academic_history:
+    case types.add_certificate_or_license_history:
 
       return {
         ...state,
         profile: {
           ...state.profile,
-          studies: [...state.profile.studies, action.payload],
+          certificatesOrLicenses: [...state.profile.certificatesOrLicenses, action.payload],
         },
       };
 
-    case types.remove_academic_history:
+    case types.add_course_or_training_history:
+
       return {
         ...state,
         profile: {
           ...state.profile,
-          studies: state.profile.studies.filter((studie) => studie.id !== action.payload.id),
+          coursesOrTrainings: [...state.profile.coursesOrTrainings, action.payload],
+        },
+      };
+
+    case types.remove_certificate_or_license_history:
+      return {
+        ...state,
+        profile: {
+          ...state.profile,
+          certificatesOrLicenses: state.profile.certificatesOrLicenses.filter((certificateOrLicense) => certificateOrLicense.name !== action.payload.name),
+        },
+      };
+
+    case types.remove_course_or_training_history:
+      return {
+        ...state,
+        profile: {
+          ...state.profile,
+          coursesOrTrainings: state.profile.coursesOrTrainings.filter((courseOrTraining) => courseOrTraining.id !== action.payload.id),
         },
       };
 

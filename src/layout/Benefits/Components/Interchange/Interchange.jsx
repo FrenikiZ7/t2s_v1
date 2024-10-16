@@ -33,8 +33,10 @@ export function Interchange() {
 
         <Title text={t('welcome_t2s_interchange')} uppercase />
 
-        <Text text={t('interchange_text_0')} />
-        <Text text={t('interchange_text_00')} />
+        <Column>
+          <Text text={t('interchange_text_0')} />
+          <Text text={t('interchange_text_00')} />
+        </Column>
 
         <Column>
           <Subtitle text={t('interchange_subtitle_1')} uppercase />
@@ -60,7 +62,6 @@ export function Interchange() {
           <Subtitle text={t('interchange_subtitle_5')} uppercase />
           <Text text={t('interchange_text_5')} />
         </Column>
-
 
         <ListWrapper>
           <ListContainer>

@@ -14,6 +14,7 @@ import { ListContainer, ListItem, ListWrapper } from '../../../../components/ele
 import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
 import { GridEvents } from '../../../../components/elements/EventsElements/GridEvents/GridEvents';
+import { Column } from '../../../../components/ColumnContainer/Column';
 
 export function Events({ items }) {
   const { t } = useTranslation();
@@ -33,8 +34,10 @@ export function Events({ items }) {
 
         <Title text={t('welcome_t2s_events')} uppercase />
 
-        <Text text={t('events_text_1')} />
-        <Text text={t('events_text_2')} />
+        <Column>
+          <Text text={t('events_text_1')} />
+          <Text text={t('events_text_2')} />
+        </Column>
 
         <ListWrapper>
           <ListContainer>

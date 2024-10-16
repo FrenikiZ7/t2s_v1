@@ -5,12 +5,30 @@ import { BannerSlideWrapper } from '../../../../components/elements/BannerSlide/
 import { LinkContainer } from '../../../../components/elements/StyledLink/StyledLink-Styles';
 import { ListContainer, ListItem } from '../../../../components/elements/List/List-Styles';
 import { slideIn, slideOut } from '../../../../styles/animations';
+import { BannerContainer } from '../../../../components/elements/Banner/Banner-Styles';
+import { ColumnContainer } from '../../../../components/ColumnContainer/Column-Styles';
+import { SubtitleElement } from '../../../../components/elements/Subtitle/Subtitle-Styles';
 
 export const EnglishContainer = styled.article`
   ${({ theme }) => css`
-     text-align: center;
      display: flex;
      flex-direction: column;
+
+     ${BannerContainer} {
+      height: 100%;
+      padding-top: 100px;
+      
+        ${ColumnContainer} {
+          gap: 0px;
+          max-width: 900px;
+          width: 100%;
+
+
+           ${SubtitleElement} {
+            margin-bottom: ${theme.spacings.xsmall};
+           }
+        }
+     }
 
      ${BannerSlideWrapper} {
 

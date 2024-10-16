@@ -13,6 +13,8 @@ import { StyledLink } from '../../../../components/elements/StyledLink/StyledLin
 import { ListContainer, ListItem, ListWrapper } from '../../../../components/elements/List/List-Styles';
 import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
+import { Column } from '../../../../components/ColumnContainer/Column';
+import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
 
 export function TelemedicineUsa() {
   useEffect(() => {
@@ -31,18 +33,27 @@ export function TelemedicineUsa() {
 
         <Title text={t('welcome_t2s_telemedicine_usa')} uppercase />
 
-        <Text text={t('telemedicine_usa_text_3')} />
-        <Text text={t('telemedicine_usa_text_4')} />
-        <Text text={t('telemedicine_usa_text_5')} />
-        <Text text={t('telemedicine_usa_text_6')} />
-        <Text text={t('telemedicine_usa_text_7')} />
-        <Text text={t('telemedicine_usa_text_8')} />
-        <Text text={t('telemedicine_usa_text_9')} />
-        <Text text={t('telemedicine_usa_text_1')} />
-        <Text text={t('telemedicine_usa_text_2')} />
+        <Column>
+          <Text text={t('telemedicine_usa_text_3')} />
+        </Column>
 
+        <Column>
 
+          <Subtitle text={t('telemedicine_usa_text_4')} as="h3" />
 
+          <Column>
+            <Text text={t('telemedicine_usa_text_5')} />
+            <Text text={t('telemedicine_usa_text_6')} />
+            <Text text={t('telemedicine_usa_text_7')} />
+            <Text text={t('telemedicine_usa_text_8')} />
+            <Text text={t('telemedicine_usa_text_9')} />
+            <Text text={t('telemedicine_usa_text_1')} />
+          </Column>
+        </Column>
+
+        <Column>
+          <Text text={t('telemedicine_usa_text_2')} />
+        </Column>
 
         <ListWrapper>
           <ListContainer>

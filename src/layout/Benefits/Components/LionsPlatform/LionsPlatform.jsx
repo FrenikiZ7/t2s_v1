@@ -33,9 +33,10 @@ export function LionsPlatform() {
 
         <Title text={t('welcome_t2s_lions_platform')} uppercase />
 
-        <Text text={t('lions_platform_text_0')} />
-        <Text text={t('lions_platform_text_00')} />
-
+        <Column>
+          <Text text={t('lions_platform_text_0')} />
+          <Text text={t('lions_platform_text_00')} />
+        </Column>
 
         <Column>
           <Subtitle text={t('lions_platform_subtitle_1')} uppercase />
@@ -61,7 +62,7 @@ export function LionsPlatform() {
           <Subtitle text={t('lions_platform_subtitle_6')} uppercase />
           <Text text={t('lions_platform_text_6')} />
         </Column>
-        
+
         <ListWrapper>
           <ListContainer>
             <ListItem>

@@ -22,7 +22,9 @@ import { AuthDropdown } from '../../../../../../components/elements/AuthElements
 import { S2tContext } from '../../../../../../contexts/s2tContext/S2tContext';
 import { StaffContext } from '../../../../../../contexts/userContext/StaffProvider/StaffContext';
 import {
-  addAcademicHistory, addClubHistory, addAwardHistory, changeProfileInfo,
+  addClubHistory, addAwardHistory, changeProfileInfo,
+  addCertificateOrLicenseHistory,
+  addCourseOrTrainingHistory,
 } from '../../../../../../contexts/userContext/StaffProvider/staffActions';
 
 export function Staff() {
@@ -108,27 +110,52 @@ export function Staff() {
     }
   };
 
-  const [academicHistory, setAcademicHistory] = useState(
+  const [certificateOrLicenseHistory, setCertificateOrLicenseHistory] = useState(
     {
       name: '',
       earliestDate: '',
-      latestDate: '',
     },
   );
 
-  const handleAddAcademic = async (e) => {
+  const handleAddCertificateOrLicense = async (e) => {
     e.preventDefault();
     e.stopPropagation();
 
     // Verifica se os campos estão preenchidos
-    if (academicHistory.name && academicHistory.earliestDate) {
-      addAcademicHistory(staffDispatch, academicHistory);
+    if (certificateOrLicenseHistory.name && certificateOrLicenseHistory.earliestDate) {
+      // lógica para alterar o histórico de títulos e prêmios no backend
 
-      // Reseta o estado local
-      setAcademicHistory({
+      addCertificateOrLicenseHistory(staffDispatch, certificateOrLicenseHistory);
+
+      setCertificateOrLicenseHistory({
         name: '',
         earliestDate: '',
-        latestDate: '',
+      });
+    } else {
+      console.error(t('fill_all_fields'));
+    }
+  };
+
+  const [courseOrTrainingHistory, setCourseOrTrainingHistory] = useState(
+    {
+      earliestDate: '',
+      date: '',
+    },
+  );
+
+  const handleAddCourseOrTraining = async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Verifica se os campos estão preenchidos
+    if (courseOrTrainingHistory.name && courseOrTrainingHistory.earliestDate) {
+      // lógica para alterar o histórico de títulos e prêmios no backend
+
+      addCourseOrTrainingHistory(staffDispatch, courseOrTrainingHistory);
+
+      setCourseOrTrainingHistory({
+        name: '',
+        earliestDate: '',
       });
     } else {
       console.error(t('fill_all_fields'));
@@ -143,8 +170,6 @@ export function Staff() {
       navigate(-1);
     }
   };
-
-  console.log(profileData);
 
   return (
     <Styled.StaffContainer>
@@ -266,23 +291,40 @@ export function Staff() {
 
             <Subtitle text={t('your_academic_history')} size={theme.sizes.xlarge} />
 
-            <AuthHistoric
-              title={t('certifications')}
-              id="staffAcademicHistory"
-              inputtitle={t('certification')}
-              placeholder={t('certification_name')}
-            // Histórico do usuário (Dados anteriores que já estão salvos)
-              historic={staffState.profile.studies}
-            // OnChanges para atualizar o clubHistory
-              onChangeName={(e) => setAcademicHistory((prevData) => ({ ...prevData, name: e.target.value }))}
-              onChangeEarliestDate={(e) => setAcademicHistory((prevData) => ({ ...prevData, earliestDate: e.target.value }))}
-              onChangeLatestDate={(e) => setAcademicHistory((prevData) => ({ ...prevData, latestDate: e.target.value || undefined }))}
-            // Values para sincronizar os inputs com o estado do clubHistory
-              nameValue={academicHistory.name}
-              earliestDateValue={academicHistory.earliestDate}
-              latestDateValue={academicHistory.latestDate}
-              onClick={(e) => handleAddAcademic(e)}
-            />
+            <Row>
+              <AuthAchievement
+                title={t('certificates_or_licenses')}
+                id="staffCertificatesOrLicensesHistory"
+                inputtitle={t('certificate_or_license')}
+                placeholder={t('certificate_or_license_name')}
+                // Histórico do usuário (Dados anteriores que já estão salvos)
+                achievements={staffState.profile.certificatesOrLicenses}
+                // OnChanges para atualizar o awardHistory
+                onChangeName={(e) => setCertificateOrLicenseHistory((prevData) => ({ ...prevData, name: e.target.value }))}
+                onChangeDate={(e) => setCertificateOrLicenseHistory((prevData) => ({ ...prevData, earliestDate: e.target.value }))}
+                // Values para sincronizar os inputs com o estado do awardHistory
+                nameValue={certificateOrLicenseHistory.name}
+                dateValue={certificateOrLicenseHistory.earliestDate}
+                onClick={(e) => handleAddCertificateOrLicense(e)}
+              />
+
+              <AuthAchievement
+                title={t('courses_or_trainings')}
+                id="staffCoursesOrTrainingsHistory"
+                inputtitle={t('course_or_training')}
+                placeholder={t('course_or_training_name')}
+                // Histórico do usuário (Dados anteriores que já estão salvos)
+                achievements={staffState.profile.coursesOrTrainings}
+                // OnChanges para atualizar o awardHistory
+                onChangeName={(e) => setCourseOrTrainingHistory((prevData) => ({ ...prevData, name: e.target.value }))}
+                onChangeDate={(e) => setCourseOrTrainingHistory((prevData) => ({ ...prevData, earliestDate: e.target.value }))}
+                // Values para sincronizar os inputs com o estado do awardHistory
+                nameValue={courseOrTrainingHistory.name}
+                dateValue={courseOrTrainingHistory.earliestDate}
+                onClick={(e) => handleAddCourseOrTraining(e)}
+              />
+            </Row>
+
             <AuthButton
               name="editOStaffProfile_submit"
               id="editStaffProfile_submit"

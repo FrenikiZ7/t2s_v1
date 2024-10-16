@@ -13,7 +13,11 @@ import {
   removeCompetitionHistory as removeUniversityCompetitionHistory,
   removeAwardHistory as removeUniversityAwardHistory,
 } from '../../../../contexts/userContext/UniversityProvider/universityActions';
-import { removeAwardHistory as removeStaffAwardHistory } from '../../../../contexts/userContext/StaffProvider/staffActions';
+import {
+  removeCourseOrTrainingHistory as removeStaffCoursesOrTrainingsHistory,
+  removeCertificateOrLicenseHistory as removeStaffCertificateOrLicenseHistory,
+} from '../../../../contexts/userContext/StaffProvider/staffActions';
+
 import { ClubContext } from '../../../../contexts/userContext/ClubProvider/ClubContext';
 import { UniversityContext } from '../../../../contexts/userContext/UniversityProvider/UniversityContext';
 import { StaffContext } from '../../../../contexts/userContext/StaffProvider/StaffContext';
@@ -44,6 +48,8 @@ export function AuthAchievement({
       universityCompetitionsHistory: () => removeUniversityCompetitionHistory(universityDispatch, item),
       universityAwardsHistory: () => removeUniversityAwardHistory(universityDispatch, item),
       staffAwardsHistory: () => removeStaffAwardHistory(staffDispatch, item),
+      staffCertificatesOrLicensesHistory: () => removeStaffCertificateOrLicenseHistory(staffDispatch, item),
+      staffCoursesOrTrainingsHistory: () => removeStaffCoursesOrTrainingsHistory(staffDispatch, item),
     };
 
     if (actions[id]) {

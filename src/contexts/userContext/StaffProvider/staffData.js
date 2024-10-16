@@ -5,8 +5,15 @@ export const staffData = {
     },
 
     info: {
-
     },
+
+    certificatesOrLicenses: [
+
+    ],
+
+    coursesOrTrainings: [
+
+    ],
 
     photos: [
 

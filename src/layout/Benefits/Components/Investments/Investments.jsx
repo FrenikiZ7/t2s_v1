@@ -33,8 +33,10 @@ export function Investments() {
 
         <Title text={t('welcome_t2s_investments')} uppercase />
 
-        <Text text={t('investments_text_0')} />
-        <Text text={t('investments_text_00')} />
+        <Column>
+          <Text text={t('investments_text_0')} />
+          <Text text={t('investments_text_00')} />
+        </Column>
 
         <Column>
           <Subtitle text={t('investments_subtitle_1')} uppercase />
@@ -63,7 +65,7 @@ export function Investments() {
 
         <ListWrapper>
           <ListContainer>
-          <ListItem>
+            <ListItem>
               {t('investments_step_1')}
             </ListItem>
 

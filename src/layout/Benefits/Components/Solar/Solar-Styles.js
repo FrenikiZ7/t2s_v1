@@ -8,11 +8,29 @@ import { slideIn, slideOut } from '../../../../styles/animations';
 import { AuthContainer } from '../../../../components/elements/AuthElements/AuthWrapper/AuthWrapper-Styles';
 import { ColumnContainer } from '../../../../components/ColumnContainer/Column-Styles';
 import { RowContainer } from '../../../../components/RowContainer/Row-Styles.js';
+import { BannerContainer } from '../../../../components/elements/Banner/Banner-Styles.js';
+import { SubtitleElement } from '../../../../components/elements/Subtitle/Subtitle-Styles.js';
 
 export const SolarContainer = styled.article`
   ${({ theme }) => css`
      display: flex;
      flex-direction: column;
+
+     ${BannerContainer} {
+      height: 100%;
+      padding-top: 100px;
+
+        ${ColumnContainer} {
+          gap: 0px;
+          max-width: 900px;
+          width: 100%;
+
+
+           ${SubtitleElement} {
+            margin-bottom: ${theme.spacings.xsmall};
+           }
+        }
+     }
 
 
      ${AuthContainer} {

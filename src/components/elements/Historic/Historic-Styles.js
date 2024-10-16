@@ -4,7 +4,6 @@ export const HistoricContainer = styled.section`
   ${({ theme }) => css`
     width: 40%;
     margin-bottom: ${theme.spacings.small};
-
     @media ${theme.medias.smallpc} {
       width: 100%;
     }
@@ -43,13 +42,8 @@ export const Item = styled.h1`
     font-size: ${theme.sizes.large};
     text-transform: uppercase;
 
-    width: 45%;
+    width: 100%;  //anteriormente 45% e 30% em smallpc
     min-width: 95px;
-    margin-right: 20px;
-
-    @media ${theme.medias.smallpc} {
-      width: 30%;
-    }
 
     @media ${theme.medias.tablet} {
      font-size: ${theme.sizes.small};
@@ -66,7 +60,7 @@ export const Years = styled.time`
   ${({ theme }) => css`
     font-weight: 600;
     font-size: ${theme.sizes.large};
-
+    width: 100%;
     @media ${theme.medias.tablet} {
      font-size: ${theme.sizes.small};
     }

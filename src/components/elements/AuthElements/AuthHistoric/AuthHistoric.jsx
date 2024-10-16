@@ -8,7 +8,7 @@ import { Button } from '../../Button/Button';
 import { AuthCheckbox } from '../AuthCheckbox/AuthCheckbox';
 import { AuthInfo } from '../AuthInfo/AuthInfo';
 import { removeAcademicHistory, removeClubHistory } from '../../../../contexts/userContext/PlayerProvider/playerActions';
-import { removeAcademicHistory as removeStaffAcademicHistory, removeClubHistory as removeStaffClubHistory } from '../../../../contexts/userContext/StaffProvider/staffActions';
+import { removeClubHistory as removeStaffClubHistory } from '../../../../contexts/userContext/StaffProvider/staffActions';
 
 import { PlayerContext } from '../../../../contexts/userContext/PlayerProvider/PlayerContext';
 import { StaffContext } from '../../../../contexts/userContext/StaffProvider/StaffContext';

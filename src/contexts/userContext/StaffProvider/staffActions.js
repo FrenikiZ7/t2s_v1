@@ -16,12 +16,20 @@ export const removeClubHistory = (dispatch, clubData) => {
   dispatch({ type: types.remove_club_history, payload: clubData });
 };
 
-export const addAcademicHistory = (dispatch, academicData) => {
-  dispatch({ type: types.add_academic_history, payload: academicData });
+export const addCertificateOrLicenseHistory = (dispatch, certificateOrLicenseData) => {
+  dispatch({ type: types.add_certificate_or_license_history, payload: certificateOrLicenseData });
 };
 
-export const removeAcademicHistory = (dispatch, academicData) => {
-  dispatch({ type: types.remove_academic_history, payload: academicData });
+export const removeCertificateOrLicenseHistory = (dispatch, certificateOrLicenseData) => {
+  dispatch({ type: types.remove_certificate_or_license_history, payload: certificateOrLicenseData });
+};
+
+export const addCourseOrTrainingHistory = (dispatch, courseOrTrainingData) => {
+  dispatch({ type: types.add_course_or_training_history, payload: courseOrTrainingData });
+};
+
+export const removeCourseOrTrainingHistory = (dispatch, courseOrTrainingData) => {
+  dispatch({ type: types.remove_course_or_training_history, payload: courseOrTrainingData });
 };
 
 export const addAwardHistory = (dispatch, awardData) => {

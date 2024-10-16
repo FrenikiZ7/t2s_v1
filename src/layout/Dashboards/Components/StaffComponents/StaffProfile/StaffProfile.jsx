@@ -23,9 +23,11 @@ export function StaffProfile() {
 
       <OwnerSlide items={staffState?.profile?.photos || []} title={t('photos')} ownerview />
       <OwnerVideoSlide items={staffState?.profile?.videos || []} title={t('videos')} profileType="staff" />
+      <Historic items={staffState?.profile?.clubs || []} title={t('club_history')} />
+
       <Row>
-        <Historic items={staffState?.profile?.clubs || []} title={t('club_history')} />
-        <Historic items={staffState?.profile?.studies || []} title={t('academic_history')} />
+        <Historic items={staffState?.profile?.certificatesOrLicenses || []} title={t('certificates_or_licenses')} />
+        <Historic items={staffState?.profile?.coursesOrTrainings || []} title={t('courses_or_trainings')} />
       </Row>
 
       <TextSlide items={staffState?.profile?.awards || []} title={t('titles_and_awards')} />

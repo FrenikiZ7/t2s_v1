@@ -33,19 +33,13 @@ export function CryptoWallet() {
 
         <Title text={t('welcome_t2s_crypto_wallet')} uppercase />
 
-        <Text text={t('crypto_wallet_text_1')} />
-        <Text text={t('crypto_wallet_text_2')} />
-
+        <Column>
+          <Text text={t('crypto_wallet_text_1')} />
+          <Text text={t('crypto_wallet_text_2')} />
+        </Column>
 
         <ListWrapper>
           <ListContainer>
-          <ListItem>
-              {t('crypto_wallet_text_1')}
-            </ListItem>
-
-            <ListItem>
-              {t('crypto_wallet_text_2')}
-            </ListItem>
 
             <ListItem>
               {t('crypto_wallet_step_1')}

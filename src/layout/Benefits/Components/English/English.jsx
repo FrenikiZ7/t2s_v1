@@ -15,6 +15,7 @@ import { s2tData } from '../../../../contexts/s2tContext/s2tData';
 import { Banner } from '../../../../components/elements/Banner/Banner';
 import { Column } from '../../../../components/ColumnContainer/Column';
 import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
+
 export function English() {
   useEffect(() => {
     window.scrollTo({
@@ -32,8 +33,10 @@ export function English() {
 
         <Title text={t('welcome_t2s_english')} uppercase />
 
-        <Text text={t('english_text_0')} />
-        <Text text={t('english_text_00')} />
+        <Column>
+          <Text text={t('english_text_0')} />
+          <Text text={t('english_text_00')} />
+        </Column>
 
         <Column>
           <Subtitle text={t('english_subtitle_1')} uppercase />
@@ -57,7 +60,7 @@ export function English() {
 
         <ListWrapper>
           <ListContainer>
-          <ListItem>
+            <ListItem>
               {t('english_step_1')}
             </ListItem>
 

@@ -6,15 +6,39 @@ import { LinkContainer } from '../../../../components/elements/StyledLink/Styled
 import { ListContainer, ListItem } from '../../../../components/elements/List/List-Styles';
 import { slideIn, slideOut } from '../../../../styles/animations';
 import { GridLayoutContainer } from '../../../../components/GridLayout/GridLayout-Styles';
+import { BannerContainer } from '../../../../components/elements/Banner/Banner-Styles';
+import { ColumnContainer } from '../../../../components/ColumnContainer/Column-Styles';
+import { SubtitleElement } from '../../../../components/elements/Subtitle/Subtitle-Styles';
+import { GridEventsContainer } from '../../../../components/elements/EventsElements/GridEvents/GridEvents-Styles';
 
 export const EventsContainer = styled.article`
   ${({ theme }) => css`
  
-     text-align: center;
-
      display: flex;
      flex-direction: column;
 
+     ${GridEventsContainer} {
+      min-height: 400px;
+      
+        ${TextElement} {
+          text-align: center;
+        }
+     }
+
+     ${BannerContainer} {
+      height: 100%;
+      width: 100%;
+      padding-top: 100px;
+
+        ${ColumnContainer} {
+          gap: 0px;
+          max-width: 900px;
+
+           ${SubtitleElement} {
+            margin-bottom: ${theme.spacings.xsmall};
+           }
+        }
+     }
 
 
      & ${ListContainer} {

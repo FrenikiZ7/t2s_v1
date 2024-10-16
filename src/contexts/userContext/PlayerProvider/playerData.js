@@ -12,6 +12,7 @@ export const playerData = {
     ],
 
     videos: [
+
     ],
 
     clubs: [

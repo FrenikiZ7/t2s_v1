@@ -44,13 +44,10 @@ export function Historic({ items, title }) {
                 <Styled.Years>
                   (
                   {new Date(item.earliestDate).getFullYear()}
-                  {' '}
-                  -
-                  {' '}
-                  {item.latestDate ? new Date(item.latestDate).getFullYear() : 'Atual'}
-
+                  {item.latestDate && ` - ${new Date(item.latestDate).getFullYear()}`}
                   )
                 </Styled.Years>
+
               </Styled.HistoricElement>
             ))}
           </>
