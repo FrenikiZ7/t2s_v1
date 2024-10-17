@@ -120,7 +120,7 @@ import { AgencyPage } from './layout/Users/Components/Agency/AgencyPage';
 import { FanPage } from './layout/Users/Components/Fan/FanPage';
 import { AgentPage } from './layout/Users/Components/Agent/AgentPage';
 import { LeaguePage } from './layout/Users/Components/League/LeaguePage';
-import { StaffOpportunities } from './layout/Dashboards/Components/StaffOpportunities/STaffOpportunities';
+import { StaffOpportunities } from './layout/Dashboards/Components/StaffOpportunities/StaffOpportunities';
 
 register();
 
