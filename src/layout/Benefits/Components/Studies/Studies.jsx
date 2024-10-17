@@ -35,6 +35,15 @@ export function Studies() {
         <Column>
           <Text text={t('studies_text_1')} />
           <Text text={t('studies_text_2')} />
+          <Text text={t('studies_text_3')} />
+          <Text text={t('studies_text_4')} />
+          <Text text={t('studies_text_5')} />
+          <Text text={t('studies_text_6')} />
+          <Text text={t('studies_text_7')} />
+          <Text text={t('studies_text_8')} />
+          <Text text={t('studies_text_9')} />
+
+
         </Column>
 
         <ListWrapper>

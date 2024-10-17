@@ -645,8 +645,18 @@
 	"interchange_subtitle_5": "Parcerias no Intercâmbio",
 
 	"welcome_t2s_studies": "Boas-vindas à area de estudos da T2S!",
-	"studies_text_1": "Aqui, você encontrará informações essenciais para melhorar seu desempenho acadêmico e expandir seus conhecimentos",
-	"studies_text_2": "A área de estudos lhe oferece acesso a diversas plataformas, onde você encontra tudo o que precisa para aproveitar ao máximo. Para acessar:",
+	"studies_text_1": " Os benefícios dos estudos são amplos e impactam diversas áreas da vida:",
+	"studies_text_2": "- Desenvolvimento de habilidades",
+	"studies_text_3": "- Melhoria da empregabilidade",
+	"studies_text_4": "- Crescimento na carreira",
+	"studies_text_5": "- Ampliação do networking",
+	"studies_text_6": "- Atualização de conhecimentos",
+	"studies_text_7": "- Aumento da confiança",
+	"studies_text_8": "- Flexibilidade",
+	"studies_text_9": "- Reconhecimento profissional",
+
+
+
 	"studies_step_1": "Clique em qualquer um dos tipos de intercâmbio abaixo.",
 	"studies_step_2": "Você será direcionado automaticamente para a plataforma escolhida",
 	"studies_step_3": "Crie sua conta ou faça login, se já tiver uma.",
