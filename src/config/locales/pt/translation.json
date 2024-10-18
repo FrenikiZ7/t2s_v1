@@ -469,6 +469,7 @@
 	"course_or_training_name": "Nome do curso ou formação",
 
 	"required_languages": "Línguas necessárias",
+	"spoken_languages": "Línguas faladas",
 	"required_passports": "Passportes necessários",
 	"my_opportunities_staff": "Minhas oportunidades (Staff)",
 	"my_opportunities_player": "Minhas oportunidades (Atletas)",
@@ -1272,5 +1273,11 @@
 	"type_your_message": "Digite sua mensagem",
 	"send": "Enviar",
 	"search_your_messages": "Pesquise suas mensagens",
-	"no_more_messages": "Você não possui mais mensagens"
+	"no_more_messages": "Você não possui mais mensagens",
+
+	"------------------------------------------ T2S+": "------------------------------------------",
+
+	"your_post": "Sua publicação",
+	"publish": "Publicar",
+	"": ""
 }

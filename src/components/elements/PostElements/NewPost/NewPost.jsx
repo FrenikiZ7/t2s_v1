@@ -74,16 +74,18 @@ export function NewPost({ children }) {
             <Close />
           </IconDiv>
 
-          {mediaType === 'image' && <img src={mediaUrl} alt="" />}
-          {mediaType === 'video' && (
-            <ReactPlayer
-              url={mediaUrl}
-              width="100%"
-              height="100%"
-              controls
-              playsinline
-            />
+          {mediaType === 'image' ? (
+            <img src={mediaUrl} alt="" />
+          ) : mediaType === 'video' && (
+          <ReactPlayer
+            url={mediaUrl}
+            width="100%"
+            height="100%"
+            controls
+            playsinline
+          />
           )}
+
         </Styled.MediaAttached>
         )}
 

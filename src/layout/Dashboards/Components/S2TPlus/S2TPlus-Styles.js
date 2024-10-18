@@ -7,5 +7,6 @@ export const S2TPlusContainer = styled.article`
     gap: ${theme.spacings.medium};
     width: 100%;
     height: 100%;
+    
   `}
 `;

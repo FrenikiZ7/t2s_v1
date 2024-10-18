@@ -8,6 +8,8 @@ import { VerticalSoloSlide } from '../../../../components/elements/VerticalSoloS
 import { Row } from '../../../../components/RowContainer/Row';
 import { Subtitle } from '../../../../components/elements/Subtitle/Subtitle';
 import { NewPost } from '../../../../components/elements/PostElements/NewPost/NewPost';
+import { PostCard } from '../../../../components/elements/PostElements/PostCard/PostCard';
+import { Timeline } from '../../../../components/elements/PostElements/Timeline/Timeline';
 
 export function S2TPlus() {
   const { t } = useTranslation();
@@ -16,12 +18,13 @@ export function S2TPlus() {
 
   return (
     <Styled.S2TPlusContainer>
-      <GridCards title={t('physical_trainers')} items={s2tState.users.scouts} />
+      {/* <GridCards title={t('physical_trainers')} items={s2tState.users.scouts} />
       <GridCards title={t('tactical_trainers')} items={s2tState.users.scouts} />
       <GridCards title={t('psychologists')} items={s2tState.users.scouts} />
-      <GridCards title={t('doctors')} items={s2tState.users.scouts} />
+      <GridCards title={t('doctors')} items={s2tState.users.scouts} /> */}
 
-      <NewPost />
+      {/* <NewPost /> */}
+      <Timeline />
     </Styled.S2TPlusContainer>
   );
 }

@@ -150,8 +150,8 @@ export function FilterStaffProposals() {
 
             <AuthInput
               type="text"
-              name="filterStaffOpportunityCourses_input"
-              id="filterStaffOpportunityCourses_input"
+              name="filterStaffOpportunityCoursesOrTrainings_input"
+              id="filterStaffOpportunityCoursesOrTrainings_input"
               placeholder={t('required_courses_or_trainings')}
               onChange={(e) => setFilterData((prevData) => ({ ...prevData, coursesOrTrainings: e.target.value }))}
             />

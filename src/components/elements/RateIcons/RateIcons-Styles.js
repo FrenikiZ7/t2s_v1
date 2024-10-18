@@ -13,7 +13,6 @@ export const RateIconsElement = styled.div`
   
 
   ${IconContainer} {
-    
     transition: all 500ms ease-in-out;
     animation-fill-mode: forwards;
 
