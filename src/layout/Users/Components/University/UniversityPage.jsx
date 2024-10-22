@@ -134,11 +134,11 @@ export function UniversityPage() {
             <Styled.Explanation>
               <ListContainer>
                 <ListItem color={theme.colors.primary}>
-                  {t('generic_step_3_part_1')}
+                  {t('university_step_3_part_1')}
                 </ListItem>
 
                 <ListItem color={theme.colors.primary}>
-                  {t('generic_step_3_part_2')}
+                  {t('university_step_3_part_2')}
                 </ListItem>
 
                 <ListItem color={theme.colors.primary}>

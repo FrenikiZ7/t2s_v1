@@ -637,7 +637,7 @@
 	"interchange_text_5": "O programa de intercâmbio conta com uma ampla rede de parceiros, que abrange instituições acadêmicas e esportivas internacionais. Essas parcerias possibilitam que os participantes tenham acesso a experiências diversas e de alta qualidade, em áreas como educação, cultura e atividades esportivas, garantindo uma vivência enriquecedora e completa.",
 	"interchange_step_1": "Clique em qualquer um dos tipos de intercâmbio abaixo.",
 	"interchange_step_2": "Você será direcionado automaticamente para o nosso site de intercâmbio.",
-	"interchange_step_3": "Crie sua conta ou faça login, se já tiver uma.",
+
 	"interchange_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 	"interchange_subtitle_1": "Treinamento Pessoal Elite",
 	"interchange_subtitle_2": "Aulas Após a Escola",
@@ -655,8 +655,6 @@
 	"studies_text_7": "- Aumento da confiança",
 	"studies_text_8": "- Flexibilidade",
 	"studies_text_9": "- Reconhecimento profissional",
-
-
 
 	"studies_step_1": "Clique em qualquer um dos tipos de intercâmbio abaixo.",
 	"studies_step_2": "Você será direcionado automaticamente para a plataforma escolhida",
@@ -827,8 +825,63 @@
 	"generic_step_3_part_1": "Em sua área acesse a opção 'Perfil' através do menu de navegação",
 	"generic_step_3_part_2": "No carrosel de mídias utilize o botão '+' para selecionar e enviar seus melhores conteúdos.",
 	"generic_step_3_part_3": "Inclua fotos e vídeos que demonstrem momentos relacionadas à sua carreira.",
-	
 
+	"league_text": "LIGAS",
+
+	"league_step_1_title": "Registrar Nova Liga",
+	"league_step_2_title": "Editar Liga",
+	"league_step_3_title": "Envio de Conteúdos",
+	"league_step_4_title": "Detalhes da Liga",
+
+	"league_step_1_part_3": "Selecione o perfil 'Liga' durante o processo de cadastro.",
+	"league_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
+
+	"league_step_3_part_1": "Acesse a opção 'Perfil da Liga' no menu de navegação para personalizar as informações da sua liga.",
+	"league_step_3_part_2": "No carrossel de mídias, clique no botão '+' para adicionar seus melhores momentos e destacar as conquistas da sua liga.",
+	"league_step_3_part_3": "Inclua fotos e vídeos que mostrem os momentos mais emocionantes e únicos da sua liga, para que os outros possam conhecer o verdadeiro espírito da sua equipe.",
+
+	"league_step_4_part_1": "Revise o formato e a estrutura da competição para garantir que todos os participantes compreendam as regras.",
+	"league_step_4_part_2": "Verifique como as fases da liga serão organizadas e quais critérios serão usados para a classificação.",
+	"league_step_4_part_3": "Confirme os prazos e datas-chave da competição, incluindo início e término das inscrições e dos jogos.",
+	"league_step_4_part_4": "Confira as recompensas disponíveis para os participantes e veja como serão distribuídas ao longo da competição.",
+
+	"agency_text": "AGÊNCIA DE INTERCÂMBIO",
+
+	"agency_step_1_title": "Registrar Nova Agencia",
+	"agency_step_2_title": "Editar Agencia",
+	"agency_step_3_title": "Envio de Conteúdos",
+	"agency_step_4_title": "Detalhes da Agencia",
+
+	"agency_step_1_part_3": "Selecione o perfil 'Agencia' durante o processo de cadastro.",
+	"agency_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
+
+	"agency_step_3_part_1": "Acesse a opção 'Perfil' através do menu de navegação para personalizar as informações do seu intercâmbio.",
+	"agency_step_3_part_2": "No carrossel de mídias, clique no botão '+' para selecionar e enviar seus melhores conteúdos sobre as experiências de intercâmbio que você oferece.",
+	"agency_step_3_part_3": "Inclua fotos e vídeos que destaquem momentos únicos das viagens e experiências de intercâmbio proporcionadas, mostrando o impacto na vida dos estudantes.",
+
+	"agency_step_4_part_1": "Cadastre os principais valores e a proposta da sua agência de intercâmbio, destacando o que a torna única no mercado.",
+	"agency_step_4_part_2": "Descreva os tipos de programas de intercâmbio que sua agência oferece, como treinamentos, competições ou intercâmbios esportivos.",
+	"agency_step_4_part_3": "Indique os destinos disponíveis para os programas, destacando as principais características de cada um.",
+	"agency_step_4_part_4": "Informe os custos e taxas associadas aos programas, garantindo transparência e clareza para os futuros clientes.",
+
+	"university_text": "UNIVERSIDADE",
+
+	"university_step_1_title": "Registrar Nova Universidade",
+	"university_step_2_title": "Editar Universidade",
+	"university_step_3_title": "Envio de Conteúdos",
+	"university_step_4_title": "Detalhes da Universidade",
+
+	"university_step_1_part_3": "Selecione o perfil 'Universidade' durante o processo de cadastro.",
+	"university_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
+
+	"university_step_3_part_1": "Em sua área, acesse a opção 'Perfil da Universidade' através do menu de navegação.",
+	"university_step_3_part_2": "No carrossel de mídias, utilize o botão '+' para selecionar e enviar conteúdos que destaquem as atividades esportivas da sua universidade.",
+	"university_step_3_part_3": "Inclua fotos e vídeos que demonstrem eventos esportivos, times e conquistas da sua universidade.",
+
+	"university_step_4_part_1": "Cadastre os times da sua universidade, especificando os níveis de competição e categorias, aproveitando a plataforma para promover suas atividades esportivas.",
+	"university_step_4_part_2": "Descreva os diferentes níveis de competição dos times, desde eventos internos até campeonatos regionais e nacionais, destacando as oportunidades de crescimento para os atletas.",
+	"university_step_4_part_3": "Informe sobre as instalações esportivas disponíveis, como quadras, campos e ginásios, e como a plataforma pode ajudar a facilitar a logística dos eventos esportivos.",
+	"university_step_4_part_4": "Revise como a plataforma pode ser usada para promover atividades esportivas, facilitando a interação entre jogadores, clubes e a comunidade universitária.",
 
 	"player_text": "Trabalhamos com atletas de todos os níveis, incluindo amadores, profissionais, semi profissionais e de categorias de base",
 	"how_it_works": "Como funciona",
@@ -860,7 +913,6 @@
 	"fan_step_4_part_4": "Curta, comenta e compartilha",
 	"fan_text_2": "Seguindo esses passos, você estará oficialmente cadastrado e acompanhando todas as novidades da sua página de fã favorita!",
 
-	
 	"agent_text": "Bem-vindos! Estamos muito felizes de ter você aqui!",
 	"agent_step_1_title": "Crie sua conta",
 	"agent_step_2_title": "Edite seu perfil",
