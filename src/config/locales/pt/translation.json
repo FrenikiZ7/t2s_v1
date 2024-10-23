@@ -130,7 +130,7 @@
 	"level_3": "Level 3",
 	"my_squad": "Meus jogadores",
 
-	"------------------------------------------ Profile Info": "------------------------------------------ ",
+	"------------------------------------------ Informações do perfil": "------------------------------------------ ",
 
 	"modality": "Modalidade",
 	"birth_date": "Data de nascimento",
@@ -228,6 +228,11 @@
 	"sub_17": "Sub 17",
 	"sub_20": "Sub 20",
 	"adult": "Adulto",
+	"professional": "Profissional",
+	"semi_professional": "Semi-Profissional",
+	"academic": "Universitário",
+	"amateur": "Amador",
+	"recreational": "Recreacional",
 
 	"goalkeeper": "Goleiro",
 	"left_back": "Lateral-Esquerdo",
@@ -259,7 +264,14 @@
 	"injured": "Lesionado",
 	"injured_free": "Lesionado - Sem contrato",
 
-	"------------------------------------------ Videos": "------------------------------------------ ",
+	"year_of_achievement": "Ano da conquista",
+	"entry": "Entrada",
+	"entry_year": "Ano de entrada",
+	"exit": "Saída",
+	"exit_year": "Ano de saída",
+	"actual": "Atual",
+	"insert_final_grade": "Insira sua nota final",
+	"------------------------------------------ Componentes de vídeos": "------------------------------------------ ",
 	"upload_method": "Método de envio",
 	"youtube": "Youtube",
 	"vimeo": "Vimeo",
@@ -270,22 +282,7 @@
 	"upload_your_video": "Envie o seu vídeo",
 	"insert_video_url": "Por favor, insira a URL do vídeo!",
 
-	"------------------------------------------ Benefits": "------------------------------------------ ",
-
-	"podcast": "Podcast",
-	"sports_channels": "Canais esportivos",
-	"investments": "Investimentos",
-	"benefits_club": "Clube de benefícios",
-	"interchange": "Intercâmbio",
-	"crypto_wallet": "Crypto Wallet",
-	"crowdfunding": "Crowdfunding",
-	"lions_platform": "Plataforma Lions",
-	"education": "Educação",
-	"american_education": "Educação americana",
-	"telemedicine_usa": "Telemedicina (USA)",
-	"solar": "solar",
-
-	"------------------------------------------ Profile Header": "------------------------------------------ ",
+	"------------------------------------------ Header dos dashboards": "------------------------------------------ ",
 
 	"profile": "Perfil",
 	"my-squad": "Meu plantel",
@@ -305,16 +302,7 @@
 	"store": "Loja",
 	"t2s+": "T2S+",
 	"my_affiliates": "Meus afiliados",
-
-	"------------------------------------------ Competitive Categories": "------------------------------------------ ",
-
-	"professional": "Profissional",
-	"semi_professional": "Semi-Profissional",
-	"academic": "Universitário",
-	"amateur": "Amador",
-	"recreational": "Recreacional",
-
-	"------------------------------------------ Store": "------------------------------------------ ",
+	"------------------------------------------ T2S - Loja": "------------------------------------------ ",
 
 	"t_shirts": "Camisetas",
 	"football_boots": "Chuteiras",
@@ -328,7 +316,7 @@
 	"partners_supporters": "Parceiros e Apoiadores",
 	"user_benefits": "Benefícios do usuário",
 
-	"------------------------------------------ Edit + Create + View Opportunity": "------------------------------------------ ",
+	"------------------------------------------ Edição, criação e visualização de oportunidades": "------------------------------------------ ",
 	"edit_my_opportunity": "Editar minha oportunidade",
 	"which_league_opportunity": "Para qual liga é a oportunidade?",
 	"league": "Liga",
@@ -480,14 +468,14 @@
 	"opportunity_player_message_2": "Olá, estou muito interessado na oportunidade e acredito que cumpro todos os requisitos. Agradeço pela consideração!",
 	"opportunity_player_message_3": "Olá, estou muito interessado na oportunidade. Atualmente, estou sob contrato, mas aberto a novas possibilidades. Obrigado!",
 	"opportunity_player_message_4": "Oi, estou muito interessado na oportunidade e estou disponível imediatamente, pois não estou sob contrato. Agradeço pela consideração!",
-	"------------------------------------------ Buttons text": "------------------------------------------ ",
+	"------------------------------------------ Texto dos botões": "------------------------------------------ ",
 
 	"change_profile_picture_button": "Botão para alterar a foto do seu perfil",
 	"change_banner_button": "Botão para alterar o banner do seu perfil",
 	"add_video_button": "Botão para adicionar um novo vídeo ao seu perfil",
 	"add_photo_button": "Botão para adicionar uma nova foto ao seu perfil",
 
-	"------------------------------------------ Report": "------------------------------------------ ",
+	"------------------------------------------ Componentes de denúncia (Report)": "------------------------------------------ ",
 
 	"report_reason_question": "Motivo da denúncia",
 	"select_reason": "Escolha o motivo",
@@ -526,7 +514,7 @@
 	"gymnastics": "Ginástica",
 	"golf": "Golfe",
 
-	"------------------------------------------ Login + Register + Passwords": "------------------------------------------ ",
+	"------------------------------------------ Login, registro e reset de senha": "------------------------------------------ ",
 
 	"forgot_password": "Esqueceu a senha",
 	"forgot_password_question": "Esqueceu a senha?",
@@ -564,7 +552,20 @@
 	"register_step_3": "Valide sua conta: Confirme seu email e siga as instruções para concluir o processo de cadastro.",
 	"register_step_4": "Acesse 'Editar perfil' e adicione detalhes sobre sua experiência, habilidades, formação e conquistas.",
 
-	"------------------------------------------ Benefits pages": "------------------------------------------ ",
+	"------------------------------------------ Páginas de benefícios": "------------------------------------------ ",
+	"podcast": "Podcast",
+	"sports_channels": "Canais esportivos",
+	"investments": "Investimentos",
+	"finance": "Financeiro",
+	"benefits_club": "Clube de benefícios",
+	"interchange": "Intercâmbio",
+	"crypto_wallet": "Crypto Wallet",
+	"crowdfunding": "Crowdfunding",
+	"lions_platform": "Plataforma Lions",
+	"education": "Educação",
+	"american_education": "Educação americana",
+	"telemedicine_usa": "Telemedicina (USA)",
+	"solar": "solar",
 
 	"welcome_t2s_benefits": "Boas-vindas aos benefícios da T2S",
 	"other_t2s_benefits": "Outros benefícios da T2S",
@@ -637,7 +638,7 @@
 	"interchange_text_5": "O programa de intercâmbio conta com uma ampla rede de parceiros, que abrange instituições acadêmicas e esportivas internacionais. Essas parcerias possibilitam que os participantes tenham acesso a experiências diversas e de alta qualidade, em áreas como educação, cultura e atividades esportivas, garantindo uma vivência enriquecedora e completa.",
 	"interchange_step_1": "Clique em qualquer um dos tipos de intercâmbio abaixo.",
 	"interchange_step_2": "Você será direcionado automaticamente para o nosso site de intercâmbio.",
-
+	"interchange_step_3": "Crie sua conta ou faça login, se já tiver uma.",
 	"interchange_step_4": "Comece a explorar e aproveitar as vantagens exclusivas que te esperam!",
 	"interchange_subtitle_1": "Treinamento Pessoal Elite",
 	"interchange_subtitle_2": "Aulas Após a Escola",
@@ -646,7 +647,7 @@
 	"interchange_subtitle_5": "Parcerias no Intercâmbio",
 
 	"welcome_t2s_studies": "Boas-vindas à area de estudos da T2S!",
-	"studies_text_1": " Os benefícios dos estudos são amplos e impactam diversas áreas da vida:",
+	"studies_text_1": "Os benefícios dos estudos são amplos e impactam diversas áreas da vida:",
 	"studies_text_2": "- Desenvolvimento de habilidades",
 	"studies_text_3": "- Melhoria da empregabilidade",
 	"studies_text_4": "- Crescimento na carreira",
@@ -664,7 +665,7 @@
 	"welcome_t2s_solar": "Conheça o grupo Jireh Energy",
 	"solar_text_1": "Sabemos que adotar a energia solar pode ser complicado. Estamos aqui como seu guia especializado em cada etapa do processo. Com os nossos clientes, estamos a criar um planeta movido pelo sol. O grupo Jireh Energy, além de serviços e produtos, também é corretor de algumas das empresas líderes do mercado como Sun Run, Freedom Forever e Apricot Solar.",
 
-	"solar_subtitle_1": " Vantagens",
+	"solar_subtitle_1": "Vantagens",
 	"solar_text_2_part_1": " - Benefícios ambientais + econômicos da energia solar",
 	"solar_text_2_part_2": " - Fonte de energia renovável",
 	"solar_text_2_part_3": " - A instalação pode ser feita em telhados, fachadas e no solo",
@@ -756,16 +757,7 @@
 	"street_name": "Nome da rua",
 	"phone_number": "Número de telefone",
 	"your_phone_number": "Seu número de telefone",
-	"------------------------------------------ Auth Elements": "------------------------------------------ ",
-
-	"year_of_achievement": "Ano da conquista",
-	"entry": "Entrada",
-	"entry_year": "Ano de entrada",
-	"exit": "Saída",
-	"exit_year": "Ano de saída",
-	"actual": "Atual",
-	"insert_final_grade": "Insira sua nota final",
-	"------------------------------------------ Events": "------------------------------------------ ",
+	"------------------------------------------ Componentes de eventos": "------------------------------------------ ",
 	"organizer": "Organizador(a)",
 	"start_date": "Data de início",
 	"end_date": "Data de término",
@@ -809,82 +801,72 @@
 	"event_url": "URL do evento",
 	"insert_event_url": "Insira a URL do evento",
 
-	"------------------------------------------ Userspage": "------------------------------------------ ",
+	"------------------------------------------ Páginas de instruções aos usuários": "------------------------------------------ ",
 
 	"profile_types": "Tipos de perfil",
+	"how_it_works": "Como funciona",
+	"be_part_exclamation": "Faça parte!",
 
 	"generic_step_1_part_1": "Acesse a plataforma e clique em 'Registre-se'.",
 	"generic_step_1_part_2": "Informe seus dados pessoais com atenção e complete todos os campos obrigatórios.",
 	"generic_step_1_part_3": "Selecione o tipo de perfil que deseja cadastrar",
 	"generic_step_1_part_4": "Valide sua conta: Confirme seu email e siga as instruções para concluir o processo de cadastro.",
-
 	"generic_step_2_part_1": "Clique em 'Minha area' para entrar na página do seu perfil.",
 	"generic_step_2_part_2": "Utilize imagens profissionais e de alta qualidade em seu perfil e banner para causar uma boa impressão.",
 	"generic_step_2_part_3": "Adicione detalhes sobre sua conta.",
-
 	"generic_step_3_part_1": "Em sua área acesse a opção 'Perfil' através do menu de navegação",
 	"generic_step_3_part_2": "No carrosel de mídias utilize o botão '+' para selecionar e enviar seus melhores conteúdos.",
 	"generic_step_3_part_3": "Inclua fotos e vídeos que demonstrem momentos relacionadas à sua carreira.",
 
-	"league_text": "LIGAS",
-
+	"league_text": "Trabalhamos com ligas de todos os níveis, incluindo amadoras, profissionais, semi profissionais",
 	"league_step_1_title": "Registrar Nova Liga",
 	"league_step_2_title": "Editar Liga",
 	"league_step_3_title": "Envio de Conteúdos",
 	"league_step_4_title": "Detalhes da Liga",
-
 	"league_step_1_part_3": "Selecione o perfil 'Liga' durante o processo de cadastro.",
 	"league_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
-
 	"league_step_3_part_1": "Acesse a opção 'Perfil da Liga' no menu de navegação para personalizar as informações da sua liga.",
 	"league_step_3_part_2": "No carrossel de mídias, clique no botão '+' para adicionar seus melhores momentos e destacar as conquistas da sua liga.",
 	"league_step_3_part_3": "Inclua fotos e vídeos que mostrem os momentos mais emocionantes e únicos da sua liga, para que os outros possam conhecer o verdadeiro espírito da sua equipe.",
-
 	"league_step_4_part_1": "Revise o formato e a estrutura da competição para garantir que todos os participantes compreendam as regras.",
 	"league_step_4_part_2": "Verifique como as fases da liga serão organizadas e quais critérios serão usados para a classificação.",
 	"league_step_4_part_3": "Confirme os prazos e datas-chave da competição, incluindo início e término das inscrições e dos jogos.",
 	"league_step_4_part_4": "Confira as recompensas disponíveis para os participantes e veja como serão distribuídas ao longo da competição.",
+	"league_text_2": "Crie o seu perfil, mostre sua liga ao mundo e se conecte com os melhores times do mundo",
 
-	"agency_text": "AGÊNCIA DE INTERCÂMBIO",
-
+	"agency_text": "Seja mais uma agência a utilizar da T2S!",
 	"agency_step_1_title": "Registrar Nova Agencia",
 	"agency_step_2_title": "Editar Agencia",
 	"agency_step_3_title": "Envio de Conteúdos",
 	"agency_step_4_title": "Detalhes da Agencia",
-
 	"agency_step_1_part_3": "Selecione o perfil 'Agencia' durante o processo de cadastro.",
 	"agency_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
-
 	"agency_step_3_part_1": "Acesse a opção 'Perfil' através do menu de navegação para personalizar as informações do seu intercâmbio.",
 	"agency_step_3_part_2": "No carrossel de mídias, clique no botão '+' para selecionar e enviar seus melhores conteúdos sobre as experiências de intercâmbio que você oferece.",
 	"agency_step_3_part_3": "Inclua fotos e vídeos que destaquem momentos únicos das viagens e experiências de intercâmbio proporcionadas, mostrando o impacto na vida dos estudantes.",
-
 	"agency_step_4_part_1": "Cadastre os principais valores e a proposta da sua agência de intercâmbio, destacando o que a torna única no mercado.",
 	"agency_step_4_part_2": "Descreva os tipos de programas de intercâmbio que sua agência oferece, como treinamentos, competições ou intercâmbios esportivos.",
 	"agency_step_4_part_3": "Indique os destinos disponíveis para os programas, destacando as principais características de cada um.",
 	"agency_step_4_part_4": "Informe os custos e taxas associadas aos programas, garantindo transparência e clareza para os futuros clientes.",
+	"agency_text_2": "Crie o seu perfil, mostre sua agência ao mundo e busque novos talentos.",
 
-	"university_text": "UNIVERSIDADE",
-
+	"university_text": "Trabalhamos com universidades de todos os níveis, então faça parte da T2S!",
 	"university_step_1_title": "Registrar Nova Universidade",
 	"university_step_2_title": "Editar Universidade",
 	"university_step_3_title": "Envio de Conteúdos",
 	"university_step_4_title": "Detalhes da Universidade",
-
 	"university_step_1_part_3": "Selecione o perfil 'Universidade' durante o processo de cadastro.",
 	"university_step_2_part_3": "Revise as informações antes de salvar para garantir que tudo esteja correto e atualizado.",
-
 	"university_step_3_part_1": "Em sua área, acesse a opção 'Perfil da Universidade' através do menu de navegação.",
 	"university_step_3_part_2": "No carrossel de mídias, utilize o botão '+' para selecionar e enviar conteúdos que destaquem as atividades esportivas da sua universidade.",
 	"university_step_3_part_3": "Inclua fotos e vídeos que demonstrem eventos esportivos, times e conquistas da sua universidade.",
-
 	"university_step_4_part_1": "Cadastre os times da sua universidade, especificando os níveis de competição e categorias, aproveitando a plataforma para promover suas atividades esportivas.",
 	"university_step_4_part_2": "Descreva os diferentes níveis de competição dos times, desde eventos internos até campeonatos regionais e nacionais, destacando as oportunidades de crescimento para os atletas.",
 	"university_step_4_part_3": "Informe sobre as instalações esportivas disponíveis, como quadras, campos e ginásios, e como a plataforma pode ajudar a facilitar a logística dos eventos esportivos.",
 	"university_step_4_part_4": "Revise como a plataforma pode ser usada para promover atividades esportivas, facilitando a interação entre jogadores, clubes e a comunidade universitária.",
+	"university_text_2": "Crie o seu perfil, mostre sua universidade ao mundo e busque novos talentos.",
 
 	"player_text": "Trabalhamos com atletas de todos os níveis, incluindo amadores, profissionais, semi profissionais e de categorias de base",
-	"how_it_works": "Como funciona",
 	"player_step_1_title": "Crie sua conta",
 	"player_step_2_title": "Edite seu perfil",
 	"player_step_3_title": "Mostre seu talento",
@@ -896,7 +878,6 @@
 	"player_step_4_part_2": "Utilize os filtros para encontrar oportunidades que se encaixam em seu perfil e interesses.",
 	"player_step_4_part_3": "Clique na vaga que te interessa, leia com atenção os detalhes e requisitos para saber se você se encaixa!",
 	"player_step_4_part_4": "Se você se encaixa nos requisitos, preencha a área de texto com uma apresentação e clique em 'Enviar' para dar o próximo passo.",
-	"be_part_exclamation": "Faça parte!",
 	"player_text_2": "Crie o seu perfil, compartilhe suas melhores fotos e vídeos e deixe que o mundo descubra o seu talento.",
 
 	"fan_text": "Bem-vindos! Estamos muito felizes de ter você aqui. Venha fazer parte dessa comunidade incrível!",
@@ -928,16 +909,13 @@
 	"agent_text_2": "Seguindo esses passos, você estará oficialmente cadastrado",
 
 	"club_text": "Trabalhamos com clubes de todos os níveis, incluindo amadores, profissionais e semi profissionais",
-
 	"club_step_1_title": "Crie sua conta",
 	"club_step_2_title": "Edite seu perfil",
 	"club_step_3_title": "Mostre seu talento",
 	"club_step_4_title": "Busque talentoss",
-
 	"club_step_1_part_3": "Selecione a opção 'Clube' para se cadastrar como um clube em busca de novos talentos.",
 	"club_step_2_part_3": "Acesse 'Editar perfil' e complete seu perfil! Revele suas conquistas memoráveis, o estádio que te coroa e o treinador que te impulsiona.",
 	"club_step_3_part_3": "Inclua fotos e vídeos que demonstrem os jogadores treinando, momentos de destaque em competições ou o dia a dia do seu clube.",
-
 	"club_step_4_part_1": "Acesse a seção 'Minhas oportunidades' para visualizar suas oportunidades disponíveis.",
 	"club_step_4_part_2": "Clique no ícone '+' para iniciar a criação de uma nova oportunidade.",
 	"club_step_4_part_3": "Clique em uma oportunidade existente para editar seus detalhes a qualquer momento.",
@@ -959,7 +937,7 @@
 	"staff_step_4_part_4": "Se você se encaixa nos requisitos, preencha a área de texto com uma apresentação e clique em 'Enviar' para dar o próximo passo.",
 	"staff_text_2": "Crie o seu perfil, compartilhe suas melhores fotos e vídeos e deixe que o mundo descubra o seu talento.",
 
-	"------------------------------------------ Terms and Conditions": "------------------------------------------ ",
+	"------------------------------------------ Termos e condições": "------------------------------------------ ",
 
 	"terms_of_use_title": "Terms of Use",
 	"terms_of_use_text_1": "Talent 2 Show LLC. Terms of Use",
@@ -1321,17 +1299,7 @@
 	"reporting_violations_policy_text_2": "support@talent2show.com.",
 	"reporting_violations_policy_text_3": "© 2024 Talent2Show Inc. All rights reserved.",
 
-	"_title": "",
-	"_text_1": "",
-	"_text_2": "",
-	"_text_3": "",
-	"_text_4": "",
-	"_text_5": "",
-	"_text_6": "",
-	"_text_7": "",
-	"_text_8": "",
-
-	"------------------------------------------ MessageCenter": "------------------------------------------",
+	"------------------------------------------ Centro de mensagens": "------------------------------------------",
 
 	"chat_warning_1": "Proteja suas informações! Não forneça dados nem clique em links enviados.",
 	"chat_reject_message": "Você não aceitou esse chat",
@@ -1345,6 +1313,5 @@
 	"------------------------------------------ T2S+": "------------------------------------------",
 
 	"your_post": "Sua publicação",
-	"publish": "Publicar",
-	"": ""
+	"publish": "Publicar"
 }
