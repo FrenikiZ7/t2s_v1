@@ -260,15 +260,15 @@
 	"injured_free": "Injured - No contract",
 
 	"------------------------------------------ Videos": "------------------------------------------ ",
-	"upload_method": "Método de envio",
+	"upload_method": " Sending method",
 	"youtube": "Youtube",
 	"vimeo": "Vimeo",
 	"t2s": "T2S",
-	"youtube_video_url": "URL do vídeo no Youtube",
-	"vimeo_video_url": "URL do vídeo no Vimeo",
+	"youtube_video_url": "URL of the video on Youtube",
+	"vimeo_video_url": "URL of the video on Vimeo",
 	"url": "URL",
-	"upload_your_video": "Envie o seu vídeo",
-	"insert_video_url": "Por favor, insira a URL do vídeo!",
+	"upload_your_video": "Upload your video",
+	"insert_video_url": "Please enter the URL of the video!",
 
 	"------------------------------------------ Benefits": "------------------------------------------ ",
 
