@@ -918,17 +918,18 @@
 	"terms_of_use_text_2": "Last Updated: July 22, 2020",
 	"terms_of_use_link_1": "www.Talent2Show.com",
 	"terms_of_use_text_3": "These terms of use (the ‘Terms’) are a legal contract between Talent2Show, LLC. and its affiliates (‘Talent2Show’, ‘we’ or ‘us’) and ‘you’ (and ‘your,’ or ‘User’). The Terms explain how you are permitted to use the services provided by and through our platform and website(s) located at the URL",
-	"terms_of_use_text_4": "as well as all of our associated internet properties (either linked by Talent2Show and/or affiliated companies) and any software that Talent2Show provides to you for download, including in your mobile devices (our ‘Mobile App(s)’ or ‘App(s)’) (all of these virtual properties and mobile applications, collectively, the ‘Site’). These Terms also govern your use of all the text, data, information, software, graphics, proprietary content and more (all of which we refer to as ‘Materials’) that we and/or our affiliates may make available to you, as well as any services we may provide through this Site). Collectively, the Site, the Materials, and the services provided herein are referred to as the ‘Service’.",
+	"terms_of_use_text_4": "as well as all of our associated internet properties (either linked by Talent2Show and/or affiliated companies) and any software that Talent2Show provides to you for download, including on your mobile devices (our ‘Mobile App(s)’ or ‘App(s)’) (all of these virtual properties and mobile applications, collectively, the ‘Site’). These Terms also govern your use of all the text, data, information, software, graphics, proprietary content, and more (all of which we refer to as ‘Materials’) that we and/or our affiliates may make available to you, as well as any services we may provide through this Site. Collectively, the Site, the Materials, and the services provided herein are referred to as the ‘Service’.",
 	"terms_of_use_text_5": "USING THE SERVICE INDICATES THAT YOU HAVE BOTH READ AND ACCEPT THESE TERMS. IF YOU DO NOT AGREE WITH ANY OF THESE TERMS, DO NOT ACCESS OR OTHERWISE USE THE SERVICE.",
 	"terms_of_use_text_6": "NOTE: THESE TERMS CONTAIN A DISPUTE RESOLUTION AND",
 	"terms_of_use_link_2": "ARBITRATION PROVISION",
 	"terms_of_use_text_7": "INCLUDING A",
 	"terms_of_use_link_3": "CLASS ACTION WAIVER",
-	"terms_of_use_text_8": "THAT AFFECTS YOUR RIGHTS. DEPENDING ON YOUR JURISDICTION, THIS SECTION MAY NOT APPLY TO YOU",
+	"terms_of_use_text_8": "THAT AFFECTS YOUR RIGHTS. DEPENDING ON YOUR JURISDICTION, THIS SECTION MAY NOT APPLY TO YOU.",
 
 	"terms_of_use_highlights_title": "Terms of Use Highlights",
 	"terms_of_use_highlights_text_1": "Please also read our full",
 	"terms_of_use_highlights_link_1": "Terms of Use.",
+
 
 	"highlight_1_title": "Your Acceptance",
 	"highlight_1_text": "Each time you access and/or use the Service, you agree to be bound by these Terms and any Additional Terms that apply to you.",
@@ -1285,18 +1286,17 @@
 
 	"------------------------------------------ MessageCenter": "------------------------------------------",
 
-	"chat_warning_1": "Proteja suas informações! Não forneça dados nem clique em links enviados.",
-	"chat_reject_message": "Você não aceitou esse chat",
-	"accept": "Aceitar",
-	"reject": "Rejeitar",
-	"type_your_message": "Digite sua mensagem",
-	"send": "Enviar",
-	"search_your_messages": "Pesquise suas mensagens",
-	"no_more_messages": "Você não possui mais mensagens",
+	"chat_warning_1": "Protect your information! Do not provide data or click on sent links.",
+	"chat_reject_message": "You did not accept this chat",
+	"accept": "Accept",
+	"reject": "Reject",
+	"type_your_message": "Type your message",
+	"send": "Send",
+	"search_your_messages": "Search your messages",
+	"no_more_messages": "You have no more messages",
+
 
 	"------------------------------------------ T2S+": "------------------------------------------",
 
-	"your_post": "Sua publicação",
-	"publish": "Publicar",
-	"": ""
-}
+	"your_post": "Your Post",
+	"publish": "Publish",
