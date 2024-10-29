@@ -312,17 +312,18 @@
 	"------------------------------------------ T2S - Loja": "------------------------------------------ ",
 
 	"t_shirts": "Camisetas",
-	"football_boots": "Chuteiras",
-	"store_text": "Ainda não vendemos esses produtos diretamente na S2T, mas não se preocupe, a gente tem uma loja completa com tudo que você precisa, e o melhor: é tudo do mesmo grupo! Então, se você clicar no botão 'Comprar', iremos te direcionar para o nosso site de compras, onde você pode finalizar a sua compra com toda segurança e tranquilidade.",
+	"football_boots": "Botas de fútbol",
+	"store_text": "Aún no vendemos estos productos directamente en S2T, pero no te preocupes, tenemos una tienda completa con todo lo que necesitas, ¡y lo mejor: es todo del mismo grupo! Así que, si haces clic en el botón 'Comprar', te redirigiremos a nuestro sitio de compras, donde podrás finalizar tu compra con total seguridad y tranquilidad.",
+
 
 	"------------------------------------------ Home": "------------------------------------------ ",
 
-	"trending_videos": "Vídeos em alta",
-	"benefits": "Benefícios",
-	"my_benefits": "Meus benefícios",
-	"partners_supporters": "Parceiros e Apoiadores",
-	"user_benefits": "Benefícios do usuário",
-
+	"trending_videos": "Videos en tendencia",
+	"benefits": "Beneficios",
+	"my_benefits": "Mis beneficios",
+	"partners_supporters": "Socios y Apoyadores",
+	"user_benefits": "Beneficios del usuario"
+	
 	"------------------------------------------ Edição, criação e visualização de oportunidades": "------------------------------------------ ",
 	"edit_my_opportunity": "Editar minha oportunidade",
 	"which_league_opportunity": "Para qual liga é a oportunidade?",
