@@ -1323,17 +1323,19 @@
 
 	"------------------------------------------ Centro de mensagens": "------------------------------------------",
 
-	"chat_warning_1": "Proteja suas informações! Não forneça dados nem clique em links enviados.",
-	"chat_reject_message": "Você não aceitou esse chat",
-	"accept": "Aceitar",
-	"reject": "Rejeitar",
-	"type_your_message": "Digite sua mensagem",
+	"chat_warning_1": "¡Protege tu información! No proporciones datos ni hagas clic en enlaces enviados.",
+	"chat_reject_message": "No aceptaste este chat",
+	"accept": "Aceptar",
+	"reject": "Rechazar",
+	"type_your_message": "Escribe tu mensaje",
 	"send": "Enviar",
-	"search_your_messages": "Pesquise suas mensagens",
-	"no_more_messages": "Você não possui mais mensagens",
+	"search_your_messages": "Busca tus mensajes",
+	"no_more_messages": "No tienes más mensajes",
+
 
 	"------------------------------------------ T2S+": "------------------------------------------",
 
-	"your_post": "Sua publicação",
+	"your_post": "Tu publicación",
 	"publish": "Publicar"
+
 }
